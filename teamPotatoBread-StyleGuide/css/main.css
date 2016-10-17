@@ -1,3 +1,6 @@
+/* Old Color: #3cadf3; New Color: #6b90ff; */
+
+
 body{
 	font-family: 'Montserrat', sans-serif; 
 	margin:0;
@@ -108,7 +111,7 @@ p.example{
 
 .in-text-link{
 	font-size: 1rem; 
-	color: #3CADF3;
+	color: #6b90ff;
 }
 
 input[type=text]{
@@ -183,13 +186,13 @@ label{
 	background-color: #EEE;
 	padding: 15px; 
 	width: 65%;
-	border-left: 2px solid #3CADF3;
+	border-left: 2px solid #6b90ff;
 	border-radius: 4px;
 }
 
 #typography, #heading, #lists, #in-text, #input-field, #dropdown, #buttons, #colours, #main-nav, #product-listing, 
 #grid-structure {
-	border-bottom: 1px dotted #3CADF3; 
+	border-bottom: 1px dotted #6b90ff; 
 	padding-bottom: 25px; 
 }
 
@@ -198,7 +201,7 @@ label{
 }
 
 .grid-filler{
-	background-color: #3CADF3; 
+	background-color: #6b90ff; 
 	margin: 0 10px 0 10px;
 	line-height: 50px;
 	color: white;
@@ -234,7 +237,7 @@ img{
 	font-weight: 300;
 	margin-top:0;
 	margin-bottom: 0; 
-	color: #3CADF3;
+	color: #6b90ff;
 }
 
 .price{
@@ -247,7 +250,7 @@ img{
 }
 
 .baby-blue{
-	background-color: #3cadf3;
+	background-color: #6b90ff;
 	color:white;
 }
 
@@ -279,7 +282,7 @@ img{
 
 .extra-nav-links{
 	text-decoration: none; 
-	color: #3cadf3;
+	color: #6b90ff;
 	margin-right: 2rem;
 }
 
