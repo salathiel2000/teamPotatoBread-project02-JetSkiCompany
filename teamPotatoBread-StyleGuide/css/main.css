@@ -105,8 +105,11 @@ p.example{
 }
 
 .main-navigation:hover{
-	color: #E9AF00;
-	text-decoration: underline;
+	color: #6b90ff;
+}
+
+.navigation {
+	max-width: 25rem;
 }
 
 .in-text-link{
@@ -287,7 +290,7 @@ img{
 }
 
 .extra-nav-links:hover{
-	text-decoration: underline;
+	color: #E9AF00;
 }
 
 #heading h1{
