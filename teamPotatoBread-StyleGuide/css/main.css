@@ -51,6 +51,11 @@ ul {
 	font-size: 0.8rem; 
 	font-weight:100;
 }
+
+.main-section:hover, .sub-section:hover {
+	color: #E9AF00;;
+}
+
 li a{
 	display: block; 
 	/*padding: 1.75rem 0 1.75rem 0;*/
@@ -121,6 +126,7 @@ input[type=text]{
 }
 
 label{
+	border-radius: 0px; 
 	color: #174887;
 }
 
@@ -143,7 +149,7 @@ label{
   	padding-left: 1.5rem;
   	padding-right: 1.5rem;
   	background-color: #deb012; 
-  	border-radius: 5rem; 
+  	border-radius: 4px; 
   	border: none;
   	color: white; 	
   	text-decoration: none; 
@@ -178,6 +184,7 @@ label{
 	padding: 15px; 
 	width: 65%;
 	border-left: 2px solid #3CADF3;
+	border-radius: 4px;
 }
 
 #typography, #heading, #lists, #in-text, #input-field, #dropdown, #buttons, #colours, #main-nav, #product-listing, 
