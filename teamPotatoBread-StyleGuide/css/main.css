@@ -25,7 +25,7 @@ h3 {
 	font-weight: 500;
 }
 
-h6 {
+h4 {
 	font-weight: bold; 
 	font-size: 0.875rem; 
 	color: #E9AF00; 
@@ -194,7 +194,7 @@ p.example {
 }
 
 .submit-button:hover {
-	background-color: #ff9e1f;
+	background-color: #6b90ff;
 	transition: 0.5s, ease-in;
 }
 
@@ -222,6 +222,10 @@ p.example {
 
 .colour-description {
 	background-color: white;
+}
+
+.heading-color {
+	color: #e9af00;
 }
 
 /* Product */
@@ -325,8 +329,4 @@ p.example {
 
 #home {
 	text-decoration: none;
-}
-
-#heading h1 {
-	color: #e9af00;
 }
