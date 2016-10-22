@@ -1,0 +1,332 @@
+/* Old Color: #3cadf3; New Color: #6b90ff; */
+
+
+/*-------------- Tags --------------*/
+
+body {
+	font-family: 'Montserrat', sans-serif; 
+	margin: 0;
+}
+
+/* Text */
+
+h1 {
+	font-size: 2.25rem; 
+	font-weight: bold; 
+}
+
+h2 {
+	font-size: 1.75rem; 
+	font-weight: 600;
+}
+
+h3 {
+	font-size: 1.25rem; 
+	font-weight: 500;
+}
+
+h4 {
+	font-weight: bold; 
+	font-size: 0.875rem; 
+	color: #E9AF00; 
+	margin-bottom: 1.25rem;
+}
+
+p {
+	font-size: 1rem;
+	font-weight: 100;
+}
+
+code{
+	font-size: 14px;
+}
+
+/* Lists*/
+
+ul {
+	list-style-type: none; 
+	margin: 0;
+	padding: 0; 
+	font-family: 'Montserrat', sans-serif; 
+	font-size: 1.125rem; 
+}
+
+li a {
+	display: block; 
+	/*padding: 1.75rem 0 1.75rem 0;*/
+	padding-top: 0.5rem; 
+	text-decoration: none; 
+	color: #303030;
+}
+
+/* Forms */
+
+label {
+	border-radius: 0px; 
+	color: #174887;
+}
+
+input[type=text] {
+	width: 75%; 
+	height: 40px;
+	padding-left: 20px;
+	margin-top: 8px; 
+	border: 1px solid #174887;
+	border-radius: 4px; 
+	box-sizing: border-box;
+}
+
+
+/* Other */
+
+img {
+	width: 100%;
+}
+
+p.example {
+	padding-right: 5rem;
+}
+
+/*-------------- Classes --------------*/
+
+/* Shortcut Menu */
+
+.main-section {
+	font-size: 0.8rem; 
+	text-decoration: underline;
+}
+
+.sub-section {
+	font-size: 0.8rem; 
+	font-weight: 100;
+}
+
+.main-section:hover, .sub-section:hover {
+	color: #E9AF00;;
+}
+
+/* Extra Nav */
+
+.extra-nav {
+	font-size: 0.9rem; 
+	float: left;
+	margin-left: 14.1875rem;
+}
+
+.extra-nav-links {
+	text-decoration: none; 
+	color: #6b90ff;
+	margin-right: 2rem;
+}
+
+.extra-nav-links:hover {
+	color: #E9AF00;
+}
+
+/* Main Navigation */
+
+.main-navigation {
+	text-decoration: none; 
+	font-size: 1.75rem;
+	color: #E9AF00;
+	background-color: #0c2545;
+	padding: 1rem;
+	float: left;
+}
+
+.main-navigation:hover {
+	color: #6b90ff;
+}
+
+.navigation {
+	max-width: 25rem;
+}
+
+/* Text */
+
+.in-text-link {
+	font-size: 1rem; 
+	color: #6b90ff;
+}
+
+.code-style {
+	background-color: #EEE;
+	padding: 15px; 
+	width: 65%;
+	border-left: 2px solid #6b90ff;
+	border-radius: 4px;
+}
+
+/* Lists */
+
+.ul-style {
+	list-style-type: circle; 
+}
+
+.ul-style li {
+	padding: 7px 0 7px 0;
+}
+
+.ol-style li {
+	padding: 7px 0 7px 0;
+}
+
+/* Forms */
+
+.submit-button {
+	width: 10rem;
+  	padding-top: 0.5rem; 
+ 	padding-bottom: 0.5rem;
+  	padding-left: 1.5rem;
+  	padding-right: 1.5rem;
+  	background-color: #deb012; 
+  	border-radius: 4px; 
+  	border: none;
+  	color: white; 	
+  	text-decoration: none; 
+}
+
+.reset-button {
+	color: #deb012;
+	text-decoration: underline;
+	border: none;
+	background-color: white;
+}
+
+.submit-button:hover {
+	background-color: #6b90ff;
+	transition: 0.5s, ease-in;
+}
+
+/* Color */
+
+.yellow {
+	background-color: #e9af00;
+	color: white; 
+}
+
+.baby-blue {
+	background-color: #6b90ff;
+	color: white;
+}
+
+.navy-blue {
+	background-color: #0c2545;
+	color: white; 
+}
+
+.gray {
+	background-color: #eeeeee;
+	color: #0c2545;
+}
+
+.colour-description {
+	background-color: white;
+}
+
+.heading-color {
+	color: #e9af00;
+}
+
+/* Product */
+
+.product-description {
+	color: white;
+	font-style: italic;
+	font-size: 12px;
+}
+
+.product p {
+	color: white;
+	font-size: 12px;
+	margin-top: 3px; 
+}
+
+.product h5 {
+	font-weight: 300;
+	margin-top:0;
+	margin-bottom: 0; 
+	color: #6b90ff;
+}
+
+.price {
+	color: white; 
+}
+
+/* Dropdown */
+
+.styled-select {
+	background: transparent;
+	width: 75%;
+	padding-left: 20px; 
+	line-height: 1; 
+	font-size: 1rem;
+	border-radius: 4px; 
+	height: 40px; 
+	border: 1px solid #174887;
+	color: #174887;
+}
+
+/* Structure */
+
+.grid-filler {
+	background-color: #6b90ff; 
+	margin: 0 10px 0 10px;
+	line-height: 50px;
+	color: white;
+}
+
+.align-c {
+	text-align: center;
+	color: #E9AF00; 
+}
+
+.align-l {
+	text-align: left;
+	padding-left: 30px; 
+}
+
+
+/*-------------- IDs --------------*/
+
+#jeti-title {
+	font-weight: bold; 
+	font-size: 3rem; 
+	color: #E9AF00;
+	margin: 0;
+	padding-left: 14.1875rem; 
+	padding-top: 2.75rem;  
+}
+
+#banner h3 {
+	font-weight: 100;
+	font-size: 1.3125rem;
+	color: white; 
+	margin-top: -0.5rem; 
+	padding-left: 25.013125rem;
+}
+
+#banner {
+	background-color: #0c2545;
+	width: 100%;
+	/*margin-left: 450px;*/
+	height: 11.3824375rem;
+}
+
+#fname {
+	margin-bottom: 15px;
+}
+
+#typography, #heading, #lists, #in-text, #input-field, #dropdown, #buttons, #colours, #main-nav, #product-listing, 
+#grid-structure {
+	border-bottom: 1px dotted #6b90ff; 
+	padding-bottom: 25px; 
+}
+
+#colours {
+	padding-bottom: 60px;
+}
+
+#home {
+	text-decoration: none;
+}
