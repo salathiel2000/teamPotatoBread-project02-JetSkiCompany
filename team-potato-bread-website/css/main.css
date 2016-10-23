@@ -1,7 +1,22 @@
-/* Old Color: #3cadf3; New Color: #6b90ff; */
+/* Old Color: #3cadf3; New color: var(--secondary-light); */
 
 
 /*-------------- Tags --------------*/
+
+html {
+
+	/* Color Variables */
+
+	--primary-light: #e9af00; /* yellow */
+	--secondary-light: #6b90ff; /* baby blue */
+	--primary-dark: #0c2545; /* navy blue */
+	--white: white;
+	--gray: #eeeeee;
+	--black: black;
+
+
+
+}
 
 body {
 	font-family: 'Montserrat', sans-serif; 
@@ -28,7 +43,7 @@ h3 {
 h4 {
 	font-weight: bold; 
 	font-size: 0.875rem; 
-	color: #E9AF00; 
+	color: var(--primary-light); 
 	margin-bottom: 1.25rem;
 }
 
@@ -102,7 +117,7 @@ p.example {
 }
 
 .main-section:hover, .sub-section:hover {
-	color: #E9AF00;;
+	color: var(--primary-light);;
 }
 
 /* Extra Nav */
@@ -115,45 +130,53 @@ p.example {
 
 .extra-nav-links {
 	text-decoration: none; 
-	color: #6b90ff;
+	color: var(--secondary-light);
 	margin-right: 2rem;
 }
 
 .extra-nav-links:hover {
-	color: #E9AF00;
+	color: var(--primary-light);
 }
 
 /* Main Navigation */
 
-.main-navigation {
+/* Full Bar */
+.main-nav {
+}
+
+/* Individual Buttons */
+.main-nav-button {
+
 	text-decoration: none; 
 	font-size: 1.75rem;
-	color: #E9AF00;
-	background-color: #0c2545;
+	color: var(--primary-light);
+
+	background-color: var(--primary-dark);
 	padding: 1rem;
-	float: left;
+
+	text-align: center;
+
+	/* removed float: left */
 }
 
-.main-navigation:hover {
-	color: #6b90ff;
+.main-nav-button:hover {
+	color: var(--secondary-light);
 }
 
-.navigation {
-	max-width: 25rem;
-}
+
 
 /* Text */
 
 .in-text-link {
 	font-size: 1rem; 
-	color: #6b90ff;
+	color: var(--secondary-light);
 }
 
 .code-style {
 	background-color: #EEE;
 	padding: 15px; 
 	width: 65%;
-	border-left: 2px solid #6b90ff;
+	border-left: 2px solid color: var(--secondary-light);;
 	border-radius: 4px;
 }
 
@@ -182,7 +205,7 @@ p.example {
   	background-color: #deb012; 
   	border-radius: 4px; 
   	border: none;
-  	color: white; 	
+  	color: var(--white); 	
   	text-decoration: none; 
 }
 
@@ -190,54 +213,34 @@ p.example {
 	color: #deb012;
 	text-decoration: underline;
 	border: none;
-	background-color: white;
+	background-color: var(--white);
 }
 
 .submit-button:hover {
-	background-color: #6b90ff;
+	background-color: var(--secondary-light);
 	transition: 0.5s, ease-in;
 }
 
 /* Color */
 
-.yellow {
-	background-color: #e9af00;
-	color: white; 
-}
-
-.baby-blue {
-	background-color: #6b90ff;
-	color: white;
-}
-
-.navy-blue {
-	background-color: #0c2545;
-	color: white; 
-}
-
-.gray {
-	background-color: #eeeeee;
-	color: #0c2545;
-}
-
 .colour-description {
-	background-color: white;
+	background-color: var(--white);
 }
 
 .heading-color {
-	color: #e9af00;
+	color: var(--primary-light);
 }
 
 /* Product */
 
 .product-description {
-	color: white;
+	color: var(--white);
 	font-style: italic;
 	font-size: 12px;
 }
 
 .product p {
-	color: white;
+	color: var(--white);
 	font-size: 12px;
 	margin-top: 3px; 
 }
@@ -246,11 +249,11 @@ p.example {
 	font-weight: 300;
 	margin-top:0;
 	margin-bottom: 0; 
-	color: #6b90ff;
+	color: var(--secondary-light);
 }
 
 .price {
-	color: white; 
+	color: var(--white); 
 }
 
 /* Dropdown */
@@ -270,15 +273,15 @@ p.example {
 /* Structure */
 
 .grid-filler {
-	background-color: #6b90ff; 
+	background-color: var(--secondary-light); 
 	margin: 0 10px 0 10px;
 	line-height: 50px;
-	color: white;
+	color: var(--white);
 }
 
 .align-c {
 	text-align: center;
-	color: #E9AF00; 
+	color: var(--primary-light); 
 }
 
 .align-l {
@@ -292,7 +295,7 @@ p.example {
 #jeti-title {
 	font-weight: bold; 
 	font-size: 3rem; 
-	color: #E9AF00;
+	color: var(--primary-light);
 	margin: 0;
 	padding-left: 14.1875rem; 
 	padding-top: 2.75rem;  
@@ -301,13 +304,13 @@ p.example {
 #banner h3 {
 	font-weight: 100;
 	font-size: 1.3125rem;
-	color: white; 
+	color: var(--white); 
 	margin-top: -0.5rem; 
 	padding-left: 25.013125rem;
 }
 
 #banner {
-	background-color: #0c2545;
+	background-color: var(--primary-dark);
 	width: 100%;
 	/*margin-left: 450px;*/
 	height: 11.3824375rem;
@@ -319,7 +322,7 @@ p.example {
 
 #typography, #heading, #lists, #in-text, #input-field, #dropdown, #buttons, #colours, #main-nav, #product-listing, 
 #grid-structure {
-	border-bottom: 1px dotted #6b90ff; 
+	border-bottom: 1px dotted color: var(--secondary-light);; 
 	padding-bottom: 25px; 
 }
 

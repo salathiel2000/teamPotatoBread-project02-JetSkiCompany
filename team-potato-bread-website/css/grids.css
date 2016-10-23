@@ -1,3 +1,28 @@
+*, *::after, *::before { /* ensures that literally everything follows this model no matter what changes are made */
+	box-sizing: border-box; 
+}
+
+.box {
+	display: flex; /* choose flexbox */
+	display: -ms-flex;
+	display: -webkit-flex;
+	/* display: -moz-flex;  ask andrew? */
+
+	flex-wrap: wrap; /* wrap elements underneath when out of space */
+	flex-wrap: -ms-wrap;
+	flex-wrap: -webkit-wrap;
+
+	justify-content: space-between; /* how long along the main axis should the box justify space?, if extra space, justify between elements */
+	justify-content: -ms-space-between;
+	justify-content: -webkit-space-between;
+}
+
+.box-item {
+	/* flex: flex-grow flex-shrink flexbasis */
+	flex: 1 1 auto; /* auto adjusts to content width(eg: text width), 0 adjusts to 0 (eg: word width) */
+}
+
+
 .grid-row{
 	width: 100%;
 }
@@ -68,10 +93,6 @@
 	padding-left: 28rem;
 }
 
-*, *::after, *::before{
-	box-sizing: border-box;
-}
-
 .col-1of3{
 	width:33.3333%;
 	display: inline-block;
@@ -79,7 +100,6 @@
 }
 
 .product.col-1of3{
-	box-sizing: border-box;
 	width:32%;
 	display: inline-block;
 	float:left;
