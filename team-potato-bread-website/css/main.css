@@ -218,8 +218,10 @@ p.example {
 	transition: 0.5s, ease-in;
 }
 
-/* Color */
+/* Colors */
 
+/* remove color classes, those aren't semmantic */
+/* these are both specific to the styleguide, change these to a more realistic implementation */
 .colour-description {
 	background-color: var(--white);
 }
