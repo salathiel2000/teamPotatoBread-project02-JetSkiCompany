@@ -91,12 +91,14 @@ input[type=text] {
 	box-sizing: border-box;
 }
 
-
+.banner-img{
+	width:100%; 
+}
 /* Other */
 
-img {
+/*img {
 	width: 100%;
-}
+}*/
 
 p.example {
 	padding-right: 5rem;
@@ -151,7 +153,7 @@ p.example {
 	font-size: 1.75rem;
 	color: var(--primary-light);
 
-	background-color: var(--primary-dark);
+	background-color: vair(--primary-dark);
 	padding: 1rem;
 
 	text-align: center;
@@ -332,4 +334,18 @@ p.example {
 
 #home {
 	text-decoration: none;
+}
+
+.frame{
+	padding: 0 3rem 0 3rem;
+}
+
+.products{
+	padding:1rem;
+}
+
+.jetski-img
+{
+	width:100%;
+	min-width: 200px;
 }
