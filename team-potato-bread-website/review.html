@@ -17,5 +17,75 @@
 	</head>
 
 	<body>
+
+	<header class="grid-row">
+		<div class="main-nav grid-row">
+			<img src="http://placehold.it/100x100" alt="Image of the Company's Logo">
+			<a class="main-nav-button">Book</a>
+			<a class="main-nav-button">Jetskis</a>
+			<a class="main-nav-button">Review</a>
+			<a class="main-nav-button">Rules</a> <!-- maybe make rules a sub-section? -->				
+			<a class="main-nav-button">About</a>
+		</div>
+
+	
+		<img src="http://placehold.it/1920x400" alt="Banner image" class="banner-img frame">
+	</header>
+
+	<section id="reviews">
+
+		<div class="grid-row frame">
+		<h2>Reviews</h2>
+		<article>
+			<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sollicitudin, sem malesuada eleifend cursus, felis nulla aliquet turpis, nec finibus enim purus at nunc. Aenean eget ipsum consectetur nisi faucibus tincidunt a ut orci. Etiam ac mollis ex, sed sagittis turpis. Cras dignissim, mi eu pellentesque dignissim, purus ex volutpat erat, sit amet ultrices ligula lectus sed sapien. </p>
+			<p class="persona">Submitted by John who rode a <a href="#">Seadoo Spark</a></p>
+		</article>
+
+			<article>
+			<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sollicitudin, sem malesuada eleifend cursus, felis nulla aliquet turpis, nec finibus enim purus at nunc. Aenean eget ipsum consectetur nisi faucibus tincidunt a ut orci. Etiam ac mollis ex, sed sagittis turpis. Cras dignissim, mi eu pellentesque dignissim, purus ex volutpat erat, sit amet ultrices ligula lectus sed sapien. </p>
+			<p class="persona">Submitted by John who rode a <a href="#">Seadoo GTX</a></p>
+		</article>
+
+	</section>
+
+	<section id="submit-review">
+	
+		<div class="grid-row frame">
+			<h2>Submit a Review</h2>
+		</div>
+
+		<form class="frame"> 
+			 <div class="grid-row"> 
+			  <label for="fname">First Name</label> 
+			 </div>
+
+			 <div class="grid-row"> 
+			  <input type="text" id="fname" name="fname"> 
+			 </div> 
+
+			 <div class="grid-row"> 
+			  <label for="lname">Last Name</label> 
+			 </div> 
+
+			 <div class="grid-row"> 
+			  <input type="text" id="lname" name="lname"> 
+			 </div> 
+
+			 <select class="styled-select"> 
+				 <option value="option1">Choose an option</option> 
+				 <option value="option2">Another one</option> 
+				 <option value="option3">Here's another one</option> 
+			</select>
+
+			<div class="grid-row review-area"> 
+			  <label for="fname">Review</label> 
+			  <textarea name="textarea" rows="10" cols="50" placeholder="Write your review here..."></textarea>
+			 </div>
+		</form>
+
+		<button class="submit-button">Submit</button>
+
+	</section>
+
 	</body>
 </html>
