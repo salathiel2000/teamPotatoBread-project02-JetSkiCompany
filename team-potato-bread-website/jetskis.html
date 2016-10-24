@@ -18,77 +18,86 @@
 
 	<body>
 
-	<header class="grid-row">
-		<div class="main-nav grid-row">
-			<img src="http://placehold.it/100x100" alt="Image of the Company's Logo">
-			<a class="main-nav-button">Book</a>
-			<a class="main-nav-button">Jetskis</a>
-			<a class="main-nav-button">Review</a>
-			<a class="main-nav-button">Rules</a> <!-- maybe make rules a sub-section? -->				
-			<a class="main-nav-button">About</a>
-		</div>
+	<header>
+		<section class="grid-row" id="banner"> <!-- change banner from id to class -->
+				<h1 id="jeti-title">Jeti Rentals</h1>
+				<h3>About</h3>
+=======
+		<header>
+			<section class="grid-row" id="banner"> <!-- change banner from id to class -->
+				<h1 id="jeti-title">Jeti Rentals</h1>
+				<h3>Jetskis</h3>
+			</section>
 
-	
-		<img src="http://placehold.it/1920x400" alt="Banner image" class="banner-img frame">
-	</header>
+			<nav>
+				<div class="main-nav box grid-row"> <!-- class ordering: unique, box-related, grid-related -->
+					<a class="main-nav-button box-item" href="index.html">Home</a>
+					<a class="main-nav-button box-item" href="book.html">Book</a>
+					<a class="main-nav-button box-item" href="jetskis.html">Jetskis</a>
+					<a class="main-nav-button box-item" href="review.html">Review</a>
+					<a class="main-nav-button box-item" href="rules.html">Rules</a> <!-- maybe make rules a sub-section? -->
+					<a class="main-nav-button box-item" href="about.html">About</a>
+					<a class="main-nav-button box-item" href="styleguide.html">Styleguide</a>
+				</div>
+			</nav>
+		</header>
 
-	<section id="jet-skis" class="grid-row">
+		<section id="jet-skis" class="grid-row">
 
-			<div class="grid-col-1of3">
+				<div class="grid-col-1of3">
 
-				<div class="products">
-					<img src="http://placehold.it/500x300" alt="Image of lite and recreational jet ski" class="jetski-img">
-					<h2>LITE</h2>
-					<h3>from $60/hr</h3>
+					<div class="products">
+						<img src="http://placehold.it/500x300" alt="Image of lite and recreational jet ski" class="jetski-img">
+						<h2>LITE</h2>
+						<h3>from $60/hr</h3>
+
+							<p>4+ hours</p>
+							<p>$50/hr</p>
+
+							<a href="" class="in-text">View details</a>
+
+							<button class="submit-button">BOOK</button>
+
+					</div>
+				</div>
+
+				<div class="grid-col-1of3">
+
+					<div class="products">
+
+						<img src="http://placehold.it/500x300" alt="Image of lite and recreational jet ski" class="jetski-img">
+						
+						<h2>LUXURY</h2>
+						<h3>from $75/hr</h3>
 
 						<p>4+ hours</p>
-						<p>$50/hr</p>
+						<p>$65/hr</p>
+
+						<a href="" class="in-text">View details</a>	
+
+						<button class="submit-button">BOOK</button>
+					</div>
+				</div>
+
+				<div class="grid-col-1of3">
+
+					<div class="products">
+
+						<img src="http://placehold.it/500x300" alt="Image of lite and recreational jet ski" class="jetski-img">
+						<h2>PERFORMANCE</h2>
+						<h3>from $90/hr</h3>
+
+						<p>4+ hours</p>
+						<p>$80/hr</p>
 
 						<a href="" class="in-text">View details</a>
 
 						<button class="submit-button">BOOK</button>
 
+					</div>
 				</div>
-			</div>
+		
 
-			<div class="grid-col-1of3">
-
-				<div class="products">
-
-					<img src="http://placehold.it/500x300" alt="Image of lite and recreational jet ski" class="jetski-img">
-					
-					<h2>LUXURY</h2>
-					<h3>from $75/hr</h3>
-
-					<p>4+ hours</p>
-					<p>$65/hr</p>
-
-					<a href="" class="in-text">View details</a>	
-
-					<button class="submit-button">BOOK</button>
-				</div>
-			</div>
-
-			<div class="grid-col-1of3">
-
-				<div class="products">
-
-					<img src="http://placehold.it/500x300" alt="Image of lite and recreational jet ski" class="jetski-img">
-					<h2>PERFORMANCE</h2>
-					<h3>from $90/hr</h3>
-
-					<p>4+ hours</p>
-					<p>$80/hr</p>
-
-					<a href="" class="in-text">View details</a>
-
-					<button class="submit-button">BOOK</button>
-
-				</div>
-			</div>
-	
-
-	</section>
-
+		</section>
 	</body>
 </html>
