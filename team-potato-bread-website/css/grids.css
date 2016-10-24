@@ -182,7 +182,6 @@
 	#contact-us.grid-col-2of3{
 		text-align: center;
 	}
->>>>>>> origin/salathiel
 }
 
 @media(max-width: 64.1875rem){
@@ -203,11 +202,11 @@
 @media(max-width: 46.25rem){
 	.grid-col-1of2{
 		width: 100%
+		/*padding-left:2rem;*/
 	}
 
-	.grid-col-1of2 {
-			width:100%;
+	.grid-col-1of2.detailed-product{
+		padding-left: 2rem;
 	}
 
->>>>>>> origin/thomas
 }

@@ -600,6 +600,25 @@ article{
 	padding:0 4rem;
 }
 
+.lite-jetski{
+	margin: 2rem 0; 
+}
+
+.grid-col-1of2.detailed-product{
+	text-align: left;
+	padding-left: 0;
+}
+
+.remove-margins h2 p{
+	margin:0;
+}
+
+.weight-text{
+	width:50%;
+	float: left;
+	text-align: left;
+}
+
 @media(max-width: 58.5625rem){
 	.owner-description{
 	padding:0 2rem;
@@ -612,4 +631,15 @@ article{
 }
 }
 
->>>>>>> origin/salathiel
+@media(max-width: 46.25rem){
+
+	.grid-col-1of2.detailed-product{
+		padding-left: 0rem;
+		margin-left:2rem;
+	}
+
+	.weight-text{
+		padding-left: 0rem;
+	}
+
+}
