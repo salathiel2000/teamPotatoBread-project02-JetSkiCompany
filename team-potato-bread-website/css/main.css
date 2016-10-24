@@ -86,13 +86,24 @@ label {
 }
 
 input[type=text] {
-	width: 75%; 
+	width: 100%; 
 	height: 40px;
 	padding-left: 20px;
 	margin-top: 8px; 
 	border: 1px solid #174887;
 	border-radius: 4px; 
 	box-sizing: border-box;
+}
+
+textarea{
+	width:100%;
+	padding:0.8rem;
+	border: 1px solid #174887;
+	margin-top: 0.5rem;
+}
+
+.review-area{
+	margin-top: 2rem;
 }
 
 .banner-img{
@@ -267,7 +278,7 @@ p.example {
 
 .styled-select {
 	background: transparent;
-	width: 75%;
+	width: 100%;
 	padding-left: 20px; 
 	line-height: 1; 
 	font-size: 1rem;
@@ -275,6 +286,7 @@ p.example {
 	height: 40px; 
 	border: 1px solid #174887;
 	color: #174887;
+	margin-top: 2rem;
 }
 
 /* Structure */
@@ -355,4 +367,38 @@ p.example {
 {
 	width:100%;
 	min-width: 200px;
+}
+
+#reviews h2{
+	margin-bottom: 2rem;
+	text-decoration: underline;
+}
+
+#submit-review h2{
+	margin-bottom: 2rem;
+	text-decoration: underline;
+}
+
+#reviews a{
+	padding:0;
+	text-decoration: none; 
+}
+
+article{
+	margin-bottom: 4rem;
+}
+
+.persona{
+	font-weight: 100; 
+	color: #bbbbbb;
+	/*font-size: 14rem;*/
+}
+
+#submit-review .submit-button{
+	margin-left:2rem;
+	width:25%;
+}
+
+#submit-review{
+	margin-bottom: 3rem;
 }
