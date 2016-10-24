@@ -1,5 +1,5 @@
 *, *::after, *::before { /* ensures that literally everything follows this model no matter what changes are made */
-	box-sizing: border-box; 
+	box-sizing: border-box;
 }
 
 .box {
@@ -27,7 +27,15 @@
 	width: 100%;
 }
 
-.grid-col-1of1{
+.grid-row::after { /* gotta clear the floats bud */
+	content: "";
+
+	display: block;
+
+	clear: both;
+}
+
+.grid-col-1of1{  /* why do our grids have padding? why do they have colors? */
 	width:100%; 
 	text-align: center; 
 	background-color: #0c2545;  
@@ -47,9 +55,9 @@
 .grid-col-1of3{
 	width:33.3333%; 
 	text-align: center; 
-	background-color: #0c2545;  
+	/* background-color: #0c2545; */  
 	height: 70px;
-	padding-top: 10px;
+	/* padding-top: 10px; */
 	float:left;
 }
 
