@@ -52,7 +52,6 @@
 .grid-col-1of2{
 	width:50%; 
 	text-align: center; 
-
 	float:left;
 }
 
@@ -123,6 +122,38 @@
 	content:"";
 	display:block;
 	clear:both; 
+}
+
+@media(max-width: 56.4375rem){
+	/*.grid-col-1of2{
+		width:100%;
+		padding: 0;
+	}*/
+
+	.owner-description{
+		padding: 0 2rem;
+	}
+
+}
+
+@media(max-width: 48.3125rem){
+	/*.grid-col-1of2{
+		width:100%;
+		padding: 0;
+	}*/
+
+	.owner-description{
+		padding: 0;
+	}
+
+}
+
+@media(max-width: 47.0625rem){
+	.grid-col-1of2{
+		width:100%;
+	}
+
+
 }
 
 @media(max-width: 64.1875rem){
