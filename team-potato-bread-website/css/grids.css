@@ -128,12 +128,19 @@
 @media(max-width: 64.1875rem){
 	.grid-col-1of3{
 		width:50%;
-		margin-top: 2rem;
+	}
+
+	.grid-col-1of2{
+		width:50%;
 	}
 
 	@media(max-width: 44.25rem){
 	.grid-col-1of3{
 		width:100%;
-		margin-top: 2rem;
 	}
+
+	.grid-col-1of2 {
+			width:100%;
+	}
+
 }
