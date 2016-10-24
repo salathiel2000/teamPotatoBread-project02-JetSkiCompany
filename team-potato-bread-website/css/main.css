@@ -7,15 +7,12 @@ html {
 
 	/* Color Variables */
 
-	--primary-light: #e9af00; /* yellow */
-	--secondary-light: #6b90ff; /* baby blue */
-	--primary-dark: #0c2545; /* navy blue */
+	--primary-light: rgb(233,175,0); /* yellow */
+	--secondary-light: rgb(107,144,255); /* baby blue */
+	--primary-dark: rgb(12,37,69); /* navy blue */
 	--white: white;
-	--gray: #eeeeee;
+	--gray: rgb(238,238,238);
 	--black: black;
-
-
-
 }
 
 a{
@@ -239,8 +236,10 @@ p.example {
 	transition: 0.5s, ease-in;
 }
 
-/* Color */
+/* Colors */
 
+/* remove color classes, those aren't semmantic */
+/* these are both specific to the styleguide, change these to a more realistic implementation */
 .colour-description {
 	background-color: var(--white);
 }
