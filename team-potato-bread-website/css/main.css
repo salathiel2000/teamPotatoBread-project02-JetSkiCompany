@@ -116,6 +116,10 @@ p.example {
 
 /* Home Page */
 
+img {
+	width: 100%;
+}
+
 .overlay-container {
 	position: relative; /* needs a relative position so .hero-image-overlay has a positioned ancestor for absolute positioning */
 }
@@ -127,12 +131,34 @@ p.example {
 .overlay {
 	z-index: 1;
 
+	/*
 	position: absolute;
+	*/
+}
+
+@media(max-width: 670px){
+	#temp {
+		max-width: 25rem;
+		top: 5rem;
+		left: 1rem;
+	}
+}
+
+#temp {
+	position: absolute;
+	left: 10rem;
+	bottom: 5rem;
+	width: 100%;
 }
 
 #hero-overlay {
-	bottom: 15rem;
+	/*
+	top: 37.5rem;
 	left: 10rem;
+	*/
+
+	max-width: 40rem;
+	margin-bottom: 1rem;
 
 	text-decoration: none;
 	color: var(--primary-dark);
@@ -142,10 +168,12 @@ p.example {
 }
 
 #hero-overlay-questions {
-	max-width: 60rem;
+	max-width: 70rem;
 
-	bottom: 5rem;
+	/*
+	top: 45rem;
 	left: 10rem;
+	*/
 
 	text-decoration: none;
 	color: var(--primary-light);
@@ -226,6 +254,21 @@ p.example {
 	background-color: var(--primary-dark);
 }
 
+
+.book-select {
+	width: 60%;
+	height: 5rem;
+	margin: 2rem;
+
+	background-color: var(--white);
+	border-color: var(--primary-dark);
+	color: var(--primary-dark);
+
+	border-width: 1px; /* consider having no borders to match rest of design */
+
+	border-radius: 4px; /* consider whether border and corner measurements should be fixed or dynamic (px vs rem) and then convert */
+
+}
 
 
 
@@ -335,6 +378,8 @@ p.example {
   	border: none;
   	color: var(--white); 	
   	text-decoration: none; 
+
+ 	margin-top: 2rem;
 }
 
 .button:hover {
