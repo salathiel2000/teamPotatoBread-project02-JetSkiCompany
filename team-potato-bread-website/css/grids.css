@@ -1,5 +1,5 @@
 *, *::after, *::before { /* ensures that literally everything follows this model no matter what changes are made */
-	box-sizing: border-box; 
+	box-sizing: border-box;
 }
 
 .box {
@@ -42,6 +42,8 @@
 	padding: 0 2rem;
 }
 
+
+
 .grid-col-1of1{
 	width:100%; 
 	text-align: center; 
@@ -59,6 +61,7 @@
 .grid-col-1of3{
 	width:33.3333%; 
 	margin-top: 2rem;
+	float:left;
 }
 
 
@@ -84,13 +87,6 @@
 	float:left;
 }
 
-
-
-
-
-
-
-/* what are these? */
 
 .col-4of12{
 	width:33.32%;

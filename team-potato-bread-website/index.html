@@ -20,7 +20,9 @@
 		<section class="grid-row" id="banner"> <!-- change banner from id to class -->
 			<h1 id="jeti-title">Jeti Rentals</h1>
 			<h3>Landing Page</h3>
+		</section>
 
+		<nav>
 			<div class="main-nav box grid-row"> <!-- class ordering: unique, box-related, grid-related -->
 				<a class="main-nav-button box-item" href="index.html">Home</a>
 				<a class="main-nav-button box-item" href="book.html">Book</a>
@@ -30,8 +32,96 @@
 				<a class="main-nav-button box-item" href="about.html">About</a>
 				<a class="main-nav-button box-item" href="styleguide.html">Styleguide</a>
 			</div>
+		</nav>
+
+		<section class="overlay-container grid-row">
+			<div class="overlay-image">
+				<img src="img/seadooSpark.png" alt="Home page splash image representing company"> <!-- good opportunity to put in an image carousel if theres time -->
+			</div>
+
+			<div id="hero-overlay" class="overlay">
+				<h2>Let us take you where you want to go...</h2> <!-- some company phrase leading into the mini-questionare -->
+			</div>
+
+			<div id="hero-overlay-questions" class="overlay grid-row">
+				<div class="grid-col-1of3">
+						<select class="hero-select">
+							<option value="option1">0-2</option>
+							<option value="option2">3-7</option>
+							<option value="option3">7+</option>
+						</select>
+						<select class="hero-select">
+							<option value="option1">Sight Seeing</option>
+							<option value="option2">Tow Sports</option>
+							<option value="option3">Go Fast</option>
+							<option value="option3">Show Off</option>
+						</select>
+				</div>
+
+				<div class="grid-col-1of3">
+						<select class="hero-select">
+							<option value="option1">Cruise</option>
+							<option value="option2">Medium</option>
+							<option value="option3">Fast</option>
+						</select>
+						<select class="hero-select">
+							<option value="option1">Nervous</option>
+							<option value="option2">Comfortable if Safe</option>
+							<option value="option3">Fully Confident</option>
+						</select>
+				</div>
+
+				<div class="grid-col-1of3">
+					<a class="overlay-button box-item" href="lite.html">Go</a>
+				</div>
+			</div>
 		</section>
 
+		<div class="grid-row">
+			<section class="grid-col-1of2">
+				<div class="overlay-container grid-row">
+					<div class="overlay-image">
+						<img src="img/seadooSpark.png" alt="About us image representing the people who work at the company">
+					</div>
 
+					<div id="about-overlay" class="overlay">
+						<h3>Who we are:</h3>
+					</div>
+				</div>
+
+				<h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ultricies elit vitae lectus auctor, vel gravida metus egestas. Morbi ac ultricies sem, vitae malesuada diam. Pellentesque volutpat interdum diam a ultricies. Nam quis vulputate tortor.</h3>
+
+				<a class="button" href="about.html">More Info</a>
+			</section>
+
+			<section class="grid-col-1of2">
+				<div class="overlay-container grid-row">
+					<div class="overlay-image">
+						<img src="img/seadooSpark.png" alt="About us image representing the people who work at the company">
+					</div>
+
+					<div id="weather-overlay" class="overlay">
+						<h3>Weather Forecast</h3>
+					</div>
+				</div>
+
+				<div class="forecast box grid-row">
+					<div class="forecast-tile box-item">
+					</div>
+					<div class="forecast-tile box-item">
+					</div>
+					<div class="forecast-tile box-item">
+					</div>
+					<div class="forecast-tile box-item">
+					</div>
+					<div class="forecast-tile box-item">
+					</div>
+					<div class="forecast-tile box-item">
+					</div>
+					<div class="forecast-tile box-item">
+					</div>
+				</div>
+			</section>
+		</div>
 	</body>
 </html>
