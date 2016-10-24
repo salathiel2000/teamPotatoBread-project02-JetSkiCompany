@@ -131,21 +131,18 @@ p.example {
 #hero-overlay-questions {
 	max-width: 60rem;
 
-	bottom: 7.5rem;
+	bottom: 5rem;
 	left: 10rem;
 
 	text-decoration: none;
 	color: var(--primary-light);
 	background-color: var(--primary-light);
-
-	padding: .25rem 2rem .25rem 0rem;
 }
 
 .hero-select {
-	margin: 1rem;
-	
-	width: 100%;
+	width: 40%;
 	height: 2.5rem;
+	margin: 1rem;
 
 	background-color: var(--white);
 	border-color: var(--primary-dark);
@@ -155,6 +152,34 @@ p.example {
 
 	border-radius: 4px; /* consider whether border and corner measurements should be fixed or dynamic (px vs rem) and then convert */
 }
+
+.overlay-button {
+	text-decoration: none;
+
+	display: block; /* I needed to figure out how to make this button be inlign and fill the div, dont know why this worked */
+
+	border-radius: 4px; 
+  	border: none;
+
+  	padding: 2rem;
+
+  	/* height: 100%; this works but causes the text to not be vertically centerd */
+
+	color: var(--primary-light);
+	background-color: var(--primary-dark);
+	
+
+	text-align: center;
+	justify-content: center; /* vertical alignment isnt working */
+}
+
+.overlay-button:hover {
+	background-color: var(--secondary-light);
+	transition: 0.5s, ease-in;
+}
+
+
+
 
 #about-overlay {
 	bottom: 3.75rem;
@@ -188,30 +213,7 @@ p.example {
 	background-color: var(--primary-dark);
 }
 
-.overlay-button {
-	text-decoration: none;
 
-	display: block; /* I needed to figure out how to make this button be inlign and fill the div, dont know why this worked */
-
-	border-radius: 4px; 
-  	border: none;
-
-  	padding: 2rem;
-
-  	/* height: 100%; this works but causes the text to not be vertically centerd */
-
-	color: var(--primary-light);
-	background-color: var(--primary-dark);
-	
-
-	text-align: center;
-	justify-content: center; /* vertical alignment isnt working */
-}
-
-.overlay-button:hover {
-	background-color: var(--secondary-light);
-	transition: 0.5s, ease-in;
-}
 
 
 /* Shortcut Menu */
