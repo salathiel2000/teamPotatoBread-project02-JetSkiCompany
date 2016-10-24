@@ -539,3 +539,32 @@ article{
 .owner-description{
 	padding: 0 4em;
 }
+
+.feature-map{
+	height:300px;
+	filter:grayscale(99%);
+	margin-top: 2rem;
+}
+
+.feature-map iframe{
+	width: 100% !important;
+	height:100% !important;
+}
+
+.owner-description{
+	padding:0 4rem;
+}
+
+@media(max-width: 58.5625rem){
+	.owner-description{
+	padding:0 2rem;
+}
+}
+
+@media(max-width: 49.5625rem){
+	.owner-description{
+	padding:0;
+}
+}
+
+>>>>>>> origin/salathiel
