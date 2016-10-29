@@ -741,6 +741,10 @@ article{
 	text-align: left;
 }
 
+.spark-in-text{
+	padding:0;
+}
+
 @media(max-width: 58.5625rem){
 	.owner-description{
 	padding:0 2rem;
