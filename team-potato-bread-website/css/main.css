@@ -1,6 +1,133 @@
-/* Old Color: #3cadf3; New color: var(--secondary-light); */
+/* 1rem = 16pt font */
+/* we need to level out some of the beach images */
 
 
+/*-------------- New --------------*/
+
+.head-banner { /* gap at the top comes from the h1 margin padding, dont worry about this until h1 is placed */
+	height: 100vh; /* ensures that the banner is the only thing on screen when scrolled to the top */
+
+	background-image: url("../img/jet-ski-banner.jpg");  /* eventually switch this to an child id of .head-banner */
+	/* display: block; dont know what this was for */
+
+    background-attachment: scroll; /* change to "fixed" if a scrolling effect is wanted */
+    background-position: center; /* controls which edge the picture snaps to */
+    background-size: cover; /* "contain" will fit the image but leave white space, "cover" will fit the container but cut off the image, size can also be manually set */
+    background-repeat: no-repeat;
+}
+
+.foot-banner {
+	background-image: url("../img/ripples.jpg");  /* eventually switch this to an child id of .head-banner */
+	/* display: block; dont know what this was for */
+
+    background-attachment: scroll; /* change to "fixed" if a scrolling effect is wanted */
+    background-position: center; /* controls which edge the picture snaps to */
+    background-size: cover; /* "contain" will fit the image but leave white space, "cover" will fit the container but cut off the image, size can also be manually set */
+    background-repeat: no-repeat;
+}
+
+.menu {
+	padding: 2rem 0;
+	
+}
+
+.menu-logo {
+	float: left;
+}
+
+.menu-buttons {
+	width: 20rem;
+
+	float: right;
+}
+
+a {
+	text-decoration: none;
+	color: var(--white);
+	font-size: 1.125rem; /* 18pt */
+}
+
+h1 {
+	font-size: 3.75rem; /* 60pt */
+
+	margin: 40vh 0 5rem 0;
+
+	color: var(--white);
+}
+
+h2 {
+	font-size: 2.25rem; /* 36pt */
+}
+
+h3 {
+	font-size: 1.625rem; /* 26pt */
+}
+
+h4 {
+	font-size: 1.125rem; /* 18pt */
+}
+
+h5 {
+	font-size: 0.875rem; /* 14pt */
+}
+
+h6 {
+	font-size: 0.75rem; /* 12 pt */
+}
+
+p {
+	font-size: 1.125rem; /* 14pt */
+	color: var(--white);
+}
+
+html {
+	/* Color Variables */
+	--white: white;
+	--yellow: rgb(242, 187, 5);
+	--blue: rgb(31, 186, 214);
+	--dark-blue: rgb(11, 9, 27);
+}
+
+/* Images */
+
+.facebook-icon {
+	width: 2.5rem;
+	height: 2.5rem;
+
+	background-image: url("../img/facebook-icon.png"); 
+
+    background-attachment: scroll; 
+    background-position: center; 
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.twitter-icon {
+	width: 2.5rem;
+	height: 2.5rem;
+
+	background-image: url("../img/twitter-icon.png"); 
+
+    background-attachment: scroll; 
+    background-position: center; 
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.instagram-icon {
+	width: 2.5rem;
+	height: 2.5rem;
+
+	background-image: url("../img/instagram-icon.png"); 
+
+    background-attachment: scroll; 
+    background-position: center; 
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+/*-------------- Old --------------*/
 /*-------------- Tags --------------*/
 
 html {
@@ -15,9 +142,7 @@ html {
 	--black: black;
 }
 
-a{
-	padding: 0rem 3rem;
-}
+
 body {
 	font-family: 'Montserrat', sans-serif; 
 	margin: 0;
@@ -116,9 +241,6 @@ p.example {
 
 /* Home Page */
 
-img {
-	width: 100%;
-}
 
 .overlay-container {
 	position: relative; /* needs a relative position so .hero-image-overlay has a positioned ancestor for absolute positioning */

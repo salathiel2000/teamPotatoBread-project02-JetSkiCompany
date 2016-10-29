@@ -1,5 +1,30 @@
-*, *::after, *::before { /* ensures that literally everything follows this model no matter what changes are made */
-	box-sizing: border-box;
+/* NEW */
+
+.grid-row-full{
+	width: 100%;
+}
+
+.grid-row{
+	max-width: 1020px;
+	
+	display: block; /* trying to center the div */
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.grid-col-1of2{
+	width:50%;
+	float:left;
+	text-align: left;
+}
+
+.box-item {
+	/* flex: flex-grow flex-shrink flexbasis */
+	flex: 1 1 auto; /* auto adjusts to content width(eg: text width), 0 adjusts to 0 (eg: word width) */
+}
+
+.box-item-no-grow {
+	flex: 0 1 auto;
 }
 
 .box {
@@ -17,26 +42,31 @@
 	justify-content: -webkit-space-between;
 }
 
-.box-item {
-	/* flex: flex-grow flex-shrink flexbasis */
-	flex: 1 1 auto; /* auto adjusts to content width(eg: text width), 0 adjusts to 0 (eg: word width) */
+*, *::after, *::before { /* ensures that literally everything follows this model no matter what changes are made */
+	box-sizing: border-box;
 }
 
 [class*='grid-col-']{
 	float:left; 
-	text-align:center;
-	padding-left:2rem;
-	padding-right:2rem;
 }
+
+/* OLD */
+
+
+
+
+
+
+
 
 .less-padding{
 	padding-left:3rem;
 	padding-right:3rem;
 }
 
-.grid-row{
-	width: 100%;
-}
+
+
+
 
 .grid{
 	padding: 0 2rem;
@@ -49,15 +79,10 @@
 	text-align: center; 
 }
 
-.grid-col-1of2{
-	width:50%; 
-	text-align: center; 
-	float:left;
-}
+
 
 .grid-col-1of3{
 	width:33.3333%; 
-	margin-top: 2rem;
 	float:left;
 }
 
