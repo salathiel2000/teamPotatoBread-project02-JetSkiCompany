@@ -312,6 +312,64 @@ header a{
 }
 /*About End*/ 
 
+/*Submit Review Begin*/ 
+
+.left{
+	text-align: right; 
+}
+
+.top-space{
+	margin-top:2.5rem;
+	padding-top: 1rem;
+}
+
+#submit-review h2{
+	margin: 4rem 0 2rem 0;
+}
+
+#submit-review p{
+	color: var(--dark-gray);
+}
+
+.middle-space:nth-child(1){
+	padding-right: 1rem;
+}
+
+.middle-space:nth-child(2){
+	padding-left: 1rem ;
+}
+
+input[type=text] {
+	width: 100%; 
+	height: 60px;
+	padding-left: 20px;
+	margin-top: 8px; 
+	border: 1px solid var(--blue);
+	box-sizing: border-box;
+}
+
+::-webkit-input-placeholder{
+	color: var(--dark-blue);
+	font-weight: 100; 
+}
+
+::-moz-placeholder { /* Firefox 19+ */
+  color: var(--blue);
+	font-weight: 100; 
+}
+
+:-ms-input-placeholder { /* IE 10+ */
+  color: var(--blue);
+	
+	font-weight: 100; 
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: var(--blue);
+	font-weight: 100; 
+}
+
+/*Submit Review End*/ 
+
 
 
 /* Images */ /*why are the icons in as background images, that's not semantically meaningful*/
@@ -430,16 +488,6 @@ li a {
 label {
 	border-radius: 0px; 
 	color: #174887;
-}
-
-input[type=text] {
-	width: 100%; 
-	height: 40px;
-	padding-left: 20px;
-	margin-top: 8px; 
-	border: 1px solid #174887;
-	border-radius: 4px; 
-	box-sizing: border-box;
 }
 
 textarea{
@@ -896,10 +944,7 @@ p.example {
 }
 
 
-#submit-review h2{
-	margin-bottom: 2rem;
-	text-decoration: underline;
-}
+
 
 
 article{
