@@ -25,6 +25,18 @@
 	padding-left: 4rem;*/
 }
 
+#company-values .grid-col-1of3:nth-child(2){
+	padding: 0 1rem 0 0;
+}
+
+#company-values .grid-col-1of3:nth-child(3){
+	padding: 0 1rem 0 0;
+}
+
+#meet-the-team .grid-col-1of2{
+	padding: 0 4rem;
+}
+
 .box-item {
 	/* flex: flex-grow flex-shrink flexbasis */
 	flex: 1 1 auto; /* auto adjusts to content width(eg: text width), 0 adjusts to 0 (eg: word width) */

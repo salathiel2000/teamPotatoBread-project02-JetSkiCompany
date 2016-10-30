@@ -45,6 +45,7 @@ h6 {
 
 p {
 	font-size: 1.125rem; /* 14pt */
+	line-height: 180%
 	/*color: var(--white);*/
 }
 
@@ -220,10 +221,96 @@ header a{
 	margin-top: 4rem;
 }
 
-
+.blue-header{
+	color: var(--blue);
+}
 
 /*Product Detail End */ 
 
+/*About Begin*/ 
+
+#who-we-are{
+	margin-top: 4rem;
+}
+
+#who-we-are{
+	color: var(--dark-gray);
+}
+
+.values{
+	border: 1px solid var(--yellow);
+	padding: 1.5rem;
+	height: 370px;
+}
+
+#company-values h3{
+	color: var(--yellow);
+	text-align: center;
+	font-family: 'Againts', sans-serif;
+	font-size: 5rem;
+	margin: 0;
+}
+
+#company-values p{
+	color: var(--dark-gray);
+}
+
+#company-values{
+	margin-top: 4rem;
+}
+
+#meet-the-team{
+	margin-top: 4rem;
+}
+
+#meet-the-team img{
+	width: 100%;
+}
+
+#meet-the-team h3{
+	font-size: 1.5rem;
+	color: var(--dark-gray);
+	margin: 1.5rem 0 0.5rem 0;
+}
+
+#meet-the-team h4{
+	font-weight: 100;
+	margin: 0;  
+	font-size: 1.5rem;
+	color: var(--light-gray);
+}
+
+#meet-the-team p{
+	color: var(--dark-gray);
+}
+
+.feature-map{
+	height:400px;
+	filter:grayscale(99%);
+	margin-top: 1rem;
+}
+
+.feature-map iframe{
+	width: 100% !important;
+	height:100% !important;
+}
+
+#contact-us .grid-col-1of3{
+	padding: 0 2rem;
+}
+
+#contact-us h3{
+	color: var(--dark-gray);
+	font-size: 1rem;
+	font-weight: bold;
+}
+
+#contact-us p{
+	color: var(--dark-gray);
+	font-size: 0.9rem;
+	margin: 0;
+}
+/*About End*/ 
 
 
 
@@ -828,24 +915,7 @@ article{
 	margin-bottom: 3rem;
 }
 
-.owner-description{
-	padding: 0 4em;
-}
 
-.feature-map{
-	height:300px;
-	filter:grayscale(99%);
-	margin-top: 2rem;
-}
-
-.feature-map iframe{
-	width: 100% !important;
-	height:100% !important;
-}
-
-.owner-description{
-	padding:0 4rem;
-}
 
 .lite-jetski{
 	margin: 2rem 0; 

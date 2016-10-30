@@ -1,4 +1,12 @@
 @font-face{
+	font-family: 'Againts';
+	font-weight: normal;
+	font-style: normal; 
+	src: url('.../fonts/againts.otf');
+	src: url('.../fonts/againts.otf?#iefixed') format('otf');
+}
+
+@font-face{
 	font-family: 'Montserrat'; 
 	font-weight: normal; 
 	font-style: normal;
