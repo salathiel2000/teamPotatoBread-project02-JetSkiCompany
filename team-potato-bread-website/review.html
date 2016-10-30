@@ -18,64 +18,54 @@
 
 	<body>
 
-	<header>
-		<section class="grid-row" id="banner"> <!-- change banner from id to class -->
-				<h1 id="jeti-title">Jeti Rentals</h1>
-				<h3>Submit a Review</h3>
+	<header class="page-banner grid-row-full"> <!-- maybe set extra settings for header/footer and sections rather than using full and content grid rows -->
+			<div class="grid-row">
+				
+				<nav class="menu">
+					<div class="menu-logo box">
+						<a href="about.html" class="menu-logo box-item-no-grow">
+							<img src="img/logo.png" alt="company logo with yellow hand written script that says Jeti and white serif font that says rental"/>
+						</a>
+					</div>
 
-			</section>
-
-			<nav>
-				<div class="main-nav box grid-row"> <!-- class ordering: unique, box-related, grid-related -->
-					<a class="main-nav-button box-item" href="index.html">Home</a>
-					<a class="main-nav-button box-item" href="book.html">Book</a>
-					<a class="main-nav-button box-item" href="jetskis.html">Jetskis</a>
-					<a class="main-nav-button box-item" href="review.html">Review</a>
-					<!-- <a class="main-nav-button box-item" href="rules.html">Rules</a> <!-- maybe make rules a sub-section? --> 
-					<a class="main-nav-button box-item" href="about.html">About</a>
-					<a class="main-nav-button box-item" href="styleguide.html">Styleguide</a>
-				</div>
-			</nav>
-		</header>
-
-		<section id="reviews">
-
-			<div class="grid-row frame">
-			<h2>Reviews</h2>
-			<article>
-				<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sollicitudin, sem malesuada eleifend cursus, felis nulla aliquet turpis, nec finibus enim purus at nunc. Aenean eget ipsum consectetur nisi faucibus tincidunt a ut orci. Etiam ac mollis ex, sed sagittis turpis. Cras dignissim, mi eu pellentesque dignissim, purus ex volutpat erat, sit amet ultrices ligula lectus sed sapien. </p>
-				<p class="persona">Submitted by John who rode a <a href="lite.html">Seadoo Spark</a></p>
-			</article>
-
-				<article>
-				<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sollicitudin, sem malesuada eleifend cursus, felis nulla aliquet turpis, nec finibus enim purus at nunc. Aenean eget ipsum consectetur nisi faucibus tincidunt a ut orci. Etiam ac mollis ex, sed sagittis turpis. Cras dignissim, mi eu pellentesque dignissim, purus ex volutpat erat, sit amet ultrices ligula lectus sed sapien. </p>
-				<p class="persona">Submitted by John who rode a <a href="lite.html">Seadoo GTX</a></p>
-			</article>
-
-		</section>
-
-		<section id="submit-review">
-		
-			<div class="grid-row frame">
-				<h2>Submit a Review</h2>
+					<div class="menu-buttons box">
+						<a href="about.html" class="box-item-no-grow">JET SKIS</a>
+						<a href="about.html" class="box-item-no-grow">REVIEW</a>
+						<a href="about.html" class="box-item-no-grow">ABOUT</a>
+					</div>
+				</nav>
 			</div>
 
-			<form class="frame"> 
+			<div class="grid-row">
+				<h1>REVIEW</h1>
+				<h2>Submit your review or view others</h2>
+			</div>
+	</header>
+
+		<section id="submit-review">
+
+			<div class="grid-row">
+				<div class="grid-col-1of2">
+					<h2 class="blue-header">SUBMIT YOUR REVIEW</h2>
+				</div>
+
+				<div class="grid-col-1of2 left top-space">
+					<p>Or view submitted reviews by clicking <a href="#">here</a></p>
+				</div>
+			</div>
+		
+			<form> 
 				 <div class="grid-row"> 
-				  <label for="fname">First Name</label> 
+			
+					 <div class="grid-col-1of2 middle-space"> 
+					 	<input type="text" id="fname" name="fname" placeholder="First Name"> 
+					 </div> 
+
+					 <div class="grid-col-1of2 middle-space"> 
+					 	<input type="text" id="lname" name="lname" placeholder="Last Name"> 
+					 </div> 
+
 				 </div>
-
-				 <div class="grid-row"> 
-				  <input type="text" id="fname" name="fname"> 
-				 </div> 
-
-				 <div class="grid-row"> 
-				  <label for="lname">Last Name</label> 
-				 </div> 
-
-				 <div class="grid-row"> 
-				  <input type="text" id="lname" name="lname"> 
-				 </div> 
 
 				 <select class="styled-select"> 
 					 <option value="option1">Choose an option</option> 
@@ -92,5 +82,21 @@
 			<a href="lite.html"><button class="submit-button">Submit</button></a>
 
 		</section>
+
+			<div class="grid-row">
+				<article>
+					<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sollicitudin, sem malesuada eleifend cursus, felis nulla aliquet turpis, nec finibus enim purus at nunc. Aenean eget ipsum consectetur nisi faucibus tincidunt a ut orci. Etiam ac mollis ex, sed sagittis turpis. Cras dignissim, mi eu pellentesque dignissim, purus ex volutpat erat, sit amet ultrices ligula lectus sed sapien. </p>
+					<p class="persona">Submitted by John who rode a <a href="lite.html">Seadoo Spark</a></p>
+				</article>
+			</div>
+
+				<article>
+				<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sollicitudin, sem malesuada eleifend cursus, felis nulla aliquet turpis, nec finibus enim purus at nunc. Aenean eget ipsum consectetur nisi faucibus tincidunt a ut orci. Etiam ac mollis ex, sed sagittis turpis. Cras dignissim, mi eu pellentesque dignissim, purus ex volutpat erat, sit amet ultrices ligula lectus sed sapien. </p>
+				<p class="persona">Submitted by John who rode a <a href="lite.html">Seadoo GTX</a></p>
+			</article>
+
+		</section>
+
+
 	</body>
 </html>
