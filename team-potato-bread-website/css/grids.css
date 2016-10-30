@@ -18,6 +18,13 @@
 	text-align: left;
 }
 
+.product-image .grid-col-1of2{
+	padding: 17.5rem 4rem 0 4rem;
+/*
+	padding-top: 15rem;
+	padding-left: 4rem;*/
+}
+
 .box-item {
 	/* flex: flex-grow flex-shrink flexbasis */
 	flex: 1 1 auto; /* auto adjusts to content width(eg: text width), 0 adjusts to 0 (eg: word width) */

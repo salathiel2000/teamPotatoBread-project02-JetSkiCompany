@@ -4,6 +4,60 @@
 
 /*-------------- New --------------*/
 
+/* Color Variables */
+html {
+	--white: white;
+	--yellow: rgb(242, 187, 5);
+	--blue: rgb(31, 186, 214);
+	--dark-blue: rgb(11, 9, 27);
+	--dark-gray: rgb(56, 56, 56);
+	--light-gray: rgb(187, 187, 187);
+}
+
+
+h1 {
+	font-size: 3.75rem; /* 60pt */
+
+	margin: 40vh 0 5rem 0;
+
+	color: var(--white);
+}
+
+h2 {
+	font-size: 2.25rem; /* 36pt */
+}
+
+h3 {
+	font-size: 1.625rem; /* 26pt */
+}
+
+h4 {
+	font-size: 1.125rem; /* 18pt */
+}
+
+h5 {
+	font-size: 0.875rem; /* 14pt */
+}
+
+h6 {
+	font-size: 0.75rem; /* 12 pt */
+}
+
+p {
+	font-size: 1.125rem; /* 14pt */
+	/*color: var(--white);*/
+}
+
+a {
+	text-decoration: none;
+	color: var(--blue);
+	/*font-size: 1.125rem;*/ /* 18pt */
+}
+
+header a{
+	color: white;
+}
+
 .head-banner { /* gap at the top comes from the h1 margin padding, dont worry about this until h1 is placed */
 	height: 100vh; /* ensures that the banner is the only thing on screen when scrolled to the top */
 
@@ -41,54 +95,139 @@
 	float: right;
 }
 
-a {
-	text-decoration: none;
-	color: var(--white);
-	font-size: 1.125rem; /* 18pt */
+/* Product Detail Begin */ 
+
+.page-banner{
+	background-image: url("../img/home-panorama.jpg"); 
+
+	background-attachment: scroll; /* change to "fixed" if a scrolling effect is wanted */
+    background-position: top; /* controls which edge the picture snaps to */
+    background-size: cover; /* "contain" will fit the image but leave white space, "cover" will fit the container but cut off the image, size can also be manually set */
+    background-repeat: no-repeat;
+    height: 20rem;
 }
 
-h1 {
-	font-size: 3.75rem; /* 60pt */
-
-	margin: 40vh 0 5rem 0;
-
-	color: var(--white);
+.page-banner h1{
+	font-size: 5rem;
+	text-align: center; 
+	margin-top: 2rem;
+	margin-bottom: 0;
 }
 
-h2 {
-	font-size: 2.25rem; /* 36pt */
+.page-banner img{
+	width:20%;
 }
 
-h3 {
-	font-size: 1.625rem; /* 26pt */
+.page-banner h2{
+	font-size: 1.1rem;
+	color: var(--blue);
+	text-align: center; 
+	margin-top: 0;
+	font-weight: 100;
 }
 
-h4 {
-	font-size: 1.125rem; /* 18pt */
+.product-image{
+	background-image: url("../img/spark.png"); 
+
+	background-attachment: scroll; /* change to "fixed" if a scrolling effect is wanted */
+    background-position: top; /* controls which edge the picture snaps to */
+    background-size: 100%; 
+    /*background-size: cover;  "contain" will fit the image but leave white space, "cover" will fit the container but cut off the image, size can also be manually set */
+    background-repeat: no-repeat;
+	height: 28rem;
+	margin-top: 4rem;
 }
 
-h5 {
-	font-size: 0.875rem; /* 14pt */
+.product-image img{
+	width: 100%;
+	margin-top: 4rem;
 }
 
-h6 {
-	font-size: 0.75rem; /* 12 pt */
+.product-image p{
+	color: var(--dark-gray);
 }
 
-p {
-	font-size: 1.125rem; /* 14pt */
-	color: var(--white);
+.product-info .grid-col-1of2{
+	padding: 1.5rem;
 }
 
-html {
-	/* Color Variables */
-	--white: white;
-	--yellow: rgb(242, 187, 5);
-	--blue: rgb(31, 186, 214);
-	--dark-blue: rgb(11, 9, 27);
+.product-info p{
+	color: var(--dark-gray);
 }
 
-/* Images */
+.product-info h4{
+	color: var(--dark-gray);
+}
+
+.product-info h3{
+	color: var(--yellow);
+	font-size: 2rem;
+	margin: 0; 
+}
+
+.product-info .grid-col-1of2{
+	padding: 0 2rem;
+}
+
+.space{
+	border: 1px solid var(--blue);
+	padding: 1.5rem;
+}
+
+.price{
+	text-align: center; 
+}
+
+.price p{
+	color: var(--yellow);
+	font-size: 3rem;
+	font-weight: bold;
+	margin-bottom: 2rem;
+}
+
+.price-button{
+	/*margin-top: 2rem;*/
+	padding: 0.5rem 3rem;
+	font-size: 2.5rem;
+  	border: 1px solid var(--blue);
+  	color: var(--blue); 	
+  	text-decoration: none; 
+}
+
+.price-button:hover{
+	background-color: var(--blue);
+	color: white;
+	transition: 0.2s ease-in;
+}
+
+.center{
+	text-align: center;
+}
+
+.price-button a{
+	color: var(--blue);
+}
+
+.submitted-reviews{
+	color: var(--dark-gray);
+}
+
+.persona{
+	color: var(--light-gray);
+}
+
+#reviews{
+	margin-top: 4rem;
+}
+
+
+
+/*Product Detail End */ 
+
+
+
+
+/* Images */ /*why are the icons in as background images, that's not semantically meaningful*/
 
 .facebook-icon {
 	width: 2.5rem;
@@ -570,9 +709,9 @@ p.example {
 	color: var(--secondary-light);
 }
 
-.price {
+/*.price {
 	color: var(--white); 
-}
+}*/
 
 /* Dropdown */
 
@@ -669,29 +808,15 @@ p.example {
 	min-width: 200px;
 }
 
-#reviews h2{
-	margin-bottom: 2rem;
-	text-decoration: underline;
-}
 
 #submit-review h2{
 	margin-bottom: 2rem;
 	text-decoration: underline;
 }
 
-#reviews a{
-	padding:0;
-	text-decoration: none; 
-}
 
 article{
 	margin-bottom: 4rem;
-}
-
-.persona{
-	font-weight: 100; 
-	color: #bbbbbb;
-	/*font-size: 14rem;*/
 }
 
 #submit-review .submit-button{

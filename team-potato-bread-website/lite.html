@@ -18,57 +18,98 @@
 
 	<body>
 
-		<header>
-			<section class="grid-row" id="banner"> <!-- change banner from id to class -->
+		<header class="page-banner grid-row-full"> <!-- maybe set extra settings for header/footer and sections rather than using full and content grid rows -->
+			<div class="grid-row">
+				
+				<nav class="menu">
+					<div class="menu-logo box">
+						<a href="about.html" class="menu-logo box-item-no-grow">
+							<img src="img/logo.png" alt="company logo with yellow hand written script that says Jeti and white serif font that says rental"/>
+						</a>
+					</div>
 
-				<h1 id="jeti-title">Jeti Rentals</h1>
-				<h3>Lite</h3>
-			</section>
+					<div class="menu-buttons box">
+						<a href="about.html" class="box-item-no-grow">JET SKIS</a>
+						<a href="about.html" class="box-item-no-grow">REVIEW</a>
+						<a href="about.html" class="box-item-no-grow">ABOUT</a>
+					</div>
+				</nav>
+			</div>
 
-			<nav>
-				<div class="main-nav box grid-row"> <!-- class ordering: unique, box-related, grid-related -->
-					<a class="main-nav-button box-item" href="index.html">Home</a>
-					<a class="main-nav-button box-item" href="book.html">Book</a>
-					<a class="main-nav-button box-item" href="jetskis.html">Jetskis</a>
-					<a class="main-nav-button box-item" href="review.html">Review</a>
-					<!-- <a class="main-nav-button box-item" href="rules.html">Rules</a> <!-- maybe make rules a sub-section? --> 
-					<a class="main-nav-button box-item" href="about.html">About</a>
-					<a class="main-nav-button box-item" href="styleguide.html">Styleguide</a>
-				</div>
-			</nav>
+			<div class="grid-row">
+				<h1>LITE</h1>
+				<h2>2016 Seadoo Spark</h2>
+			</div>
 		</header>
 
-		<div class="grid-col-1of2 lite-jetski">
-			<img src="http://placehold.it/400x360" alt="view of a seadoo spark">
+		<div class="grid-row product-image"> 
+			<div class="grid-col-1of2">
+				<p>In hac habitasse platea dictumst. Praesent cursus sodales nulla, at ultrices ipsum vehicula in. Curabitur fermentum quam vitae fermentum.</p>
+			</div>
 		</div>
 
-		<section class="grid-row">
-			<div class="grid-col-1of2 detailed-product">
-				<h2>Seadoo Spark</h2>
-				<p>Etiam ultrices vel velit ut laoreet. Morbi ut elit quis tortor tincidunt faucibus ac eu ligula. Vivamus luctus ultricies ante, ac efficitur risus maximus non. Aliquam semper laoreet augue, at cursus ligula congue a. Fusce vitae nibh fringilla, sagittis felis nec, venenatis dui. Donec commodo suscipit neque id mollis. </p>
-				<h2>$65/hr</h2>
-			<div class="remove-margins">
-				<h3>Rider Capactiy</h3>
-				<p>2</p>
-				<h3>Speed</h3>
-				<p>60hp</p>
-				<h3>Weight</h3>
-				
-				<div class="weight-text">
-					<p>160 kg</p>
+		<div class="grid-row product-info">
+			<div class="grid-col-1of2">
+				<div class="space">
+					<h3>KEY SPECS</h3>
+					<h4>RIDER CAPACTIY</h4>
+					<p>3</p>
+					<h4>SPEED</h4>
+					<p>60 HP</p>
+					<h4>FUEL CAPACITY</h4>
+					<p>7.9 GALLONS</p>
+					<h4>RIDING TIME (WIT FULL FUEL)</h4>
+					<p>3 HRS.</p>
+					<h4>STORAGE CAPACITY</h4>
+					<p>GLOVE BOX: 0.42 GALLONS</p>
 				</div>
 			</div>
-					<a href="book.html"><button class="submit-button grid-col-1of2">BOOK</button></a>
+
+			<div class="grid-col-1of2">	
+				<div class="space">
+					<h3>KEY FEATURES</h3>
+					<h4>INTELLIGENT BRAKE AND REVERSE (IBR)</h4>
+					<p>Praesent cursus sodales nulla, at ultrices ipsum</p>
+					<h4>INTELLIGENT THROTTLE CONTROL</h4>
+					<p>Praesent cursus sodales nulla, at ultrices ipsum</p>
+					<h4>CLOSED LOOP COOLING SYSTEM</h4>
+					<p>Praesent cursus sodales nulla, at ultrices ipsum</p>
+					<h4>LIGHTWEIGHT, HIGH-STRENGTH POLYTEC MATERIAL</h4>
+					<p>Praesent cursus sodales nulla, at ultrices ipsum</p>
+					<h4>HANDLE GRIPS WITH PALM REST</h4>
+					<p>Praesent cursus sodales nulla, at ultrices ipsum</p>
+				</div>
 			</div>
+
+		</div>
+
+		<div class="grid-row price">
+			<p>$60 / HR</p>
+		</div>
+
+		<div class="grid-row center">
+			<a href="book.html" class="price-button">Book</a>
+		</div>
+
+		<section id="reviews">
+
+			<div class="grid-row">
+			<h2>Reviews</h2>
+			<article>
+				<p class="submitted-reviews"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sollicitudin, sem malesuada eleifend cursus, felis nulla aliquet turpis, nec finibus enim purus at nunc. Aenean eget ipsum consectetur nisi faucibus tincidunt a ut orci. Etiam ac mollis ex, sed sagittis turpis. Cras dignissim, mi eu pellentesque dignissim, purus ex volutpat erat, sit amet ultrices ligula lectus sed sapien. </p>
+				<p class="persona">Submitted by Jane</p>
+			</article>
+
+				<article>
+				<p class="submitted-reviews"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sollicitudin, sem malesuada eleifend cursus, felis nulla aliquet turpis, nec finibus enim purus at nunc. Aenean eget ipsum consectetur nisi faucibus tincidunt a ut orci. Etiam ac mollis ex, sed sagittis turpis. Cras dignissim, mi eu pellentesque dignissim, purus ex volutpat erat, sit amet ultrices ligula lectus sed sapien. </p>
+				<p class="persona">Submitted by Bob</p>
+			</article>
+
+			<p>Already took our Seadoo Spark for a spin? <a href="review.html">Submit a review</a> to let us know what you thougt</p>
+
 		</section>
 
-		<section class="frame">
-			<h2>Reviews</h2>
-				<article>
-				<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sollicitudin, sem malesuada eleifend cursus, felis nulla aliquet turpis, nec finibus enim purus at nunc. Aenean eget ipsum consectetur nisi faucibus tincidunt a ut orci. Etiam ac mollis ex, sed sagittis turpis. Cras dignissim, mi eu pellentesque dignissim, purus ex volutpat erat, sit amet ultrices ligula lectus sed sapien. </p>
-				<p class="persona">Submitted by John who rode a <a class="spark-in-text" href="lite.html">Seadoo Spark</a></p>
-			</article>
-		</section>
+
 
 	</body>
 </html>
