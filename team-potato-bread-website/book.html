@@ -17,87 +17,184 @@
 	</head>
 
 	<body>
-		<header>
-			<section class="grid-row" id="banner"> <!-- change banner from id to class -->
-				<h1 id="jeti-title">Jeti Rentals</h1>
-				<h3>Bookings</h3>
-			</section>
+		<header class="page-banner grid-row-full"> <!-- maybe set extra settings for header/footer and sections rather than using full and content grid rows -->
+			<div class="grid-row">
+				<nav class="menu">
+					<div class="menu-logo box">
+						<a href="index.html" class="menu-logo box-item">	</a>
+					</div>
 
-			<nav>
-				<div class="main-nav box grid-row"> <!-- class ordering: unique, box-related, grid-related -->
-					<a class="main-nav-button box-item" href="index.html">Home</a>
-					<a class="main-nav-button box-item" href="book.html">Book</a>
-					<a class="main-nav-button box-item" href="jetskis.html">Jetskis</a>
-					<a class="main-nav-button box-item" href="review.html">Review</a>
-					<!-- <a class="main-nav-button box-item" href="rules.html">Rules</a> <!-- maybe make rules a sub-section? --> 
-					<a class="main-nav-button box-item" href="about.html">About</a>
-					<a class="main-nav-button box-item" href="styleguide.html">Styleguide</a>
-				</div>
-			</nav>
+					<div class="menu-buttons box">
+						<a href="index.html#jet-skis" class="box-item">JET SKIS</a> <!-- add scroll smoothing -->
+						<a href="review.html" class="box-item">REVIEW</a>
+						<a href="about.html" class="box-item">ABOUT</a>
+					</div>
+				</nav>
+			</div>
+
+			<div class="grid-row">
+				<h1>BOOK</h1>
+			</div>
 		</header>
 
-		<div class="grid-row">
-			<section class="grid-col-1of2">
-				<div class="products">
-					<select class="box-item book-select">
-						<option value="option1">Lite</option>
-						<option value="option2">Luxury</option>
-						<option value="option3">Performance</option>
-					</select>
+		<section class="grid-row">
+			<h2 class="yellow">BOOKING INFORMATION</h2>
 
-					<select class="box-item book-select">
-						<option value="option1">1</option>
-						<option value="option2">2</option>
-						<option value="option3">3</option>
-						<option value="option3">4</option>
-					</select>
+			<div class="grid-col-1of2">
+				<select class="styled-select">
+					<option>SEADOO SPARK</option>
+					<option>SEADOO RTX</option>
+					<option>SEADOO GTXS</option>
+				</select>
 
-					<select class="box-item book-select">
-						<option value="option1">July 22</option>
-						<option value="option1">July 23</option>
-						<option value="option1">July 24</option>
-						<option value="option1">July 25</option>
-						<option value="option1">July 26</option>
-						<option value="option1">July 27</option>
-						<option value="option1">July 28</option>
-					</select>
+				<select class="styled-select">
+					<option>QUANTITY</option>
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+				</select>
 
-					<select class="box-item book-select">
-						<option value="option1">9:00AM</option>
-						<option value="option2">10:00AM</option>
-						<option value="option3">11:00AM</option>
-						<option value="option3">12:00PM</option>
-						<option value="option3">1:00PM</option>
-						<option value="option3">2:00PM</option>
-						<option value="option3">3:00PM</option>
-						<option value="option3">4:00PM</option>
-						<option value="option3">5:00PM</option>
-					</select>
-						
+				<select class="styled-select">
+					<option>MONTH</option>
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+				</select>
 
-					<select class="box-item book-select">
-						<option value="option1">1 Hour</option>
-						<option value="option2">3 Hours</option>
-						<option value="option3">5 Hours</option>
-						<option value="option3">Full Day</option>
-					</select>
+				<select class="styled-select">
+					<option>DAY</option>
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+				</select>
+
+				<select class="styled-select">
+					<option>YEAR</option>
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+				</select>
+
+				<select class="styled-select">
+					<option>START TIME</option>
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+				</select>
+
+				<select class="styled-select">
+					<option>DURATION</option>
+					<option>1 Hour</option>
+					<option>3 hours</option>
+					<option>5 Hours</option>
+					<option>All Day</option>
+				</select>
+			</div>
+
+			<div class="book-panel grid-col-1of2">
+				<img src="img/seadoo-spark.png" alt="image of a jet ski">
+
+				<h2>LITE</h2>
+
+				<p>Light and easy to handle</p>
+
+					<div class="grid-col-1of2">
+						<h3>RIDER CAPACITY</h3>
+					</div>
+					<div class="grid-col-1of2">
+						<h3>2</h3>
+					</div>
+
+					<div class="grid-col-1of2">
+						<h3>SPEED</h3>
+					</div>
+					<div class="grid-col-1of2">
+						<h3>60HP</h3>
+					</div>
+
+					<div class="grid-col-1of2">
+						<h3>WEIGHT</h3>
+					</div>
+					<div class="grid-col-1of2">
+						<h3>160 Kg</h3>
+					</div>
+
+				<h2>$60/HR</h2>
+			</div>
+		</section>
+
+		<section class="grid-row">
+			<h2 class="yellow">PASSENGER INFORMATION</h2>
+			<form>
+				<input type="text" placeholder="FIRST NAME">
+				<input type="text" placeholder="LAST NAME">
+				<input type="text" placeholder="EMAIL ADDRESS (THIS IS WHERE WE’LL SEND YOUR CONFIRMATION)">
+			</form>
+		</section>
+
+		<section class="grid-row">
+			<h2 class="yellow">PAYMENT INFORMATION</h2>
+			<form>
+				<input type="text" placeholder="NAME ON CARD">
+				<input type="text" placeholder="CARD NUMBER">
+				<input type="text" placeholder="EXPIRATION DATE (MM/YY)">
+				<input type="text" placeholder="CVC (3 DIGITS ON BACK OF CARD)">
+			</form>
+		</section>
+
+		<section class="foot-banner grid-row-full">
+			<div class="grid-row">
+				<div class="grid-col-1of2">
+					<h4>FIND US ON SOCIAL MEDIA</h4>
+
+					<div class="box-left box-center-align grid-row-full">
+						<div class="facebook icon box-item"></div> <!-- facebook icon needs to be expaned to line up with edge of the image -->
+						<p class="box-item">Facebook</p>
+					</div>
+
+					<div class="box-left box-center-align grid-row-full">
+						<div class="twitter icon box-item"></div>
+						<p class="box-item">Twitter</p>
+					</div>
+
+					<div class="box-left box-center-align grid-row-full">
+						<div class="instagram icon box-item"></div>
+						<p class="box-item">Instagram</p>
+					</div>
 				</div>
-			</section>
 
-			<section class="grid-col-1of2">
-				<div class="products">
-					<img src="http://placehold.it/500x300" alt="Image of lite and recreational jet ski" class="jetski-img">
+				<div class="grid-col-1of2">
+					<h4>CONTACT US</h4>
 
-					<h2>60$/Hour</h2>
-					<ul>
-						<li>Rider Capacity - XXXXXXXXXX</li>
-						<li>Weight - XXXXXXXXXX</li>
-						<li>Speed - XXXXXXXXXX</li>
-					</ul>
+					<h5 class="yellow">via email</h5>
 
-					<a href="index.html"><button class="button" href="about.html">Book</button></a>
+					<form>
+						<input type="text" placeholder="Name">
+						<input type="text" placeholder="Email Address">
+						<input type="text" placeholder="Your Message Here">
+						<input type="submit" value="Submit">
+					</form>
+
+					<h5 class="yellow">via telephone</h5>
+
+					<p class="footer-telephone-2">1 (242) 466-7981</p>
 				</div>
-			</section>
-		</div>
+			</div>
+
+			<div class="grid-row">
+				<div class="grid-col-1of2">
+					<p>© 2016. Jeti Rentals. All Rights Reserved.</p>
+				</div>
+
+				<div class="grid-col-1of2">
+					<p class="footer-telephone-1">1 (242) 466-7981</p>
+				</div>
+			</div>
+		</section>
 	</body>
 </html>
