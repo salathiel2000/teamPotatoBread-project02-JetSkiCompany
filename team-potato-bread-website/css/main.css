@@ -1,6 +1,8 @@
 /* ------------------------------------------ Notes ------------------------------------------ */
 /* 1rem = 16pt font */
 /* we need to level out some of the beach images */
+/* png images need to be edited so they dont waterfall-load */
+/* include links to github and sytle guide and other things in bottom of page */
 
 /* ------------------------------------------ New Website ------------------------------------------ */
 
@@ -13,6 +15,8 @@ html {
 	--dark-gray: rgb(56, 56, 56);
 	--light-gray: rgb(187, 187, 187);
 	--transparent: rgba(0, 0, 0, 0);
+
+
 }
 
 /* Text */
@@ -221,6 +225,8 @@ a {
 
 	border-width: 2px;
 
+	border-style: solid;
+
 }
 
 @media(max-width: 46.875rem){
@@ -318,6 +324,7 @@ select::-ms-expand {
 	color: var(--white);
 	background-color: var(--blue);
 	border-color: var(--blue);
+
 
 	border-width: 2px;
 }
@@ -688,7 +695,6 @@ select::-ms-expand {
 /*About End*/ 
 
 /*Submit Review Begin*/ 
->>>>>>> origin/salathiel
 
 /* ------------------------------------------ Review ------------------------------------------ */
 .left{
@@ -835,6 +841,46 @@ select{
 
 .book-panel img {
 	max-width: 100%;
+	max-height: 15rem; /* keeps the panel from getting too long */
+}
+
+.temp-spacer {
+	padding: 2rem 1rem 1rem 1rem;
+}
+
+#book-cancel {
+	max-width: 100%;
+	width: 15rem;
+
+	padding: 1rem;
+	margin: 1rem 1rem 1rem 0;
+
+	float: left;
+	background-color: var(--light-gray);
+	color: var(--white);
+	border-style: none;
+
+	border-width: 2px;
+}
+
+#book-submit {
+	max-width: 100%;
+	width: 15rem;
+
+	padding: 1rem;
+	margin: 1rem 0 1rem 1rem;
+
+	float: right;
+	background-color: var(--transparent);
+	color: var(--blue);
+	border-color: var(--blue);
+	border-style: solid;
+
+	border-width: 2px;
+}
+
+h3 {
+	margin: 1rem;
 }
 
 /* ------------------------------------------ Confirm ------------------------------------------ */
@@ -846,6 +892,17 @@ select{
 #confirm p{
 	color: var(--dark-gray);
 }
+
+.confirm-banner {
+	background-image: url("../img/spark.png"); 
+
+    background-attachment: scroll;
+    background-position: center; 
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
 /* Confirm End */
 /* New Website End */
 

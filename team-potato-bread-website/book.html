@@ -96,14 +96,15 @@
 				</select>
 			</div>
 
-			<div class="book-panel grid-col-1of2">
-				<img src="img/seadoo-spark.png" alt="image of a jet ski">
+			<div class="temp-spacer grid-col-1of2">
+				<div class="book-panel">
+					<img src="img/seadoo-spark.png" alt="image of a jet ski">
 
-				<h2>LITE</h2>
+					<h2>LITE</h2>
 
-				<p>Light and easy to handle</p>
+					<p>Light and easy to handle</p>
 
-					<div class="grid-col-1of2">
+					<div class="grid-col-1of2"> <!-- need grid rows here? -->
 						<h3>RIDER CAPACITY</h3>
 					</div>
 					<div class="grid-col-1of2">
@@ -124,7 +125,8 @@
 						<h3>160 Kg</h3>
 					</div>
 
-				<h2>$60/HR</h2>
+					<h2>$60/HR</h2>
+				</div>
 			</div>
 		</section>
 
@@ -137,13 +139,15 @@
 			</form>
 		</section>
 
-		<section class="grid-row">
+		<section id="payment-information" class="grid-row">
 			<h2 class="yellow">PAYMENT INFORMATION</h2>
 			<form>
 				<input type="text" placeholder="NAME ON CARD">
 				<input type="text" placeholder="CARD NUMBER">
 				<input type="text" placeholder="EXPIRATION DATE (MM/YY)">
 				<input type="text" placeholder="CVC (3 DIGITS ON BACK OF CARD)">
+				<input id="book-cancel" type="submit" value="Cancel">
+				<input id="book-submit" type="submit" value="Submit">
 			</form>
 		</section>
 
@@ -153,17 +157,17 @@
 					<h4>FIND US ON SOCIAL MEDIA</h4>
 
 					<div class="box-left box-center-align grid-row-full">
-						<div class="facebook icon box-item"></div> <!-- facebook icon needs to be expaned to line up with edge of the image -->
+						<div class="facebook icon"></div> <!-- facebook icon needs to be expaned to line up with edge of the image -->
 						<p class="box-item">Facebook</p>
 					</div>
 
 					<div class="box-left box-center-align grid-row-full">
-						<div class="twitter icon box-item"></div>
+						<div class="twitter icon"></div>
 						<p class="box-item">Twitter</p>
 					</div>
 
 					<div class="box-left box-center-align grid-row-full">
-						<div class="instagram icon box-item"></div>
+						<div class="instagram icon"></div>
 						<p class="box-item">Instagram</p>
 					</div>
 				</div>
@@ -173,7 +177,7 @@
 
 					<h5 class="yellow">via email</h5>
 
-					<form>
+					<form class="footer-form">
 						<input type="text" placeholder="Name">
 						<input type="text" placeholder="Email Address">
 						<input type="text" placeholder="Your Message Here">
