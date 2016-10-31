@@ -391,7 +391,7 @@ select::-ms-expand {
     background-size: 100%; 
     /*background-size: cover;  "contain" will fit the image but leave white space, "cover" will fit the container but cut off the image, size can also be manually set */
     background-repeat: no-repeat;
-	height: 28rem;
+	height: 35rem;
 	margin-top: 4rem;
 }
 
