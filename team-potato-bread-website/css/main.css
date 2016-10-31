@@ -135,7 +135,7 @@ header a{
     background-size: 100%; 
     /*background-size: cover;  "contain" will fit the image but leave white space, "cover" will fit the container but cut off the image, size can also be manually set */
     background-repeat: no-repeat;
-	height: 28rem;
+	height: 35rem;
 	margin-top: 4rem;
 }
 
@@ -453,6 +453,25 @@ select{
 #confirm p{
 	color: var(--dark-gray);
 }
+
+@media(max-width: 61.4375rem){
+	.product-image .grid-col-1of2{
+		width: 100%;
+		padding: 0;
+		margin-top: 45%;
+	}
+
+	.product-image{
+		height: 100%;
+	}
+}
+
+@media(max-width: 36.25rem){
+	#confirm .right-align{
+		text-align: left;s
+	}
+}
+
 
 /*Confirmation End*/ 
 
