@@ -225,6 +225,52 @@ header a{
 	color: var(--blue);
 }
 
+@media(max-width: 78.9375rem){
+	.space{
+		height: 38rem;
+	}
+}
+
+@media(max-width: 73.75rem){
+	.space{
+		height: 40rem;
+	}
+}
+
+@media(max-width: 68.0625rem){
+	.space{
+		height: 42rem;
+	}
+}
+
+@media(max-width: 62.6875rem){
+	.space{
+		height: 44rem;
+	}
+}
+
+@media(max-width: 48.75rem){
+	.product-info .grid-col-1of2{
+		width: 100%;
+		margin-top: 2rem;
+	}
+
+	.space{
+		height: 35rem;
+	}
+}
+
+@media(max-width: 35.125rem){
+	.space{
+		height: 44rem;
+	}
+}
+
+@media(max-width: 26.4375rem){
+	.space{
+		height: 53rem;
+	}
+}
 /*Product Detail End */ 
 
 /*About Begin*/ 
