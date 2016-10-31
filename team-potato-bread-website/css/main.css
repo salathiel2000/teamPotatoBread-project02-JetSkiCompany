@@ -415,6 +415,18 @@ select{
 
 /*Submit Review End*/ 
 
+/*Confirmation Begin*/ 
+
+#confirm .right-align{
+	text-align: right;
+	color: var(--light-gray); 
+}
+
+#confirm p{
+	color: var(--dark-gray);
+}
+
+/*Confirmation End*/ 
 
 
 /* Images */ /*why are the icons in as background images, that's not semantically meaningful*/
