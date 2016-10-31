@@ -93,6 +93,44 @@
 	padding: 0 4rem;
 }
 
+.box-item {
+	/* flex: flex-grow flex-shrink flexbasis */
+	flex: 1 1 auto; /* auto adjusts to content width(eg: text width), 0 adjusts to 0 (eg: word width) */
+}
+
+.box-item-no-grow {
+	flex: 0 1 auto;
+}
+
+.box {
+	display: flex; /* choose flexbox */
+	display: -ms-flex;
+	display: -webkit-flex;
+	/* display: -moz-flex;  ask andrew? */
+
+	flex-wrap: wrap; /* wrap elements underneath when out of space */
+	flex-wrap: -ms-wrap;
+	flex-wrap: -webkit-wrap;
+
+	justify-content: space-between; /* how long along the main axis should the box justify space?, if extra space, justify between elements */
+	justify-content: -ms-space-between;
+	justify-content: -webkit-space-between;
+}
+
+*, *::after, *::before { /* ensures that literally everything follows this model no matter what changes are made */
+	box-sizing: border-box;
+}
+
+[class*='grid-col-']{
+	float:left; 
+}
+
+@media(max-width: 69.1775rem){
+	.grid-row{
+		padding:0 2rem;
+	}
+}
+
 @media(max-width: 56.625rem){
 	.grid-row{
 		padding:0 2rem;
@@ -101,7 +139,20 @@
 /* Grid End */
 /* New Website End */
 
+
 /* ------------------------------------------ Old Website ------------------------------------------ */
+
+
+
+/* OLD */
+
+
+
+
+
+
+
+>>>>>>> origin/salathiel
 
 .less-padding{
 	padding-left:3rem;
