@@ -70,11 +70,20 @@
 	float:left; 
 }
 
+@media(max-width: 69.1775rem){
+	.grid-row{
+		padding:0 2rem;
+	}
+}
+
 @media(max-width: 56.625rem){
 	.grid-row{
 		padding:0 2rem;
 	}
 }
+
+
+
 
 /* OLD */
 

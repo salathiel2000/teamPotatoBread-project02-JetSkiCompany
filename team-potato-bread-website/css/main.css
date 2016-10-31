@@ -356,6 +356,30 @@ header a{
 	font-size: 0.9rem;
 	margin: 0;
 }
+
+@media(max-width: 64.1875rem){
+	#company-values .grid-col-1of3{
+		margin-top: 2rem;
+	}
+
+	#company-values .grid-col-1of3:nth-child(2){
+		padding-right: 1rem;
+	}
+
+	#company-values .grid-col-1of3:nth-child(4){
+		padding-right: 1rem;
+	}
+}
+
+@media(max-width: 35.625rem){
+	#meet-the-team .grid-col-1of2{
+		padding: 0 1rem;
+	}
+
+	.grid-col-1of2{
+		padding:0;
+	}
+}
 /*About End*/ 
 
 /*Submit Review Begin*/ 
