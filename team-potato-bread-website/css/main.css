@@ -47,8 +47,10 @@ h6 {
 }
 
 p {
-	font-size: 1.125rem; /* 14pt */
-	line-height: 180%
+	font-size: 1rem; /* 14pt */
+	line-height: 180%; 
+	font-weight: 100;
+	color: var(--dark-gray);
 	/*color: var(--white);*/
 }
 
@@ -186,6 +188,27 @@ a {
 	padding: 0;
 }
 
+/*
+.footer-form ::-webkit-input-placeholder{
+	color: var(--white);
+	font-weight: 100; 
+}
+
+::-moz-placeholder { /* Firefox 19+ 
+  color: var(--blue);
+	font-weight: 100; 
+}
+
+:-ms-input-placeholder { /* IE 10+ 
+  color: var(--blue);
+	
+	font-weight: 100; 
+}
+:-moz-placeholder { /* Firefox 18- 
+  color: var(--blue);
+	font-weight: 100; 
+}
+*/
 .foot-banner input {
 	width: 100%;
 
@@ -282,7 +305,7 @@ select::-ms-expand {
 	background-color: var(--transparent);
 	border-color: var(--blue);
 
-	border-width: 2px;
+	border-width: 1px;
 }
 
 .suggestion-menu input {
@@ -354,7 +377,7 @@ select::-ms-expand {
 	text-align: center;
 
 	border: solid;
-	border-width: 2px;
+	border-width: 1px;
 	border-color: var(--blue);
 	padding: 1rem;
 }
@@ -383,6 +406,20 @@ select::-ms-expand {
 .jet-ski-panel img {
 	max-width: 100%;
 }
+
+.product-description h3{
+	font-size: 0.9rem;
+	color: var(--dark-gray);
+}
+
+.product-description .grid-col-1of2{
+	/*margin-left: 2rem;*/
+}
+
+.more-space{
+	padding-top:3rem;
+}
+
 
 /* Home End */
 
@@ -689,6 +726,7 @@ input[type=text] {
 	height: 60px;
 	padding-left: 20px;
 	margin-top: 8px; 
+	color: var(--transparent);
 	border: 1px solid var(--blue);
 	box-sizing: border-box;
 }
@@ -890,7 +928,6 @@ html {
 }
 
 
->>>>>>> origin/salathiel
 body {
 	font-family: 'Montserrat', sans-serif; 
 	margin: 0;
