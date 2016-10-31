@@ -821,7 +821,21 @@ select{
 /* Review End */
 
 /* ------------------------------------------ Book ------------------------------------------ */
+.book-panel {
+	
+	max-width: 100%;
+	justify-content: center;
+	text-align: center;
 
+	border: solid;
+	border-width: 1px;
+	border-color: var(--blue);
+	padding: 1rem;
+}
+
+.book-panel img {
+	max-width: 100%;
+}
 
 /* ------------------------------------------ Confirm ------------------------------------------ */
 #confirm .right-align{
