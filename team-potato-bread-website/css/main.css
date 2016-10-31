@@ -323,6 +323,11 @@ header a{
 	padding-top: 1rem;
 }
 
+.button-top-space{
+	margin-top:2.5rem;
+	padding-top: 1rem;
+}
+
 #submit-review h2{
 	margin: 4rem 0 2rem 0;
 }
@@ -411,6 +416,29 @@ select{
 	background-color: var(--blue);
 	color: white;
 	transition: 0.2s ease-in;
+}
+
+@media(max-width: 46.875rem){
+	#submit-review .grid-col-1of2{
+		width:100%;
+	}
+
+	.middle-space:nth-child(2){
+		padding-left:0;
+	}
+
+	.middle-space:nth-child(1){
+		padding-right:0;
+	}
+
+	.left{
+		text-align: left;
+	}
+
+	.top-space{
+		margin: 0;
+		padding: 0;
+	}
 }
 
 /*Submit Review End*/ 
