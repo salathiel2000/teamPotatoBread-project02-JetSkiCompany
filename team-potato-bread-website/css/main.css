@@ -59,6 +59,8 @@ header a{
 	color: white;
 }
 
+
+
 .head-banner { /* gap at the top comes from the h1 margin padding, dont worry about this until h1 is placed */
 	height: 100vh; /* ensures that the banner is the only thing on screen when scrolled to the top */
 
@@ -584,6 +586,23 @@ select{
     background-repeat: no-repeat;
 }
 
+@media(max-width: 44.1875rem){
+	.page-banner h1{
+		font-size: 4rem;
+	}
+}
+
+@media(max-width: 36.125rem){
+	.page-banner h1{
+		font-size: 3rem;
+	}
+}
+
+@media(max-width: 29.25rem){
+	.page-banner h1{
+		font-size: 2rem;
+	}
+}
 
 /*-------------- Old --------------*/
 /*-------------- Tags --------------*/
