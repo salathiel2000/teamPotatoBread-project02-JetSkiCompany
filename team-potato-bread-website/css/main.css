@@ -585,8 +585,6 @@ select::-ms-expand {
 /*Product Detail End */ 
 
 /*About Begin*/ 
-
->>>>>>> origin/salathiel
 #who-we-are{
 	margin-top: 4rem;
 }
@@ -885,6 +883,19 @@ select{
 h3 {
 	margin: 1rem;
 }
+
+/* ------------------------------------------ Booking Review ------------------------------------------ */
+.order-summary{
+	border: 1px solid var(--blue);
+	padding: 1.5rem;
+	height: 40rem;
+	margin: 5rem 0 5rem 0;
+}
+
+.order-summary h2 {
+	color: var(--yellow);
+}
+
 
 /* ------------------------------------------ Confirm ------------------------------------------ */
 #confirm .right-align{

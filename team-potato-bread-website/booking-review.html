@@ -18,30 +18,131 @@
 
 	<body>
 
-	<header class="page-banner grid-row-full"> <!-- maybe set extra settings for header/footer and sections rather than using full and content grid rows -->
-		<div class="grid-row">
-				
-			<nav class="menu">
-				<div class="menu-logo box">
-					<a href="about.html" class="menu-logo box-item-no-grow">
-					<img src="img/logo.png" alt="company logo with yellow hand written script that says Jeti and white serif font that says rental"/>
-					</a>
+		<header class="page-banner grid-row-full"> <!-- maybe set extra settings for header/footer and sections rather than using full and content grid rows -->
+			<div class="grid-row">
+					
+				<nav class="menu">
+					<div class="menu-logo box">
+						<a href="about.html" class="menu-logo box-item-no-grow">
+						<img src="img/logo.png" alt="company logo with yellow hand written script that says Jeti and white serif font that says rental"/>
+						</a>
+					</div>
+
+					<div class="menu-buttons box">
+						<a href="about.html" class="box-item-no-grow">JET SKIS</a>
+						<a href="about.html" class="box-item-no-grow">REVIEW</a>
+						<a href="about.html" class="box-item-no-grow">ABOUT</a>
+					</div>
+				</nav>
+			</div>
+
+
+			<div class="grid-row">
+				<h1>REVIEW</h1>
+				<h2>Make sure all the information is correct</h2>
+			</div>
+		</header>
+
+		<section id="order-summary">
+			<div class="grid-row">	
+				<div class="grid-col-1of3">
+					<div class="order-summary">
+						<h2>BOOKING INFORMATION</h2>
+						<a href="book.html">EDIT</a>
+						<h4>Jet Ski</h4>
+						<p>Lite (Seadoo Spark)</p>
+						<h4>Quantity</h4>
+						<p>1</p>
+						<h4>Date</h4>
+						<p>24 November 2016</p>
+						<h4>Duration</h4>
+						<p>1 Hour</p>
+					</div>
 				</div>
 
-				<div class="menu-buttons box">
-					<a href="about.html" class="box-item-no-grow">JET SKIS</a>
-					<a href="about.html" class="box-item-no-grow">REVIEW</a>
-					<a href="about.html" class="box-item-no-grow">ABOUT</a>
+				<div class="grid-col-1of3">
+					<div class="order-summary">
+						<h2>PASSENGER INFORMATION</h2>
+						<a href="book.html">EDIT</a>
+						<h4>Name</h4>
+						<p>Jane Doe</p>
+						<h4>Email</h4>
+						<p>jane@me.com</p>
+					</div>
 				</div>
-			</nav>
-		</div>
 
+				<div class="grid-col-1of3">
+					<div class="order-summary">
+						<h2>PAYMENT INFORMATION</h2>
+						<a href="book.html">EDIT</a>
+						<h4>Name</h4>
+						<p>Jane M Doe</p>
+						<h4>Card Number</h4>
+						<p>**** **** 1234</p>
+						<h4>Expiration Date</h4>
+						<p>03/17</p>
+						<h4>CVV</h4>
+						<p>**1</p>
+					</div>
+				</div>
+			</div>
 
-		<div class="grid-row">
-			<h1>REVIEW</h1>
-			<h2>Make sure all the information is correct</h2>
-		</div>
-	</header>
+			<div class="grid-row">
+				<form>
+					<input id="book-cancel" type="submit" value="Cancel">
+					<a href="confirmation.html" class="price-button test-button">Complete Order</a>
+				</form>
+			</div>
+		</section>
 
+		<section class="foot-banner grid-row-full">
+			<div class="grid-row">
+				<div class="grid-col-1of2">
+					<h4>FIND US ON SOCIAL MEDIA</h4>
+
+					<div class="box-left box-center-align grid-row-full">
+						<div class="facebook icon"></div> <!-- facebook icon needs to be expaned to line up with edge of the image -->
+						<p class="box-item">Facebook</p>
+					</div>
+
+					<div class="box-left box-center-align grid-row-full">
+						<div class="twitter icon"></div>
+						<p class="box-item">Twitter</p>
+					</div>
+
+					<div class="box-left box-center-align grid-row-full">
+						<div class="instagram icon"></div>
+						<p class="box-item">Instagram</p>
+					</div>
+				</div>
+
+				<div class="grid-col-1of2">
+					<h4>CONTACT US</h4>
+
+					<h5 class="yellow">via email</h5>
+
+					<form class="footer-form">
+						<input type="text" placeholder="Name">
+						<input type="text" placeholder="Email Address">
+						<input type="text" placeholder="Your Message Here">
+						<input type="submit" value="Submit">
+					</form>
+
+					<h5 class="yellow">via telephone</h5>
+
+					<p class="footer-telephone-2">1 (242) 466-7981</p>
+				</div>
+			</div>
+
+			<div class="grid-row">
+				<div class="grid-col-1of2">
+					<p>© 2016. Jeti Rentals. All Rights Reserved.</p>
+				</div>
+
+				<div class="grid-col-1of2">
+					<p class="footer-telephone-1">1 (242) 466-7981</p>
+				</div>
+			</div>
+		</section>
 	</body>
 </html>
