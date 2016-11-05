@@ -1,7 +1,6 @@
 /* ------------------------------------------ Notes ------------------------------------------ */
 /* need to figure out grid padding */
 
-/* ------------------------------------------ New Website ------------------------------------------ */
 /* ------------------------------------------ Universal ------------------------------------------ */
 *, *::after, *::before { /* ensures that literally everything follows this model no matter what changes are made */
 	box-sizing: border-box;
@@ -55,11 +54,17 @@
 	float:left; 
 }
 
-.grid-row-full{ /* change this to grid-row */
+.grid-row::after{
+	content:"";
+	display:block;
+	clear:both; 
+}
+
+.grid-row-full { /* change this to grid-row */
 	width: 100%;
 }
 
-.grid-row{ /* change the name of this */
+.grid-row { /* change the name of this */
 	width: 100%;
 	padding: 0 6rem;
 	
@@ -72,6 +77,16 @@
 	width:50%;
 	float:left;
 	text-align: left;
+}
+
+.grid-col-2of3{
+	width:66.6666%;
+	float:left;
+}
+
+.grid-col-1of3{
+	width:33.3333%; 
+	float:left;
 }
 
 .product-image .grid-col-1of2{
@@ -97,38 +112,6 @@
 	padding: 0 4rem;
 }
 
-.box-item {
-	/* flex: flex-grow flex-shrink flexbasis */
-	flex: 1 1 auto; /* auto adjusts to content width(eg: text width), 0 adjusts to 0 (eg: word width) */
-}
-
-.box-item-no-grow {
-	flex: 0 1 auto;
-}
-
-.box {
-	display: flex; /* choose flexbox */
-	display: -ms-flex;
-	display: -webkit-flex;
-	/* display: -moz-flex;  ask andrew? */
-
-	flex-wrap: wrap; /* wrap elements underneath when out of space */
-	flex-wrap: -ms-wrap;
-	flex-wrap: -webkit-wrap;
-
-	justify-content: space-between; /* how long along the main axis should the box justify space?, if extra space, justify between elements */
-	justify-content: -ms-space-between;
-	justify-content: -webkit-space-between;
-}
-
-*, *::after, *::before { /* ensures that literally everything follows this model no matter what changes are made */
-	box-sizing: border-box;
-}
-
-[class*='grid-col-']{
-	float:left; 
-}
-
 @media(max-width: 69.1775rem){
 	.grid-row{
 		padding:0 2rem;
@@ -141,168 +124,3 @@
 	}
 }
 /* Grid End */
-/* New Website End */
-
-
-/* ------------------------------------------ Old Website ------------------------------------------ */
-
-
-
-/* OLD */
-
-
-
-
-
-
-
->>>>>>> origin/salathiel
-
-.less-padding{
-	padding-left:3rem;
-	padding-right:3rem;
-}
-
-.grid{
-	padding: 0 2rem;
-}
-
-.grid-col-1of1{
-	width:100%; 
-	text-align: left; 
-}
-
-.grid-col-1of3{
-	width:33.3333%; 
-	float:left;
-}
-
-.grid-col-2of3{
-	width:66.6666%;
-	float:left;
-}
-
-.grid-col-1of4{
-	width:25%; 
-	text-align: center; 
-
-	float:left;
-}
-
-.grid-col-1of8{
-	width:2.5%; 
-	text-align: center; 
-
-	float:left;
-}
-
-.col-1of12{
-	width: 8.333333%; 
-	display: inline-block;
-
-	float:left;
-}
-
-.col-4of12{
-	width:33.32%;
-	float:left; 
-	padding-left: 14.1875rem; 
-	position: fixed;
-}
-
-.col-8of12{
-	width:98%;
-	float:left;
-	padding-left: 28rem;
-}
-
-.col-1of3{
-	width:33.3333%;
-	display: inline-block;
-	float:left;
-}
-
-.product.col-1of3{
-	width:32%;
-	display: inline-block;
-	float:left;
-	margin-left: 5px; 
-	margin-right: 5px; 
-	background-color: #0c2545;
-	padding-bottom: 30px; 
-}
-
-.col-1of2{
-	width:50%; 
-	float: left; 
-}
-
-.grid-row::after{
-	content:"";
-	display:block;
-	clear:both; 
-}
-
-
-@media(max-width: 48.3125rem){
-	/*.grid-col-1of2{
-		width:100%;
-		padding: 0;
-	}*/
-
-	.owner-description{
-		padding: 0;
-	}
-
-}
-
-@media(max-width: 80rem){
-	#contact-us .grid-col-1of3{
-		text-align: left;
-	}
-}
-
-@media(max-width: 64.1875rem){
-	.grid-col-2of3{
-		width:100%;
-	}
-
-	#contact-us .grid-col-1of3{
-		width:100%;
-		text-align: center;
-	}
-}
-
-@media(max-width: 62.25rem){
-	#contact-us.grid-col-1of3{
-		text-align: center;
-	}
-	#contact-us.grid-col-2of3{
-		text-align: center;
-	}
-}
-
-@media(max-width: 64.1875rem){
-	.grid-col-1of3{
-		width:50%;
-	}
-
-
-	@media(max-width: 44.25rem){
-	.grid-col-1of3{
-		width:100%;
-	}
-}
-
-@media(max-width: 46.25rem){
-	.grid-col-1of2{
-		width: 100%
-		/*padding-left:2rem;*/
-	}
-
-	.grid-col-1of2.detailed-product{
-		padding-left: 2rem;
-	}
-
-}
-/* Old Website End */
