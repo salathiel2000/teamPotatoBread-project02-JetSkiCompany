@@ -106,8 +106,9 @@ section {
 	width:33.3333%;
 }
 
-
-
+.grid-col-1of2-permanent { /* used for panel details where the widths are super small and dont need to be adjusted */
+	width: 50%;
+}
 
 .product-image .grid-col-1of2{
 	padding: 22rem 4rem 0 1rem;

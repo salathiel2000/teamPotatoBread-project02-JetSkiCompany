@@ -1,11 +1,19 @@
 /* ------------------------------------------ Notes ------------------------------------------ */
-/* 1rem = 16pt font */
-/* we need to level out some of the beach images */
-/* png images need to be edited so they dont waterfall-load */
-/* include links to github and sytle guide and other things in bottom of page */
-/* properly define classes and ids */
-/* add consistent text styling */
-/* add consistent button & interactable styling */
+/*
+we need to level out some of the beach images
+png images need to be edited so they dont waterfall-load
+include links to github and sytle guide and other things in bottom of page
+properly define classes and ids
+add consistent text styling
+add consistent button & interactable styling
+
+Guidelines: 
+
+attribute order: size, location, styling
+1rem = 16pt font
+
+
+
 
 /* ------------------------------------------ New Website ------------------------------------------ */
 
@@ -17,58 +25,80 @@ html {
 	--dark-blue: rgb(11, 9, 27);
 	--dark-gray: rgb(56, 56, 56);
 	--light-gray: rgb(187, 187, 187);
+	--black: black;
 	--transparent: rgba(0, 0, 0, 0);
 
 
 }
 
 /* Text */
-h1 {
-	font-size: 3.75rem; /* 60pt */
-
-	margin: 40vh 0 5rem 0;
+h1 { /* ALL CAPS */
+	font-size: 5rem; /* 80pt */
+	font-weight: 500; /* medium */
 
 	color: var(--white);
+
+	text-align: center; 
+	margin-top: 2rem;
+	margin-bottom: 0;
 }
 
-h2 {
+h2 { /* ALL CAPS */
 	font-size: 2.25rem; /* 36pt */
+	font-weight: 500; /* medium */
 
 	color: var(--blue);
 }
 
-h3 {
-	font-size: 1.625rem; /* 26pt */
+h3 { /* ALL CAPS */
+	font-size: 1.5rem; /* 24pt */
+	font-weight: 500; /* medium */
+
+	color: var(--dark-gray);
 }
 
-h4 {
+h4 { /* Sentence case */
 	font-size: 1.125rem; /* 18pt */
+	font-weight: 200; /* light */
+
+	color: var(--dark-gray);
 }
 
-h5 {
-	font-size: 0.875rem; /* 14pt */
+h5 { /* Sentence case */
+	font-size: 1.125rem; /* 18pt */
+	font-weight: 200; /* light */
+
+	color: var(--light-gray);
 }
 
-h6 {
-	font-size: 0.75rem; /* 12 pt */
+h6 { /* ALL CAPS */
+	font-size: 0.875rem; /* 14 pt */
+	font-weight: bold; /* bold */   /* where is the actual bold 700 weight font? */
 }
 
 p {
-	font-size: 1rem; /* 14pt */
-	line-height: 180%; 
-	font-weight: 100;
+	font-size: 0.875rem; /* 14pt */
+	
+	font-weight: 200; /* light */
+
 	color: var(--dark-gray);
-	/*color: var(--white);*/
+	
+	line-height: 180%; 
 }
 
-a {
-	text-decoration: none;
+a { /* Sentence case */
+	font-size: 1.125rem; /* 18pt */
+	font-weight: 500; /* medium */
+
 	color: var(--blue);
-	/*font-size: 1.125rem;*/ /* 18pt */
+
+	text-decoration: none;
 }
 /* Universal End */
 
 /* ------------------------------------------ Header ------------------------------------------ */
+
+
 .menu {
 	padding: 2rem 0;
 }
@@ -103,13 +133,6 @@ a {
     background-size: cover; /* "contain" will fit the image but leave white space, "cover" will fit the container but cut off the image, size can also be manually set */
     background-repeat: no-repeat;
     height: 20rem;
-}
-
-.page-banner h1{
-	font-size: 5rem;
-	text-align: center; 
-	margin-top: 2rem;
-	margin-bottom: 0;
 }
 
 .page-banner img{
@@ -283,7 +306,11 @@ select::-ms-expand {
 }
 
 .head-banner h1 {
+	font-size: 3.75rem; /* 60pt */
+
 	margin: 25vh 0 5rem 0;
+
+	text-align: left;
 }
 
 .head-banner img { /* condesnse */
@@ -387,6 +414,14 @@ select::-ms-expand {
 	border: solid;
 	border-width: 1px;
 	border-color: var(--blue);
+}
+
+table {
+	width: 100%;
+}
+
+td {
+	width: 50%;
 }
 
 .book-button {
@@ -852,6 +887,9 @@ select{
 
 	border-width: 2px;
 }
+
+
+
 
 /* ------------------------------------------ Booking Review ------------------------------------------ */
 .order-summary{
