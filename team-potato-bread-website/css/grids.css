@@ -1,5 +1,6 @@
 /* ------------------------------------------ Notes ------------------------------------------ */
 /* need to figure out grid padding */
+/* using grid columns for table values isnt going to work because they're going to change their widths with the media queries, try putting them on one line */
 
 /* ------------------------------------------ Universal ------------------------------------------ */
 *, *::after, *::before { /* ensures that literally everything follows this model no matter what changes are made */
@@ -50,8 +51,22 @@
 /* Flexbox End */
 
 /* ------------------------------------------ Grid ------------------------------------------ */
-[class*='grid-col-']{
-	float:left; 
+/* Rows */
+section {
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+}
+
+
+.grid-row-section {
+	width: 100%;
+
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+
+.grid-row {
+	width: 100%;
 }
 
 .grid-row::after{
@@ -60,40 +75,42 @@
 	clear:both; 
 }
 
-.grid-row-full { /* change this to grid-row */
-	width: 100%;
+.grid-row-section::after{
+	content:"";
+	display:block;
+	clear:both; 
 }
 
-.grid-row { /* change the name of this */
+/* Columns */
+[class*='grid-col-']{
+	float:left;
+
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+
+/* slot everything into a column */ /* this will create space between each column, edge space is created between column and grid-row */
+.grid-col-1of1 {
 	width: 100%;
-	padding: 0 6rem;
-	
-/*	display: block;  trying to center the div 
-	margin-left: 4rem;
-	margin-right: 4rem;*/
 }
 
 .grid-col-1of2{
 	width:50%;
-	float:left;
-	text-align: left;
 }
 
 .grid-col-2of3{
 	width:66.6666%;
-	float:left;
 }
 
 .grid-col-1of3{
-	width:33.3333%; 
-	float:left;
+	width:33.3333%;
 }
 
+
+
+
 .product-image .grid-col-1of2{
-	padding: 22rem 4rem 0 4rem;
-/*
-	padding-top: 15rem;
-	padding-left: 4rem;*/
+	padding: 22rem 4rem 0 1rem;
 }
 
 #company-values .grid-col-1of3:nth-child(2){
@@ -113,14 +130,43 @@
 }
 
 @media(max-width: 69.1775rem){
-	.grid-row{
-		padding:0 2rem;
+	.grid-row-section{
+		padding-left: 2rem;
+		padding-right: 2rem;
 	}
 }
 
-@media(max-width: 56.625rem){
-	.grid-row{
-		padding:0 2rem;
+@media(max-width: 64.1875rem){
+	.grid-col-1of3 {
+		width: 50%;
+	}
+
+
+	.grid-col-2of3{
+		width:100%;
+	}
+}
+
+@media(max-width: 44.25rem){
+	.grid-col-1of3{
+		width:100%;
+}
+
+
+@media(max-width: 46.25rem){
+	.grid-col-1of2{
+		width: 100%
 	}
 }
 /* Grid End */
+
+
+
+
+
+
+
+
+
+
+
