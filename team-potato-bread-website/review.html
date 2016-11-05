@@ -17,96 +17,87 @@
 	</head>
 
 	<body>
+		<header class="page-banner grid-row"> <!-- maybe set extra settings for header/footer and sections rather than using full and content grid rows -->
+				<div class="grid-row-section">
+					<nav class="menu">
+						<div class="menu-logo box">
+							<a href="index.html" class="menu-logo box-item">	</a>
+						</div>
 
-	<header class="page-banner grid-row"> <!-- maybe set extra settings for header/footer and sections rather than using full and content grid rows -->
-			<div class="grid-row-section">
-				<nav class="menu">
-					<div class="menu-logo box">
-						<a href="index.html" class="menu-logo box-item">	</a>
-					</div>
+						<div class="menu-buttons box">
+							<a href="index.html#jet-skis" class="box-item">JET SKIS</a> <!-- add scroll smoothing -->
+							<a href="review.html" class="box-item">REVIEW</a>
+							<a href="about.html" class="box-item">ABOUT</a>
+						</div>
+					</nav>
+				</div>
 
-					<div class="menu-buttons box">
-						<a href="index.html#jet-skis" class="box-item">JET SKIS</a> <!-- add scroll smoothing -->
-						<a href="review.html" class="box-item">REVIEW</a>
-						<a href="about.html" class="box-item">ABOUT</a>
-					</div>
-				</nav>
-			</div>
-
-			<div class="grid-row-section">
-				<h1>REVIEW</h1>
-				<h2>Submit your review or view others</h2>
-			</div>
-	</header>
+				<div class="grid-row-section">
+					<h1>REVIEW</h1>
+					<h2>Submit your review or view others</h2>
+				</div>
+		</header>
 
 		<section id="submit-review">
-
 			<div class="grid-row-section">
 				<div class="grid-col-1of2">
 					<h2 class="blue-header">SUBMIT YOUR REVIEW</h2>
 				</div>
 
-				<div class="grid-col-1of2 left top-space">
+				<div class="left top-space grid-col-1of2">
 					<p>Or view submitted reviews by clicking <a href="#">here</a></p>
 				</div>
 			</div>
 		
 			<form> 
 				 <div class="grid-row-section"> 
-			
-					 <div class="grid-col-1of2 middle-space"> 
+					 <div class="middle-space grid-col-1of2"> 
 					 	<input type="text" id="fname" name="fname" placeholder="First Name"> 
 					 </div> 
 
-					 <div class="grid-col-1of2 middle-space"> 
+					 <div class="middle-space grid-col-1of2"> 
 					 	<input type="text" id="lname" name="lname" placeholder="Last Name"> 
 					 </div> 
-
 				 </div>
 
 				 <div class="grid-row-section">
-
-				 <select class="styled-select"> 
-					 <option value="option1">Choose an option</option> 
-					 <option value="option2">Another one</option> 
-					 <option value="option3">Here's another one</option> 
-				</select>
-
+				 	<div class="grid-col-1of1">
+						<select class="styled-select"> 
+							 <option value="option1">Choose an option</option> 
+							 <option value="option2">Another one</option> 
+							 <option value="option3">Here's another one</option> 
+						</select>
+					</div>
 				</div>
 
 				<div class="review-area grid-row-section"> 
-				 	<textarea name="textarea" rows="10" cols="50" placeholder="Write your review here..."></textarea>
+					<div class="grid-col-1of1">
+				 		<textarea name="textarea" rows="10" cols="50" placeholder="Write your review here..."></textarea>
+				 	</div>
 				</div>
 
 				<div class="button-top-space grid-row-section">
-					<a href="book.html" class="price-button">Submit</a>
+					<div class="grid-col-1of1">
+							<a href="book.html" class="price-button">Submit</a>
+					</div>
 				</div>
 			</form>
-
-			
-
 		</section>
 
-		<section id="view-reviews">
-
-			<div class="grid-row-section">
+		<section id="view-reviews" class="grid-row-section">
+			<div class="grid-col-1of1">
 				<h2 class="blue-header">REVIEWS</h2>
-			</div>
-			
-			<div class="grid-row-section">
+
 				<article>
 					<p> This was my first time ever in The Bahamas and also my first time riding a jet ski. Salathiel and Thomas were absolutely brilliant, they were able to make me feel extra comfortable with the Seadoo Spark, and even gave me an extra 10 mins. of training (without charging) to ensure I was truly ready to have the most fun on my ride.</p>
 					<p class="persona">Submitted by John who rode a <a href="lite.html">Seadoo Spark</a></p>
 				</article>
-			</div>
 
-			<div class="grid-row-section">
 				<article>
-					<p> I've ridden a jet ski before, but Jeti's modern fleet ensured a totally different experience. I was happy to see the jet skis were well kept, maintenance reports were clearly visible on the water craft, and that made me feel very comfortable. </p>
+					<p> I've ridden a jet ski before, but Jeti's modern fleet ensured a totally different experience. I was happy to see the jet skis were well kept, maintenance reports were clearly visible on the water craft, and that made me feel very comfortable.</p>
 					<p class="persona">Submitted by Jane who rode a <a href="lite.html">Seadoo GTX</a></p>
 				</article>
 			</div>
-
 		</section>
 
 		<section class="foot-banner grid-row">

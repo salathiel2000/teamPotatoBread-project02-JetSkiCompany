@@ -4,6 +4,8 @@
 /* png images need to be edited so they dont waterfall-load */
 /* include links to github and sytle guide and other things in bottom of page */
 /* properly define classes and ids */
+/* add consistent text styling */
+/* add consistent button & interactable styling */
 
 /* ------------------------------------------ New Website ------------------------------------------ */
 
@@ -707,14 +709,6 @@ select::-ms-expand {
 	color: var(--dark-gray);
 }
 
-.middle-space:nth-child(1){
-	padding-right: 1rem;
-}
-
-.middle-space:nth-child(2){
-	padding-left: 1rem ;
-}
-
 input[type=text] {
 	width: 100%; 
 	height: 60px;
@@ -795,14 +789,6 @@ select{
 		width:100%;
 	}
 
-	.middle-space:nth-child(2){
-		padding-left:0;
-	}
-
-	.middle-space:nth-child(1){
-		padding-right:0;
-	}
-
 	.left{
 		text-align: left;
 	}
@@ -872,7 +858,8 @@ select{
 	border: 1px solid var(--blue);
 	padding: 1.5rem;
 	height: 40rem;
-	margin: 5rem 0 5rem 0;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
 }
 
 .order-summary h2 {
