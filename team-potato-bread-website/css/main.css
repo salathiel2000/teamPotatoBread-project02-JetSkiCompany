@@ -7,12 +7,13 @@ properly define classes and ids
 add consistent text styling
 add consistent button & interactable styling
 addback in arrow for seleciton boxes
+add in consistent annotations and spacing for all pages and css
 
 Guidelines: 
 
 attribute order: size, location, styling
 1rem = 16pt font
-
+***inline elements do not have vertical padding*** change them to inline-blocks
 
 
 
@@ -95,17 +96,21 @@ a { /* Sentence case */
 	text-decoration: none;
 }
 
-input {
-	border-style: solid; /* this has to be set because the "user agent stylesheet" is overriding it for some reason */
-
-	color: var(--white);
-	background-color: var(--blue);
+input { /* the "user agent stylesheet" overrides some css styling of the attributes in the input tag are not directly set */
+	border-style: solid;
+	border-width: 0;
 }
 
-/* Buttons */
+/* Buttons */ 
+/* buttons usually require specific styling in each use case */
+
 .small-button { /* anchor link size */
 	font-size: 1.125rem; /* 18pt */
 	font-weight: 500; /* medium */
+
+	padding: 1rem;
+
+	display: inline-block;
 
 	color: var(--white);
 	background-color: var(--blue);
@@ -114,6 +119,8 @@ input {
 .large-button { /* h2 size */
 	font-size: 2.25rem; /* 36pt */
 	font-weight: 500; /* medium */
+
+	padding: 1rem;
 
 	color: var(--white);
 	background-color: var(--blue);
@@ -252,23 +259,6 @@ select::-ms-expand {
 
 
 /* ------------------------------------------ Footer ------------------------------------------ */
-.icon-box p {
-	color: var(--white);
-	padding-left: 1rem;
-}
-
-.foot-banner p {
-	color: var(--white);
-}
-
-.foot-banner h4 {
-	color: var(--blue);
-}
-
-.yellow {
-	color: var(--yellow);
-}
-
 .foot-banner {
 	margin-top: 1rem;
 
@@ -285,7 +275,7 @@ select::-ms-expand {
 	width: 2.5rem;
 	height: 2.5rem;
 
-	margin-right: 1rem;
+	margin-right: 1rem; /* space the words from the icons */
 
 	background-attachment: scroll; 
     background-position: center; 
@@ -305,14 +295,42 @@ select::-ms-expand {
 	background-image: url("../img/instagram-icon.png"); 
 }
 
-.footer-telephone-2 {
-	visibility: hidden;
-	height: 0;
-	margin: 0;
-	padding: 0;
-}
- 
 
+/* Color Adjustment*/
+
+.foot-banner p {
+	color: var(--white);
+}
+
+.foot-banner h3 {
+	color: var(--blue);
+}
+
+.yellow {
+	color: var(--yellow) !important;
+}
+
+/* Footer Form */
+
+.footer-form input[type=text] {
+	width: 100%;
+
+	padding: 1rem;
+	margin: 1rem 0rem 1rem 0;
+
+	color: var(--white);
+	background-color: var(--transparent);
+	border-color: var(--blue);
+
+	border-width: 2px;
+
+	border-style: solid;
+}
+
+.foot-banner input[type=submit] {
+	width: 100%;
+	margin-top: 1rem;
+}
 
 .footer-form ::-webkit-input-placeholder{
 	color: var(--white);
@@ -336,20 +354,13 @@ select::-ms-expand {
 }
 
 
-.foot-banner input {
-	width: 100%;
+/* Adaptation */
 
-	padding: 1rem;
-	margin: 1rem 0rem 1rem 0;
-
-	color: var(--white); /* this is broken */
-	background-color: var(--transparent);
-	border-color: var(--blue);
-
-	border-width: 2px;
-
-	border-style: solid;
-
+.footer-telephone-2 {
+	visibility: hidden;
+	height: 0;
+	margin: 0;
+	padding: 0;
 }
 
 @media(max-width: 46.875rem){
@@ -421,6 +432,18 @@ select::-ms-expand {
 	color: var(--yellow);
 }
 
+
+
+
+.jet-ski-panel a { /* make the a tag work like a button in the jet ski panel (maybe find a better fix for this with time) */
+	display: inline-block;
+
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	margin-bottom: 1rem;
+}
+
+
 table {
 	width: 100%;
 }
@@ -453,15 +476,6 @@ td {
 .jet-ski-panel img {
 	max-width: 100%;
 }
-
-.product-description .grid-col-1of2{
-	/*margin-left: 2rem;*/
-}
-
-.more-space{
-	padding-top:3rem;
-}
-
 
 /* Home End */
 
@@ -684,33 +698,6 @@ td {
 	color: var(--black);
 	font-size: 0.9rem;
 	margin: 0;
-}
-
-/* About End */
-
-
-@media(max-width: 64.1875rem){
-	#company-values .grid-col-1of3{
-		margin-top: 2rem;
-	}
-
-	#company-values .grid-col-1of3:nth-child(2){
-		padding-right: 1rem;
-	}
-
-	#company-values .grid-col-1of3:nth-child(4){
-		padding-right: 1rem;
-	}
-}
-
-@media(max-width: 35.625rem){
-	#meet-the-team .grid-col-1of2{
-		padding: 0 1rem;
-	}
-
-	.grid-col-1of2{
-		padding:0;
-	}
 }
 /*About End*/ 
 

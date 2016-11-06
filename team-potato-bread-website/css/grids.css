@@ -24,12 +24,6 @@
 	justify-content: -webkit-space-between;
 }
 
-.box-item {
-	/* flex: flex-grow flex-shrink flexbasis */
-	flex: 0 1 auto; /* auto adjusts to content width(eg: text width), 0 adjusts to 0 (eg: word width) */
-	/* not the same as the default andrew gave us: 1 1 auto; */
-}
-
 .box-left { /* differences: left justify and center align */
 	display: flex;
 	display: -ms-flex;
@@ -47,6 +41,12 @@
 	align-items: center;
 	align-items: -ms-center;
 	align-items: -webkit-center;
+}
+
+.box-item {
+	/* flex: flex-grow flex-shrink flexbasis */
+	flex: 0 1 auto; /* auto adjusts to content width(eg: text width), 0 adjusts to 0 (eg: word width) */
+	/* not the same as the default andrew gave us: 1 1 auto; */
 }
 /* Flexbox End */
 
@@ -69,17 +69,22 @@ section {
 	width: 100%;
 }
 
-.grid-row::after{
+.grid-row::after {
 	content:"";
 	display:block;
 	clear:both; 
 }
 
-.grid-row-section::after{
+.grid-row-section::after {
 	content:"";
 	display:block;
 	clear:both; 
 }
+
+
+/*.jet-ski-panel .grid-col-1of2 {
+	height: 5rem;
+}*/
 
 /* Columns */
 [class*='grid-col-']{
