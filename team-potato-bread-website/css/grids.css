@@ -1,6 +1,12 @@
 /* ------------------------------------------ Notes ------------------------------------------ */
-/* need to figure out grid padding */
-/* using grid columns for table values isnt going to work because they're going to change their widths with the media queries, try putting them on one line */
+/*
+need to figure out grid padding
+using grid columns for table values isnt going to work because they're going to change their widths with the media queries, try putting them on one line
+
+Guidelines:
+basically use rows and columns for each piece of content, one row/column can be shared between multiple elements only when the column number stays the same
+
+*/
 
 /* ------------------------------------------ Universal ------------------------------------------ */
 *, *::after, *::before { /* ensures that literally everything follows this model no matter what changes are made */

@@ -11,6 +11,7 @@ add in consistent annotations and spacing for all pages and css
 add image alt text
 make file names consistent
 fix usear agent stylesheet screwing with everything (its messing with the inputs, and giving everything massive margins)
+ensure that all images are put into css as background images
 
 Guidelines: 
 
@@ -99,6 +100,12 @@ a { /* Sentence case */
 	text-decoration: none;
 }
 
+a:hover {
+	color: var(--yellow);
+	cursor: pointer;
+	transition: 0.1s ease-in-out;
+}
+
 input { /* the "user agent stylesheet" overrides some css styling of the attributes in the input tag are not directly set */
 	border-style: solid;
 	border-width: 0;
@@ -132,6 +139,7 @@ img {
 
 .small-button:hover, .large-button:hover {
 	background-color: var(--yellow);
+	color: var(--white); /* keeps the <a> hover-state from creating a blank yellow box */
 	cursor: pointer;
 	transition: 0.1s ease-in-out;
 }
@@ -436,7 +444,7 @@ textarea {
 	}
 }	
 
-.jet-ski-panel {
+.jet-ski-panel { /* merge with other panels? */
 	justify-content: center;
 	text-align: center;
 
@@ -512,34 +520,19 @@ td {
 	margin-top: 4rem;
 }
 
-.product-info h3{
-	color: var(--yellow);
-	margin: 0; 
-}
+.info-panel{ /* merge with other panels? */
+	justify-content: center;
+	text-align: center;
 
-.space{
 	border: 1px solid var(--blue);
-	padding: 1.5rem;
 }
 
-.price{
-	text-align: center; 
-}
-
-.price p{
+.info-panel h3 {
 	color: var(--yellow);
-	font-size: 3rem;
-	font-weight: bold;
-	margin-bottom: 2rem;
 }
 
-.price-button{
-	/*margin-top: 2rem;*/
-	padding: 0.5rem 3rem;
-	font-size: 2.5rem;
-  	border: 1px solid var(--blue);
-  	color: var(--blue); 	
-  	text-decoration: none; 
+.center {
+	text-align: center;
 }
 
 /* kill these */
@@ -689,16 +682,19 @@ input[type=text] {
 	font-weight: 100; 
 }
 
-.styled-select {
-	background: transparent;
+.styled-select { /* this really needs to be fixed */
 	width: 100%;
-	padding-left: 2rem; 
-	line-height: 1; 
 	height: 60px; 
+
+	padding-left: 2rem; 
+	margin-bottom: 2rem;
 	border: 1px solid var(--blue);
+
+	line-height: 1; 
+
+
 	color: var(--black);
-	font-weight: 100; 
-	margin-top: 2rem;
+	background: transparent;
 }
 
 @media(max-width: 46.875rem){
@@ -709,8 +705,19 @@ input[type=text] {
 /* Review End */
 
 /* ------------------------------------------ Book ------------------------------------------ */
-.book-panel {
-	
+#book-img {
+	background-image: url("../img/seadoo-spark.png"); 
+
+    background-attachment: scroll;
+    background-position: center; 
+    background-size: contain;
+    background-repeat: no-repeat;
+
+	height: 15rem; /* keeps the panel from getting too long */
+}
+
+
+.book-panel { /* merge with other panels */
 	max-width: 100%;
 	justify-content: center;
 	text-align: center;
@@ -721,51 +728,13 @@ input[type=text] {
 	padding: 1rem;
 }
 
-.book-panel img {
-	max-width: 100%;
-	max-height: 15rem; /* keeps the panel from getting too long */
-}
-
-.temp-spacer {
-	padding: 2rem 1rem 1rem 1rem;
-}
-
-#book-cancel {
-	max-width: 100%;
-	width: 15rem;
-
-	padding: 1rem;
-	margin: 1rem 1rem 1rem 0;
-
-	float: left;
+.cancel {
 	background-color: var(--gray);
-	color: var(--white);
-	border-style: none;
-
-	border-width: 2px;
 }
-
-#book-submit {
-	max-width: 100%;
-	width: 15rem;
-
-	padding: 1rem;
-	margin: 1rem 0 1rem 1rem;
-
-	float: right;
-	background-color: var(--transparent);
-	color: var(--blue);
-	border-color: var(--blue);
-	border-style: solid;
-
-	border-width: 2px;
-}
-
-
 
 
 /* ------------------------------------------ Booking Review ------------------------------------------ */
-.order-summary{
+.summary-panel { /* merge with other panels */
 	border: 1px solid var(--blue);
 	padding: 1.5rem;
 	height: 40rem;
@@ -773,7 +742,7 @@ input[type=text] {
 	margin-bottom: 1rem;
 }
 
-.order-summary h2 {
+.summary-panel h2 { /* merge with other panels */
 	color: var(--yellow);
 }
 
@@ -784,25 +753,9 @@ input[type=text] {
 	color: var(--gray); 
 }
 
-#confirm p{
-	color: var(--black);
-}
-
-.confirm-banner {
-	background-image: url("../img/spark.png"); 
-
-    background-attachment: scroll;
-    background-position: center; 
-    background-size: cover;
-    background-repeat: no-repeat;
-}
 
 
-/* Confirm End */
-/* New Website End */
-
-
-/* ------------------------------------------ Old Website ------------------------------------------ */
+/* ------------------------------------------ Old Website STUFF IN HERE IS STILL USED GOTTA FIGURE OUT WHAT ------------------------------------------ */
 @media(max-width: 61.4375rem){
 	.product-image .grid-col-1of2{
 		width: 100%;
