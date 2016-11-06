@@ -27,8 +27,10 @@ html {
 	--gray: rgb(187, 187, 187);
 	--transparent: rgba(0, 0, 0, 0);
 
+	font-family: "Montserrat", Arial, sans-serif; 
 	font-size: 1.125rem; /* default h4 font size */
 	font-weight: 200;
+
 }
 
 /* Text */
@@ -87,19 +89,22 @@ p {
 }
 
 a { /* Sentence case */
-	font-size: 1.125rem; /* 18pt */
-	font-weight: 500; /* medium */
+	font-size: 0.875rem; /* 18pt */
+	font-weight: 200; /* medium */
 
 	color: var(--blue);
 
 	text-decoration: none;
 }
 
+a:hover{
+	text-decoration: underline;
+}
+
 input {
 	border-style: solid; /* this has to be set because the "user agent stylesheet" is overriding it for some reason */
 
 	color: var(--white);
-	background-color: var(--blue);
 }
 
 /* Buttons */
@@ -739,12 +744,16 @@ td {
 	color: var(--black);
 }
 
+.black-text{
+	color:black;
+}
+
 input[type=text] {
 	width: 100%; 
 	height: 60px;
 	padding-left: 20px;
 	margin-top: 8px; 
-	color: var(--white);
+	/*color: white;*/
 	border: 1px solid var(--blue);
 	box-sizing: border-box;
 }
@@ -769,14 +778,12 @@ input[type=text] {
 	font-weight: 100; 
 }
 
-select{
-/*  -webkit-appearance: none;
-  -webkit-border-radius: 0px;*/
+/*select{
+	cursor: pointer;
+}*/
 
-}
-
-.styled-select {
-	background: transparent;
+.select-option{
+	background: white;
 	width: 100%;
 	padding-left: 2rem; 
 	line-height: 1; 
@@ -785,6 +792,34 @@ select{
 	color: var(--black);
 	font-weight: 100; 
 	margin-top: 2rem;
+}
+
+.select-hidden{
+	display: none;
+	visibility: hidden; 
+	padding-right: 20px; 
+}
+select{
+	-webkit-appearance: none;
+	-moz-appearance: none;
+
+	/*background-position: right 10px center; 
+	background-repeat: no-repeat;
+	background-size: auto 500%; 
+	background: transparent;*/
+	width: 100%;
+	padding-left: 1rem; 
+	line-height: 1; 
+	height: 60px; 
+	border: 1px solid var(--blue);
+	color: var(--black);
+	font-weight: 100; 
+	margin-top: 2rem;
+	border-radius: 0px;
+	cursor: pointer;
+	background: url("../img/dropDown.png") no-repeat right #fff;
+	background-size: auto 15%;
+	background-position: 97%
 }
 
 #submit-review textarea{
@@ -813,6 +848,7 @@ select{
 	color: white;
 	transition: 0.2s ease-in;
 }
+
 
 @media(max-width: 46.875rem){
 	#submit-review .grid-col-1of2{
