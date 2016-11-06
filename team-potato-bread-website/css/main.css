@@ -765,7 +765,7 @@ input[type=text] {
 	height: 60px; 
 /*select{
 	cursor: pointer;
-}*/
+}*/}
 
 .select-option{
 	background: white;
@@ -784,6 +784,7 @@ input[type=text] {
 	visibility: hidden; 
 	padding-right: 20px; 
 }
+
 select{
 	-webkit-appearance: none;
 	/*-moz-appearance: none;*/
