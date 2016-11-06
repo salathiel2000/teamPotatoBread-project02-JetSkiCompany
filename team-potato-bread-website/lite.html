@@ -18,8 +18,8 @@
 
 	<body>
 
-		<header class="page-banner grid-row-full"> <!-- maybe set extra settings for header/footer and sections rather than using full and content grid rows -->
-			<div class="grid-row">
+		<header class="page-banner grid-row"> <!-- maybe set extra settings for header/footer and sections rather than using full and content grid rows -->
+			<div class="grid-row-section">
 				<nav class="menu">
 					<div class="menu-logo box">
 						<a href="index.html" class="menu-logo box-item">	</a>
@@ -33,19 +33,19 @@
 				</nav>
 			</div>
 
-			<div class="grid-row">
+			<div class="grid-row-section">
 				<h1>LITE</h1>
 				<h2>2016 Seadoo Spark</h2>
 			</div>
 		</header>
 
-		<div class="grid-row product-image"> 
+		<div class="product-image grid-row-section"> 
 			<div class="grid-col-1of2">
 				<p>Seadoo's playful Spark is awesome for first time riders. It's fun, light-weight and easy to handle, with the right amount of speed making it perfect for beginners</p>
 			</div>
 		</div>
 
-		<div class="grid-row product-info">
+		<div class="grid-row-section product-info">
 			<div class="grid-col-1of2">
 				<div class="space">
 					<h3>KEY SPECS</h3>
@@ -80,48 +80,52 @@
 
 		</div>
 
-		<div class="grid-row price">
-			<p>$60 / HR</p>
+		<div class="grid-row-section price">
+			<div class="grid-col-1of1">
+				<p>$60 / HR</p>
+			</div>
 		</div>
 
-		<div class="grid-row center">
-			<a href="book.html" class="price-button">Book</a>
+		<div class="grid-row-section center">
+			<div class="grid-col-1of1">
+				<a href="book.html" class="price-button">Book</a>
+			</div>
 		</div>
 
-		<section id="reviews">
-
-			<div class="grid-row">
-			<h2 class="blue-header">REVIEWS</h2>
-			<article>
-				<p class="submitted-reviews"> I've never had so much fun on the water before. Besides the team at Jeti being awesome in getting me up and running in no time, the Spark couldn't have been a better fit for me. It handled well, it rode smoothly and still gave me an adrenaline rush </p>
-				<p class="persona">Submitted by Jane</p>
-			</article>
+		<section id="reviews" class="grid-row-section">
+			<div class="grid-col-1of1">
+				<h2 class="blue-header">REVIEWS</h2>
 
 				<article>
-				<p class="submitted-reviews"> The Spark is very playful. From the colours to its overall shape, it's simply a light-hearted jet ski, which will bring out your inner child. 10/10 would definitely recommend</p>
-				<p class="persona">Submitted by Bob</p>
-			</article>
+					<p class="submitted-reviews"> I've never had so much fun on the water before. Besides the team at Jeti being awesome in getting me up and running in no time, the Spark couldn't have been a better fit for me. It handled well, it rode smoothly and still gave me an adrenaline rush </p>
+					<p class="persona">Submitted by Jane</p>
+				</article>
 
-			<p>Already took our Seadoo Spark for a spin? <a href="review.html">Submit a review</a> to let us know what you thought</p>
+				<article>
+					<p class="submitted-reviews"> The Spark is very playful. From the colours to its overall shape, it's simply a light-hearted jet ski, which will bring out your inner child. 10/10 would definitely recommend</p>
+					<p class="persona">Submitted by Bob</p>
+				</article>
 
+				<p>Already took our Seadoo Spark for a spin? <a href="review.html">Submit a review</a> to let us know what you thought</p>
+			</div>
 		</section>
 
-		<section class="foot-banner grid-row-full">
-			<div class="grid-row">
+		<section class="foot-banner grid-row">
+			<div class="grid-row-section">
 				<div class="grid-col-1of2">
 					<h4>FIND US ON SOCIAL MEDIA</h4>
 
-					<div class="box-left box-center-align grid-row-full">
+					<div class="box-left box-center-align grid-row">
 						<div class="facebook icon"></div> <!-- facebook icon needs to be expaned to line up with edge of the image -->
 						<p class="box-item">Facebook</p>
 					</div>
 
-					<div class="box-left box-center-align grid-row-full">
+					<div class="box-left box-center-align grid-row">
 						<div class="twitter icon"></div>
 						<p class="box-item">Twitter</p>
 					</div>
 
-					<div class="box-left box-center-align grid-row-full">
+					<div class="box-left box-center-align grid-row">
 						<div class="instagram icon"></div>
 						<p class="box-item">Instagram</p>
 					</div>
@@ -145,7 +149,7 @@
 				</div>
 			</div>
 
-			<div class="grid-row">
+			<div class="grid-row-section">
 				<div class="grid-col-1of2">
 					<p>© 2016. Jeti Rentals. All Rights Reserved.</p>
 				</div>
