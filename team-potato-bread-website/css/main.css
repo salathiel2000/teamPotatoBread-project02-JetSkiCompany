@@ -23,10 +23,12 @@ html {
 	--white: white;
 	--yellow: rgb(242, 187, 5);
 	--blue: rgb(31, 186, 214);
-	--dark-blue: rgb(11, 9, 27);
-	--dark-gray: rgb(56, 56, 56);
-	--light-gray: rgb(187, 187, 187);
+	--black: rgb(56, 56, 56);
+	--gray: rgb(187, 187, 187);
 	--transparent: rgba(0, 0, 0, 0);
+
+	font-size: 1.125rem; /* default h4 font size */
+	font-weight: 200;
 }
 
 /* Text */
@@ -52,21 +54,21 @@ h3 { /* ALL CAPS */
 	font-size: 1.5rem; /* 24pt */
 	font-weight: 500; /* medium */
 
-	color: var(--dark-gray);
+	color: var(--black);
 }
 
 h4 { /* Sentence case */
 	font-size: 1.125rem; /* 18pt */
 	font-weight: 200; /* light */
 
-	color: var(--dark-gray);
+	color: var(--black);
 }
 
 h5 { /* Sentence case */
 	font-size: 1.125rem; /* 18pt */
 	font-weight: 200; /* light */
 
-	color: var(--light-gray);
+	color: var(--gray);
 }
 
 h6 { /* ALL CAPS */
@@ -79,7 +81,7 @@ p {
 	
 	font-weight: 200; /* light */
 
-	color: var(--dark-gray);
+	color: var(--black);
 	
 	line-height: 180%; 
 }
@@ -92,6 +94,31 @@ a { /* Sentence case */
 
 	text-decoration: none;
 }
+
+input {
+	border-style: solid; /* this has to be set because the "user agent stylesheet" is overriding it for some reason */
+
+	color: var(--white);
+	background-color: var(--blue);
+}
+
+/* Buttons */
+.small-button { /* anchor link size */
+	font-size: 1.125rem; /* 18pt */
+	font-weight: 500; /* medium */
+
+	color: var(--white);
+	background-color: var(--blue);
+}
+
+.large-button { /* h2 size */
+	font-size: 2.25rem; /* 36pt */
+	font-weight: 500; /* medium */
+
+	color: var(--white);
+	background-color: var(--blue);
+}
+
 /* Universal End */
 
 /* ------------------------------------------ Header ------------------------------------------ */
@@ -110,7 +137,6 @@ a { /* Sentence case */
     padding-top: 2rem;
     padding-bottom: 2rem;
 }
-
 
 /* Different h1 styling for home header */
 .head-banner h1 {
@@ -141,27 +167,20 @@ select::-ms-expand {
 
 	padding: 1rem;
 	margin: 1rem 2rem 1rem 0;
+	border-width: 1px;
 
 	color: var(--white);
 	background-color: var(--transparent);
-	border-color: var(--blue);
-
-	border-width: 1px;
+	border-color: var(--blue);	
 }
 
 .suggestion-menu input {
-	max-width: 100%;
 	width: 15rem;
+	max-width: 100%;
 
 	padding: 1rem;
 	margin: 1rem 0 1rem 0;
-
-	color: var(--white);
-	background-color: var(--blue);
-	border-color: var(--blue);
-
-
-	border-width: 2px;
+	border-width: 0;
 }
 
 @media(max-width: 24.2rem){
@@ -190,6 +209,9 @@ select::-ms-expand {
 .menu-buttons {
 	width: 20rem;
 	float: right;
+}
+
+.menu-buttons a {
 	color: var(--white);
 }
 
@@ -349,8 +371,6 @@ select::-ms-expand {
 
 /* ------------------------------------------ Page Specific ------------------------------------------ */
 /* ------------------------------------------ Home ------------------------------------------ */
-
-
 .who-are-we-img {
 	background-image: url("../img/beach-copy.jpg");
 
@@ -397,6 +417,10 @@ select::-ms-expand {
 	border-color: var(--blue);
 }
 
+.jet-ski-panel h3 {
+	color: var(--yellow);
+}
+
 table {
 	width: 100%;
 }
@@ -430,11 +454,6 @@ td {
 	max-width: 100%;
 }
 
-.product-description h3{
-	font-size: 0.9rem;
-	color: var(--dark-gray);
-}
-
 .product-description .grid-col-1of2{
 	/*margin-left: 2rem;*/
 }
@@ -465,20 +484,19 @@ td {
 }
 
 .product-image p{
-	color: var(--dark-gray);
+	color: var(--black);
 }
 
 .product-info p{
-	color: var(--dark-gray);
+	color: var(--black);
 }
 
 .product-info h4{
-	color: var(--dark-gray);
+	color: var(--black);
 }
 
 .product-info h3{
 	color: var(--yellow);
-	font-size: 2rem;
 	margin: 0; 
 }
 
@@ -522,11 +540,11 @@ td {
 }
 
 .submitted-reviews{
-	color: var(--dark-gray);
+	color: var(--black);
 }
 
 .persona{
-	color: var(--light-gray);
+	color: var(--gray);
 }
 
 #reviews{
@@ -595,7 +613,7 @@ td {
 }
 
 #who-we-are{
-	color: var(--dark-gray);
+	color: var(--black);
 }
 
 .values{
@@ -613,7 +631,7 @@ td {
 }
 
 #company-values p{
-	color: var(--dark-gray);
+	color: var(--black);
 }
 
 #company-values{
@@ -629,8 +647,6 @@ td {
 }
 
 #meet-the-team h3{
-	font-size: 1.5rem;
-	color: var(--dark-gray);
 	margin: 1.5rem 0 0.5rem 0;
 }
 
@@ -638,11 +654,11 @@ td {
 	font-weight: 100;
 	margin: 0;  
 	font-size: 1.5rem;
-	color: var(--light-gray);
+	color: var(--gray);
 }
 
 #meet-the-team p{
-	color: var(--dark-gray);
+	color: var(--black);
 }
 
 .feature-map{
@@ -661,13 +677,11 @@ td {
 }
 
 #contact-us h3{
-	color: var(--dark-gray);
-	font-size: 1rem;
-	font-weight: bold;
+	color: var(--black);
 }
 
 #contact-us p{
-	color: var(--dark-gray);
+	color: var(--black);
 	font-size: 0.9rem;
 	margin: 0;
 }
@@ -722,7 +736,7 @@ td {
 }
 
 #submit-review p{
-	color: var(--dark-gray);
+	color: var(--black);
 }
 
 input[type=text] {
@@ -736,7 +750,7 @@ input[type=text] {
 }
 
 ::-webkit-input-placeholder{
-	color: var(--dark-blue);
+	color: var(--black);
 	font-weight: 100; 
 }
 
@@ -768,7 +782,7 @@ select{
 	line-height: 1; 
 	height: 60px; 
 	border: 1px solid var(--blue);
-	color: var(--dark-blue);
+	color: var(--black);
 	font-weight: 100; 
 	margin-top: 2rem;
 }
@@ -846,7 +860,7 @@ select{
 	margin: 1rem 1rem 1rem 0;
 
 	float: left;
-	background-color: var(--light-gray);
+	background-color: var(--gray);
 	color: var(--white);
 	border-style: none;
 
@@ -889,11 +903,11 @@ select{
 /* ------------------------------------------ Confirm ------------------------------------------ */
 #confirm .right-align{
 	text-align: right;
-	color: var(--light-gray); 
+	color: var(--gray); 
 }
 
 #confirm p{
-	color: var(--dark-gray);
+	color: var(--black);
 }
 
 .confirm-banner {
