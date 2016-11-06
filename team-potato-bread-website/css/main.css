@@ -8,6 +8,9 @@ add consistent text styling
 add consistent button & interactable styling
 addback in arrow for seleciton boxes
 add in consistent annotations and spacing for all pages and css
+add image alt text
+make file names consistent
+fix usear agent stylesheet screwing with everything (its messing with the inputs, and giving everything massive margins)
 
 Guidelines: 
 
@@ -101,13 +104,24 @@ input { /* the "user agent stylesheet" overrides some css styling of the attribu
 	border-width: 0;
 }
 
+img {
+	width: 100%;
+}
+
 /* Buttons */ 
 /* buttons usually require specific styling in each use case */
 
 .small-button { /* anchor link size */
 	font-size: 1.125rem; /* 18pt */
 	font-weight: 500; /* medium */
+}
 
+.large-button { /* h2 size */
+	font-size: 2.25rem; /* 36pt */
+	font-weight: 500; /* medium */
+}
+
+.small-button, .large-button {
 	padding: 1rem;
 
 	display: inline-block;
@@ -116,14 +130,29 @@ input { /* the "user agent stylesheet" overrides some css styling of the attribu
 	background-color: var(--blue);
 }
 
-.large-button { /* h2 size */
-	font-size: 2.25rem; /* 36pt */
-	font-weight: 500; /* medium */
+.small-button:hover, .large-button:hover {
+	background-color: var(--yellow);
+	cursor: pointer;
+	transition: 0.1s ease-in-out;
+}
 
-	padding: 1rem;
+/* Select */
 
-	color: var(--white);
-	background-color: var(--blue);
+/* Selection Box Styling (removes arrow) */
+select {
+	-moz-appearance: none;
+	-webkit-appearance:none;
+}
+
+select::-ms-expand {
+	display: none;
+}
+
+textarea {
+	width:100%;
+	padding:0.8rem;
+	border: 1px solid var(--blue);
+	margin-top: 0.5rem;
 }
 
 /* Universal End */
@@ -150,16 +179,6 @@ input { /* the "user agent stylesheet" overrides some css styling of the attribu
 	font-size: 3.75rem; /* 60pt */
 	margin: 25vh 0 5rem 0;
 	text-align: left;
-}
-
-/* Selection Box Styling (removes arrow) */
-select {
-	-moz-appearance: none;
-	-webkit-appearance:none;
-}
-
-select::-ms-expand {
-	display: none;
 }
 
 .suggestion-menu {
@@ -202,9 +221,9 @@ select::-ms-expand {
 .menu-logo {
 	background-image: url("../img/logo.png"); 
 
-	background-attachment: scroll; /* change to "fixed" if a scrolling effect is wanted */
-    background-position: top; /* controls which edge the picture snaps to */
-    background-size: contain; /* "contain" will fit the image but leave white space, "cover" will fit the container but cut off the image, size can also be manually set */
+	background-attachment: scroll; 
+    background-position: top;
+    background-size: contain;
     background-repeat: no-repeat;
 
     width: 10rem;
@@ -227,9 +246,9 @@ select::-ms-expand {
 .page-banner{
 	background-image: url("../img/home-panorama.jpg"); 
 
-	background-attachment: scroll; /* change to "fixed" if a scrolling effect is wanted */
-    background-position: top; /* controls which edge the picture snaps to */
-    background-size: cover; /* "contain" will fit the image but leave white space, "cover" will fit the container but cut off the image, size can also be manually set */
+	background-attachment: scroll; 
+    background-position: top; 
+    background-size: cover;
     background-repeat: no-repeat;
     min-height: 20rem;
 
@@ -241,12 +260,11 @@ select::-ms-expand {
 	width: 100%;
 }
 
-.page-banner h2{
-	font-size: 1.1rem;
-	color: var(--blue);
-	text-align: center; 
+.page-banner p {
 	margin-top: 0;
-	font-weight: 100;
+	text-align: center; 
+
+	color: var(--blue);
 }
 
 @media(max-width: 37rem){
@@ -262,12 +280,11 @@ select::-ms-expand {
 .foot-banner {
 	margin-top: 1rem;
 
-	background-image: url("../img/ripples.jpg");  /* eventually switch this to an child id of .head-banner */
-	/* display: block; dont know what this was for */
+	background-image: url("../img/ripples.jpg");
 
-    background-attachment: scroll; /* change to "fixed" if a scrolling effect is wanted */
-    background-position: center; /* controls which edge the picture snaps to */
-    background-size: cover; /* "contain" will fit the image but leave white space, "cover" will fit the container but cut off the image, size can also be manually set */
+    background-attachment: scroll;
+    background-position: center;
+    background-size: cover; 
     background-repeat: no-repeat;
 }
 
@@ -423,9 +440,7 @@ select::-ms-expand {
 	justify-content: center;
 	text-align: center;
 
-	border: solid;
-	border-width: 1px;
-	border-color: var(--blue);
+	border: 1px solid var(--blue);
 }
 
 .jet-ski-panel h3 {
@@ -483,11 +498,11 @@ td {
 .product-image{
 	background-image: url("../img/spark.png"); 
 
-	background-attachment: scroll; /* change to "fixed" if a scrolling effect is wanted */
-    background-position: top; /* controls which edge the picture snaps to */
-    background-size: 100%; 
-    /*background-size: cover;  "contain" will fit the image but leave white space, "cover" will fit the container but cut off the image, size can also be manually set */
+	background-attachment: scroll;
+    background-position: top;
+    background-size: contain;
     background-repeat: no-repeat;
+
 	height: 35rem;
 	margin-top: 4rem;
 }
@@ -495,18 +510,6 @@ td {
 .product-image img{
 	width: 100%;
 	margin-top: 4rem;
-}
-
-.product-image p{
-	color: var(--black);
-}
-
-.product-info p{
-	color: var(--black);
-}
-
-.product-info h4{
-	color: var(--black);
 }
 
 .product-info h3{
@@ -539,40 +542,7 @@ td {
   	text-decoration: none; 
 }
 
-.price-button:hover{
-	background-color: var(--blue);
-	color: white;
-	transition: 0.2s ease-in;
-}
-
-.center{
-	text-align: center;
-}
-
-.price-button a{
-	color: var(--blue);
-}
-
-.submitted-reviews{
-	color: var(--black);
-}
-
-.persona{
-	color: var(--gray);
-}
-
-#reviews{
-	margin-top: 4rem;
-}
-
-.blue-header{
-	color: var(--blue);
-}
-/* Product Detail End */
-
-
-/* ------------------------------------------ About ------------------------------------------ */
-
+/* kill these */
 @media(max-width: 78.9375rem){
 	.space{
 		height: 38rem;
@@ -619,61 +589,56 @@ td {
 		height: 53rem;
 	}
 }
+
+
+/* Product Detail End */
+
+
+/* ------------------------------------------ About ------------------------------------------ */
+
+
 /*Product Detail End */ 
 
-/*About Begin*/ 
-#who-we-are{
-	margin-top: 4rem;
-}
-
-#who-we-are{
-	color: var(--black);
-}
-
-.values{
+/*About Begin*/
+.values {
 	border: 1px solid var(--yellow);
-	padding: 1.5rem;
-	height: 370px;
 }
 
-#company-values h3{
-	color: var(--yellow);
-	text-align: center;
+.values h3{
 	font-family: 'Againts', sans-serif;
+
 	font-size: 5rem;
 	margin: 0;
+	text-align: center;
+
+	color: var(--yellow);
 }
 
-#company-values p{
-	color: var(--black);
+#thomas-portrait {
+	background-image: url("../img/jayZ-portrait.jpg");
+
+    background-attachment: scroll; 
+    background-position: center; 
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    width: 100%;
+    height: calc(100vh * .8); /* idk what to do with this, maybe fixed height and a media query? */
 }
 
-#company-values{
-	margin-top: 4rem;
+#salathiel-portrait {
+	background-image: url("../img/otherPortrait.jpg");
+
+    background-attachment: scroll; 
+    background-position: center; 
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    width: 100%;
+    height: calc(100vh * .8); /* idk what to do with this, maybe fixed height and a media query? */
 }
 
-#meet-the-team{
-	margin-top: 4rem;
-}
 
-#meet-the-team img{
-	width: 100%;
-}
-
-#meet-the-team h3{
-	margin: 1.5rem 0 0.5rem 0;
-}
-
-#meet-the-team h4{
-	font-weight: 100;
-	margin: 0;  
-	font-size: 1.5rem;
-	color: var(--gray);
-}
-
-#meet-the-team p{
-	color: var(--black);
-}
 
 .feature-map{
 	height:400px;
@@ -685,20 +650,6 @@ td {
 	width: 100% !important;
 	height:100% !important;
 }
-
-#contact-us .grid-col-1of3{
-	padding: 0 2rem;
-}
-
-#contact-us h3{
-	color: var(--black);
-}
-
-#contact-us p{
-	color: var(--black);
-	font-size: 0.9rem;
-	margin: 0;
-}
 /*About End*/ 
 
 /*Submit Review Begin*/ 
@@ -706,24 +657,6 @@ td {
 /* ------------------------------------------ Review ------------------------------------------ */
 .left{
 	text-align: right; 
-}
-
-.top-space{
-	margin-top:2.5rem;
-	padding-top: 1rem;
-}
-
-.button-top-space{
-	margin-top:2.5rem;
-	padding-top: 1rem;
-}
-
-#submit-review h2{
-	margin: 4rem 0 2rem 0;
-}
-
-#submit-review p{
-	color: var(--black);
 }
 
 input[type=text] {
@@ -756,12 +689,6 @@ input[type=text] {
 	font-weight: 100; 
 }
 
-select{
-/*  -webkit-appearance: none;
-  -webkit-border-radius: 0px;*/
-
-}
-
 .styled-select {
 	background: transparent;
 	width: 100%;
@@ -774,45 +701,9 @@ select{
 	margin-top: 2rem;
 }
 
-#submit-review textarea{
-	width:100%;
-	padding:0.8rem;
-	border: 1px solid var(--blue);
-	margin-top: 0.5rem;
-}
-
-.review-area{
-	margin-top: 2rem;
-}
-
-#submit-review .price-button{
-	/*margin-top: 2rem;*/
-	padding: 0.5rem 3rem;
-	font-size: 2.5rem;
-  	border: 1px solid var(--blue);
-  	color: var(--blue); 
-  	margin-top: 2rem;	
-  	text-decoration: none; 
-}
-
-#submit-review .price-button:hover{
-	background-color: var(--blue);
-	color: white;
-	transition: 0.2s ease-in;
-}
-
 @media(max-width: 46.875rem){
-	#submit-review .grid-col-1of2{
-		width:100%;
-	}
-
 	.left{
 		text-align: left;
-	}
-
-	.top-space{
-		margin: 0;
-		padding: 0;
 	}
 }
 /* Review End */
