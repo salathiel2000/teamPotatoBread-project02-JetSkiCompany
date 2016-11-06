@@ -17,34 +17,31 @@
 	</head>
 
 	<body>
-
-		<header class="page-banner grid-row"> <!-- maybe set extra settings for header/footer and sections rather than using full and content grid rows -->
+		<header class="page-banner grid-row">
 			<div class="grid-row-section">
-					
-				<nav class="menu">
+				<nav class="grid-col-1of1">
 					<div class="menu-logo box">
-						<a href="about.html" class="menu-logo box-item-no-grow">
-						<img src="img/logo.png" alt="company logo with yellow hand written script that says Jeti and white serif font that says rental"/>
-						</a>
+						<a href="index.html" class="menu-logo box-item"></a>
 					</div>
 
 					<div class="menu-buttons box">
-						<a href="about.html" class="box-item-no-grow">JET SKIS</a>
-						<a href="about.html" class="box-item-no-grow">REVIEW</a>
-						<a href="about.html" class="box-item-no-grow">ABOUT</a>
+						<a href="index.html#jet-skis" class="box-item">JET SKIS</a> <!-- add scroll smoothing -->
+						<a href="review.html" class="box-item">REVIEW</a>
+						<a href="about.html" class="box-item">ABOUT</a>
 					</div>
 				</nav>
 			</div>
 
-
 			<div class="grid-row-section">
-				<h1>REVIEW</h1>
-				<h2>Make sure all the information is correct</h2>
+				<div class="grid-col-1of1">
+					<h1>REVIEW INFORMATION</h1>
+					<h2>Ensure the entered information is correct</h2>
+				</div>
 			</div>
 		</header>
 
 		<section id="order-summary">
-			<div class="grid-row-section">	
+			<div class="grid-row-section">
 				<div class="grid-col-1of3">
 					<div class="order-summary">
 						<h2>BOOKING INFORMATION</h2>
@@ -88,10 +85,12 @@
 			</div>
 
 			<div class="grid-row-section">
-				<form>
-					<input id="book-cancel" type="submit" value="Cancel">
-					<a href="confirmation.html" class="price-button test-button">Complete Order</a>
-				</form>
+				<div class="grid-col-1of1">
+					<form>
+						<input id="book-cancel" type="submit" value="Cancel">
+						<a href="confirmation.html" class="price-button test-button">Complete Order</a>
+					</form>
+				</div>
 			</div>
 		</section>
 

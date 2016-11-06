@@ -17,11 +17,11 @@
 	</head>
 
 	<body>
-		<header class="page-banner grid-row"> <!-- maybe set extra settings for header/footer and sections rather than using full and content grid rows -->
+		<header class="page-banner grid-row">
 			<div class="grid-row-section">
-				<nav class="menu">
+				<nav class="grid-col-1of1">
 					<div class="menu-logo box">
-						<a href="index.html" class="menu-logo box-item">	</a>
+						<a href="index.html" class="menu-logo box-item"></a>
 					</div>
 
 					<div class="menu-buttons box">
@@ -33,12 +33,16 @@
 			</div>
 
 			<div class="grid-row-section">
-				<h1>BOOK</h1>
+				<div class="grid-col-1of1">
+					<h1>BOOK</h1>
+				</div>
 			</div>
 		</header>
 
 		<section class="grid-row-section">
-			<h2 class="yellow">BOOKING INFORMATION</h2>
+			<div class="grid-col-1of1">
+				<h2 class="yellow">BOOKING INFORMATION</h2>
+			</div>
 
 			<div class="grid-col-1of2">
 				<select class="styled-select">
@@ -104,25 +108,23 @@
 
 					<p>Light and easy to handle</p>
 
-					<div class="grid-col-1of2"> <!-- need grid rows here? -->
-						<h3>RIDER CAPACITY</h3>
-					</div>
-					<div class="grid-col-1of2">
-						<h3>2</h3>
-					</div>
+					<div class="grid-col-1of1">
+						<table>
+							<tr>
+								<td><h3>RIDER CAPACITY</h3></td>
+								<td><h3>2</h3></td>
+							</tr>
 
-					<div class="grid-col-1of2">
-						<h3>SPEED</h3>
-					</div>
-					<div class="grid-col-1of2">
-						<h3>60HP</h3>
-					</div>
+							<tr>
+								<td><h3>SPEED</h3></td>
+								<td><h3>60HP</h3></td>
+							</tr>
 
-					<div class="grid-col-1of2">
-						<h3>WEIGHT</h3>
-					</div>
-					<div class="grid-col-1of2">
-						<h3>160 Kg</h3>
+							<tr>
+								<td><h3>WEIGHT</h3></td>
+								<td><h3>160KG</h3></td>
+							</tr>
+						</table>
 					</div>
 
 					<h2>$60/HR</h2>
@@ -131,25 +133,29 @@
 		</section>
 
 		<section class="grid-row-section">
-			<h2 class="yellow">PASSENGER INFORMATION</h2>
-			<form>
-				<input type="text" placeholder="FIRST NAME">
-				<input type="text" placeholder="LAST NAME">
-				<input type="text" placeholder="EMAIL ADDRESS (THIS IS WHERE WE’LL SEND YOUR CONFIRMATION)">
-			</form>
+			<div class="grid-col-1of1">
+				<h2 class="yellow">PASSENGER INFORMATION</h2>
+				<form>
+					<input type="text" placeholder="FIRST NAME">
+					<input type="text" placeholder="LAST NAME">
+					<input type="text" placeholder="EMAIL ADDRESS (THIS IS WHERE WE’LL SEND YOUR CONFIRMATION)">
+				</form>
+			</div>
 		</section>
 
 		<section id="payment-information" class="grid-row-section">
-			<h2 class="yellow">PAYMENT INFORMATION</h2>
-			<form>
-				<input type="text" placeholder="NAME ON CARD">
-				<input type="text" placeholder="CARD NUMBER">
-				<input type="text" placeholder="EXPIRATION DATE (MM/YY)">
-				<input type="text" placeholder="CVC (3 DIGITS ON BACK OF CARD)">
-				<input id="book-cancel" type="submit" value="Cancel">
-				<a href="booking-review.html" class="price-button test-button">Submit</a>
-				<!-- <a href="index.html"><input id="book-submit" type="submit" value="Submit"></a> -->
-			</form>
+			<div class="grid-col-1of1">
+				<h2 class="yellow">PAYMENT INFORMATION</h2>
+				<form>
+					<input type="text" placeholder="NAME ON CARD">
+					<input type="text" placeholder="CARD NUMBER">
+					<input type="text" placeholder="EXPIRATION DATE (MM/YY)">
+					<input type="text" placeholder="CVC (3 DIGITS ON BACK OF CARD)">
+					<input id="book-cancel" type="submit" value="Cancel">
+					<a href="booking-review.html" class="price-button test-button">Submit</a>
+					<!-- <a href="index.html"><input id="book-submit" type="submit" value="Submit"></a> -->
+				</form>
+			</div>
 		</section>
 
 		<section class="foot-banner grid-row">

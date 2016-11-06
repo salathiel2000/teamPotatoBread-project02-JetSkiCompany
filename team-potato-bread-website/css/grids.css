@@ -106,13 +106,17 @@ section {
 	width:33.3333%;
 }
 
-
-
+.grid-col-1of2-permanent { /* used for panel details where the widths are super small and dont need to be adjusted */
+	width: 50%;
+}
 
 .product-image .grid-col-1of2{
 	padding: 22rem 4rem 0 1rem;
 }
 
+
+/* thse look fine but they are different from the rest of the site grid structure */
+/* 
 #company-values .grid-col-1of3:nth-child(2){
 	padding: 0 1rem 0 0;
 }
@@ -121,13 +125,10 @@ section {
 	padding: 0 1rem 0 0;
 }
 
-#order-summary .grid-col-1of3{
-	padding: 0 1rem 0 0;
-}
-
 #meet-the-team .grid-col-1of2{
 	padding: 0 4rem;
 }
+*/
 
 @media(max-width: 69.1775rem){
 	.grid-row-section{

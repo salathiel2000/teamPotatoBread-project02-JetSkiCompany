@@ -1,9 +1,20 @@
 /* ------------------------------------------ Notes ------------------------------------------ */
-/* 1rem = 16pt font */
-/* we need to level out some of the beach images */
-/* png images need to be edited so they dont waterfall-load */
-/* include links to github and sytle guide and other things in bottom of page */
-/* properly define classes and ids */
+/*
+we need to level out some of the beach images
+png images need to be edited so they dont waterfall-load
+include links to github and sytle guide and other things in bottom of page
+properly define classes and ids
+add consistent text styling
+add consistent button & interactable styling
+addback in arrow for seleciton boxes
+
+Guidelines: 
+
+attribute order: size, location, styling
+1rem = 16pt font
+
+
+
 
 /* ------------------------------------------ New Website ------------------------------------------ */
 
@@ -16,61 +27,152 @@ html {
 	--dark-gray: rgb(56, 56, 56);
 	--light-gray: rgb(187, 187, 187);
 	--transparent: rgba(0, 0, 0, 0);
-
-
 }
 
 /* Text */
-h1 {
-	font-size: 3.75rem; /* 60pt */
-
-	margin: 40vh 0 5rem 0;
+h1 { /* ALL CAPS */
+	font-size: 5rem; /* 80pt */
+	font-weight: 500; /* medium */
 
 	color: var(--white);
+
+	text-align: center; 
+	margin-top: 2rem;
+	margin-bottom: 0;
 }
 
-h2 {
+h2 { /* ALL CAPS */
 	font-size: 2.25rem; /* 36pt */
+	font-weight: 500; /* medium */
 
 	color: var(--blue);
 }
 
-h3 {
-	font-size: 1.625rem; /* 26pt */
+h3 { /* ALL CAPS */
+	font-size: 1.5rem; /* 24pt */
+	font-weight: 500; /* medium */
+
+	color: var(--dark-gray);
 }
 
-h4 {
+h4 { /* Sentence case */
 	font-size: 1.125rem; /* 18pt */
+	font-weight: 200; /* light */
+
+	color: var(--dark-gray);
 }
 
-h5 {
-	font-size: 0.875rem; /* 14pt */
+h5 { /* Sentence case */
+	font-size: 1.125rem; /* 18pt */
+	font-weight: 200; /* light */
+
+	color: var(--light-gray);
 }
 
-h6 {
-	font-size: 0.75rem; /* 12 pt */
+h6 { /* ALL CAPS */
+	font-size: 0.875rem; /* 14 pt */
+	font-weight: bold; /* bold */   /* where is the actual bold 700 weight font? */
 }
 
 p {
-	font-size: 1rem; /* 14pt */
-	line-height: 180%; 
-	font-weight: 100;
+	font-size: 0.875rem; /* 14pt */
+	
+	font-weight: 200; /* light */
+
 	color: var(--dark-gray);
-	/*color: var(--white);*/
+	
+	line-height: 180%; 
 }
 
-a {
-	text-decoration: none;
+a { /* Sentence case */
+	font-size: 1.125rem; /* 18pt */
+	font-weight: 500; /* medium */
+
 	color: var(--blue);
-	/*font-size: 1.125rem;*/ /* 18pt */
+
+	text-decoration: none;
 }
 /* Universal End */
 
 /* ------------------------------------------ Header ------------------------------------------ */
-.menu {
-	padding: 2rem 0;
+/* Home Header */
+.head-banner {
+	background-image: url("../img/jet-ski-banner.jpg");  /* eventually switch this to an child id of .head-banner */
+
+    background-attachment: scroll; /* change to "fixed" if a scrolling effect is wanted */
+    background-position: center; /* controls which edge the picture snaps to */
+    background-size: cover; /* "contain" will fit the image but leave white space, "cover" will fit the container but cut off the image, size can also be manually set */
+    background-repeat: no-repeat;
+
+
+    min-height: 100vh; /* Home banner fills screen */
+
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
+
+/* Different h1 styling for home header */
+.head-banner h1 {
+	font-size: 3.75rem; /* 60pt */
+	margin: 25vh 0 5rem 0;
+	text-align: left;
+}
+
+/* Selection Box Styling (removes arrow) */
+select {
+	-moz-appearance: none;
+	-webkit-appearance:none;
+}
+
+select::-ms-expand {
+	display: none;
+}
+
+.suggestion-menu {
+	justify-content: left;
+	justify-content: -ms-left;
+	justify-content: -webkit-left;
+}
+
+.suggestion-menu select {
+	width: 15rem; /* default width */
+	max-width: 100%; /* fits selectors to small screen widths */
+
+	padding: 1rem;
+	margin: 1rem 2rem 1rem 0;
+
+	color: var(--white);
+	background-color: var(--transparent);
+	border-color: var(--blue);
+
+	border-width: 1px;
+}
+
+.suggestion-menu input {
+	max-width: 100%;
+	width: 15rem;
+
+	padding: 1rem;
+	margin: 1rem 0 1rem 0;
+
+	color: var(--white);
+	background-color: var(--blue);
+	border-color: var(--blue);
+
+
+	border-width: 2px;
+}
+
+@media(max-width: 24.2rem){
+	.head-banner h1 {
+		font-size: 2.5rem;
+		margin: 10vh 0 2rem 0;
+	}
+
+}
+
+/* Page Header */
 .menu-logo {
 	background-image: url("../img/logo.png"); 
 
@@ -87,8 +189,8 @@ a {
 
 .menu-buttons {
 	width: 20rem;
-
 	float: right;
+	color: var(--white);
 }
 
 /* Product Detail Begin */ 
@@ -100,14 +202,10 @@ a {
     background-position: top; /* controls which edge the picture snaps to */
     background-size: cover; /* "contain" will fit the image but leave white space, "cover" will fit the container but cut off the image, size can also be manually set */
     background-repeat: no-repeat;
-    height: 20rem;
-}
+    min-height: 20rem;
 
-.page-banner h1{
-	font-size: 5rem;
-	text-align: center; 
-	margin-top: 2rem;
-	margin-bottom: 0;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
 .page-banner img{
@@ -122,13 +220,12 @@ a {
 	font-weight: 100;
 }
 
-@media(max-width: 24.2rem){
+@media(max-width: 37rem){
 	.menu-buttons {
 		max-width: 30%;
 		display: inline;
 	}
 }
-
 /* Header End */
 
 
@@ -252,94 +349,7 @@ a {
 
 /* ------------------------------------------ Page Specific ------------------------------------------ */
 /* ------------------------------------------ Home ------------------------------------------ */
-/* Header */
-header a{
-	color: white;
-}
 
-/* Removes the arrow from the selection boxes */
-select {
-	-moz-appearance: none;
-	-webkit-appearance:none;
-}
-
-select::-ms-expand {
-	display: none;
-}
-
-.head-banner { /* gap at the top comes from the h1 margin padding, dont worry about this until h1 is placed */
-	min-height: 100vh; /* ensures that the banner is the only thing on screen when scrolled to the top */
-
-	background-image: url("../img/jet-ski-banner.jpg");  /* eventually switch this to an child id of .head-banner */
-	/* display: block; dont know what this was for */
-
-    background-attachment: scroll; /* change to "fixed" if a scrolling effect is wanted */
-    background-position: center; /* controls which edge the picture snaps to */
-    background-size: cover; /* "contain" will fit the image but leave white space, "cover" will fit the container but cut off the image, size can also be manually set */
-    background-repeat: no-repeat;
-
-}
-
-.head-banner h1 {
-	margin: 25vh 0 5rem 0;
-}
-
-.head-banner img { /* condesnse */
-	width:20%;
-}
-
-#slogan {
-	max-width: 50%;
-}
-
-@media(max-width: 46.875rem){
-	#slogan {
-		max-width: 100%;
-	}
-}
-
-.suggestion-menu {
-	justify-content: left;
-	justify-content: -ms-left;
-	justify-content: -webkit-left;
-}
-
-.suggestion-menu select {
-	max-width: 100%;
-	width: 15rem;
-
-	padding: 1rem;
-	margin: 1rem 2rem 1rem 0;
-
-	color: var(--white);
-	background-color: var(--transparent);
-	border-color: var(--blue);
-
-	border-width: 1px;
-}
-
-.suggestion-menu input {
-	max-width: 100%;
-	width: 15rem;
-
-	padding: 1rem;
-	margin: 1rem 0 1rem 0;
-
-	color: var(--white);
-	background-color: var(--blue);
-	border-color: var(--blue);
-
-
-	border-width: 2px;
-}
-
-@media(max-width: 24.2rem){
-	.head-banner h1 {
-		font-size: 2.5rem;
-		margin: 10vh 0 2rem 0;
-	}
-
-}
 
 .who-are-we-img {
 	background-image: url("../img/beach-copy.jpg");
@@ -385,6 +395,14 @@ select::-ms-expand {
 	border: solid;
 	border-width: 1px;
 	border-color: var(--blue);
+}
+
+table {
+	width: 100%;
+}
+
+td {
+	width: 50%;
 }
 
 .book-button {
@@ -707,14 +725,6 @@ select::-ms-expand {
 	color: var(--dark-gray);
 }
 
-.middle-space:nth-child(1){
-	padding-right: 1rem;
-}
-
-.middle-space:nth-child(2){
-	padding-left: 1rem ;
-}
-
 input[type=text] {
 	width: 100%; 
 	height: 60px;
@@ -795,14 +805,6 @@ select{
 		width:100%;
 	}
 
-	.middle-space:nth-child(2){
-		padding-left:0;
-	}
-
-	.middle-space:nth-child(1){
-		padding-right:0;
-	}
-
 	.left{
 		text-align: left;
 	}
@@ -867,12 +869,16 @@ select{
 	border-width: 2px;
 }
 
+
+
+
 /* ------------------------------------------ Booking Review ------------------------------------------ */
 .order-summary{
 	border: 1px solid var(--blue);
 	padding: 1.5rem;
 	height: 40rem;
-	margin: 5rem 0 5rem 0;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
 }
 
 .order-summary h2 {
@@ -982,111 +988,3 @@ select{
 		font-size: 2rem;
 	}
 }
-
-/*-------------- Old --------------*/
-/*-------------- Tags --------------*/
-
-html {
-
-	/* Color Variables */
-
-	--primary-light: rgb(233,175,0); /* yellow */
-	--secondary-light: rgb(107,144,255); /* baby blue */
-	--primary-dark: rgb(12,37,69); /* navy blue */
-	--white: white;
-	--gray: rgb(238,238,238);
-	--black: black;
-}
-
-
-body {
-	font-family: 'Montserrat', sans-serif; 
-	margin: 0;
-}
-
-/* Text */
-.in-text-link {
-	font-size: 1rem; 
-	color: var(--secondary-light);
-}
-
-.code-style {
-	background-color: #EEE;
-	padding: 15px; 
-	width: 65%;
-	border-left: 2px solid color: var(--secondary-light);;
-	border-radius: 4px;
-}
-
-/* Lists */
-.ul-style {
-	list-style-type: circle; 
-}
-
-.ul-style li {
-	padding: 7px 0 7px 0;
-}
-
-.ol-style li {
-	padding: 7px 0 7px 0;
-}
-
-/* Buttons */
-.button {		/* is exactly the same as submit-button for now */
-	width: 10rem;
-  	padding-top: 0.5rem; 
- 	padding-bottom: 0.5rem;
-  	padding-left: 1.5rem;
-  	padding-right: 1.5rem;
-  	background-color: #deb012; 
-  	border-radius: 4px; 
-  	border: none;
-  	color: var(--white); 	
-  	text-decoration: none; 
-
- 	margin-top: 2rem;
-}
-
-.button:hover {
-	background-color: var(--secondary-light);
-	transition: 0.5s, ease-in;
-}
-
-/* Forms */
-.submit-button {
-	width: 10rem;
-  	padding-top: 0.5rem; 
- 	padding-bottom: 0.5rem;
-  	padding-left: 1.5rem;
-  	padding-right: 1.5rem;
-  	background-color: #deb012; 
-  	border-radius: 4px; 
-  	border: none;
-  	color: var(--white); 	
-  	margin-top:1rem;
-  	text-decoration: none; 
-}
-
-.reset-button {
-	color: #deb012;
-	text-decoration: underline;
-	border: none;
-	background-color: var(--white);
-}
-
-.submit-button:hover {
-	background-color: var(--secondary-light);
-	transition: 0.5s, ease-in;
-}
-/* Old Website End */
-
-.test-button{
- 	width: 25%;
-    float: right;
-    margin-top: 1rem;
- }
-
- .price{
- 	width: 100%;
- }
-
