@@ -32,8 +32,10 @@ html {
 	--gray: rgb(187, 187, 187);
 	--transparent: rgba(0, 0, 0, 0);
 
+	font-family: "Montserrat", Arial, sans-serif; 
 	font-size: 1.125rem; /* default h4 font size */
 	font-weight: 200;
+
 }
 
 /* Text */
@@ -92,15 +94,17 @@ p {
 }
 
 a { /* Sentence case */
-	font-size: 1.125rem; /* 18pt */
-	font-weight: 500; /* medium */
+	font-size: 0.875rem; /* 18pt */
+	font-weight: 200; /* medium */
 
 	color: var(--blue);
 
 	text-decoration: none;
 }
 
+
 a:hover {
+	text-decoration: underline
 	color: var(--yellow);
 	cursor: pointer;
 	transition: 0.1s ease-in-out;
@@ -109,6 +113,58 @@ a:hover {
 input { /* the "user agent stylesheet" overrides some css styling of the attributes in the input tag are not directly set */
 	border-style: solid;
 	border-width: 0;
+}
+
+input[type=date]{
+	width: 100%; 
+	height: 60px;
+	padding-left: 20px;
+	margin-top: 2rem; 
+	/*color: white;*/
+	border: 1px solid var(--blue);
+	box-sizing: border-box;
+}
+
+input[type=time]{
+	width: 100%; 
+	height: 60px;
+	padding-left: 20px;
+	margin-top: 2rem; 
+	/*color: white;*/
+	border: 1px solid var(--blue);
+	box-sizing: border-box;
+}
+
+input[type=number]{
+	width: 100%; 
+	height: 60px;
+	padding-left: 20px;
+	margin-top: 2rem; 
+	/*color: white;*/
+	border: 1px solid var(--blue);
+	box-sizing: border-box;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button {  
+
+   opacity: 1;
+
+}
+
+input[type=time]::-webkit-inner-spin-button, 
+input[type=time]::-webkit-outer-spin-button {  
+
+   opacity: 1;
+
+}
+
+input[type=date]::-webkit-inner-spin-button, 
+input[type=date]::-webkit-outer-spin-button {  
+
+   opacity: 1;
+
+>>>>>>> origin/salathiel
 }
 
 img {
@@ -652,12 +708,34 @@ td {
 	text-align: right; 
 }
 
+.top-space{
+	margin-top:2.5rem;
+	padding-top: 1rem;
+}
+
+.button-top-space{
+	margin-top:2.5rem;
+	padding-top: 1rem;
+}
+
+#submit-review h2{
+	margin: 4rem 0 2rem 0;
+}
+
+#submit-review p{
+	color: var(--black);
+}
+
+.black-text{
+	color:black;
+}
+
 input[type=text] {
 	width: 100%; 
 	height: 60px;
 	padding-left: 20px;
 	margin-top: 8px; 
-	color: var(--white);
+	/*color: white;*/
 	border: 1px solid var(--blue);
 	box-sizing: border-box;
 }
@@ -685,6 +763,49 @@ input[type=text] {
 .styled-select { /* this really needs to be fixed */
 	width: 100%;
 	height: 60px; 
+/*select{
+	cursor: pointer;
+}*/
+
+.select-option{
+	background: white;
+	width: 100%;
+	padding-left: 2rem; 
+	line-height: 1; 
+	height: 60px; 
+	border: 1px solid var(--blue);
+	color: var(--black);
+	font-weight: 100; 
+	margin-top: 2rem;
+}
+
+.select-hidden{
+	display: none;
+	visibility: hidden; 
+	padding-right: 20px; 
+}
+select{
+	-webkit-appearance: none;
+	-moz-appearance: none;
+
+	/*background-position: right 10px center; 
+	background-repeat: no-repeat;
+	background-size: auto 500%; 
+	background: transparent;*/
+	width: 100%;
+	padding-left: 1rem; 
+	line-height: 1; 
+	height: 60px; 
+	border: 1px solid var(--blue);
+	color: var(--black);
+	font-weight: 100; 
+	margin-top: 2rem;
+	border-radius: 0px;
+	cursor: pointer;
+	background: url("../img/dropDown.png") no-repeat right #fff;
+	background-size: auto 15%;
+	background-position: 97%
+}
 
 	padding-left: 2rem; 
 	margin-bottom: 2rem;

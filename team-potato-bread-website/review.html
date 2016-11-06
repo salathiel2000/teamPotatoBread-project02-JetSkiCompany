@@ -53,25 +53,26 @@
 			<form> 
 				 <div class="grid-row-section"> 
 					 <div class="middle-space grid-col-1of2"> 
-					 	<input type="text" id="fname" name="fname" placeholder="First Name"> 
+					 	<input class="black-text" type="text" id="fname" name="fname" placeholder="First Name"> 
 					 </div> 
 
 					 <div class="middle-space grid-col-1of2"> 
-					 	<input type="text" id="lname" name="lname" placeholder="Last Name"> 
+					 	<input class="black-text" type="text" id="lname" name="lname" placeholder="Last Name"> 
 					 </div> 
 				 </div>
 
 				 <div class="grid-row-section">
-				 	<div class="grid-col-1of1">
+				 	<div class="grid-col-1of1 dropdown">
 						<select class="styled-select"> 
-							 <option value="option1">Choose an option</option> 
+							 <option value="option1"="">Choose an option</option> 
 							 <option value="option2">Another one</option> 
 							 <option value="option3">Here's another one</option> 
 						</select>
 					</div>
 				</div>
 
-				<div class="review-area grid-row-section"> 
+
+			<div class="review-area grid-row-section"> 
 					<div class="grid-col-1of1">
 				 		<textarea name="textarea" rows="10" cols="50" placeholder="Write your review here..."></textarea>
 				 	</div>
@@ -108,6 +109,10 @@
 
 					<div class="box-left box-center-align grid-row">
 						<div class="facebook icon box-item"></div> <!-- facebook icon needs to be expaned to line up with edge of the image -->
+						<div class="facebook icon"></div> <!-- facebook icon needs to be expaned to line up with edge of the image -->
+
+
+
 						<p class="box-item">Facebook</p>
 					</div>
 
@@ -149,6 +154,11 @@
 					<p class="footer-telephone-1">1 (242) 466-7981</p>
 				</div>
 			</div>
-		</section>
+		</section> 
+
+
+	<script src="js/zepto.js"></script>
+    <script src="js/main.js"></script>
+
 	</body>
 </html>
