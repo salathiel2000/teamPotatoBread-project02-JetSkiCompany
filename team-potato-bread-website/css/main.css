@@ -163,8 +163,6 @@ input[type=date]::-webkit-inner-spin-button,
 input[type=date]::-webkit-outer-spin-button {  
 
    opacity: 1;
-
->>>>>>> origin/salathiel
 }
 
 img {
@@ -217,6 +215,10 @@ textarea {
 	padding:0.8rem;
 	border: 1px solid var(--blue);
 	margin-top: 0.5rem;
+}
+
+select, textarea, input {
+	outline-color: var(--yellow);
 }
 
 /* Universal End */
