@@ -246,11 +246,13 @@ img {
 
 .small-button, .large-button {
 	padding: 1rem;
+	margin-top: 1rem;
 
 	display: inline-block;
 
 	color: var(--white);
 	background-color: var(--blue);
+
 }
 
 .small-button:hover, .large-button:hover {
