@@ -746,14 +746,13 @@ table{
 	text-align: center;
 
 	border: 1px solid var(--blue);
+
+	margin-bottom: 1rem;
 }
 
 .jet-ski-panel h3 {
 	color: var(--yellow);
 }
-
-
-
 
 .jet-ski-panel a { /* make the a tag work like a button in the jet ski panel (maybe find a better fix for this with time) */
 	display: inline-block;
