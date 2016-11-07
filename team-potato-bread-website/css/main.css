@@ -867,11 +867,14 @@ td {
 	.product-info .grid-col-1of2{
 		width: 100%;
 		margin-top: 2rem;
+		padding:0;
 	}
 
 	.space{
 		height: 35rem;
 	}
+
+
 }
 
 @media(max-width: 35.125rem){
@@ -1161,6 +1164,7 @@ select{
 	.product-image{
 		height: 100%;
 	}
+
 }
 
 @media(max-width: 36.25rem){
@@ -1271,6 +1275,34 @@ select{
 @media(max-width: 34.365rem){
 	.jet-ski-panel{
 		height: 850px;
+	}
+}
+
+@media(max-width: 60.5625rem){
+	.info-panel{
+		height: 600px;
+	}
+}
+
+@media(max-width: 48.75rem){
+	.info-panel{
+		height: 450px;
+	}
+}
+
+@media(max-width: 31.5rem){
+	.info-panel{
+		height: 650px;
+	}
+}
+
+@media(max-width: 56.625rem){
+	.product-info .grid-col-1of2:nth-child(1){
+		padding-left:0;
+	}
+
+	.product-info .grid-col-1of2:nth-child(2){
+		padding-right:0;
 	}
 }
 
