@@ -285,6 +285,13 @@ section{
 	padding-right: 0;
 }
 
+@media(max-width: 46.25rem){
+	.remove-padding-left, .remove-padding-right {
+	padding-left: 0;
+	padding-right: 0;
+	}
+}
+
 #payment-information .small-button{
 	padding: 1rem 3rem;
 }
@@ -1220,7 +1227,3 @@ select{
 	color: var(--yellow);
 	padding: 1rem;
 }	
-
-
-
->>>>>>> salathiel
