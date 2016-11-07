@@ -27,7 +27,7 @@ attribute order: size, location, styling
 
 /* Color Variables */
 html {
-	--white: white;
+	--white: rgb(255, 255, 255);
 	--yellow: rgb(242, 187, 5);
 	--blue: rgb(31, 186, 214);
 	--black: rgb(56, 56, 56);
@@ -39,6 +39,52 @@ html {
 	font-weight: 200;
 
 }
+
+#swatch-yellow, #swatch-blue, #swatch-gray, #swatch-black {
+	border-width: 0;
+	height: 10rem;
+	width: 10rem;
+	display: inline-block;
+	margin-right: 1rem;
+	margin-bottom: 1rem;
+	padding: 1rem;
+}		
+
+#swatch-white {
+	border-width: 1px;
+	border-style: solid;
+	height: 10rem;
+	width: 10rem;
+	display: inline-block;
+	margin-right: 1rem;
+	margin-bottom: 1rem;
+	padding: 1rem;
+
+	border-color: var(--black);
+	background-color: var(--white);
+}
+
+#swatch-yellow {
+	background-color: var(--yellow);
+}
+
+#swatch-blue {
+	background-color: var(--blue);
+}
+
+#swatch-gray {
+	background-color: var(--gray);
+}
+
+#swatch-black {
+	background-color: var(--black);
+}
+
+.white {
+	color: var(--white);
+}
+
+
 
 .black-background { /* styleguide only */
 	background-color: var(--black);
@@ -579,10 +625,6 @@ td {
 	.jet-ski-panel {
 		max-width: 100%;
 	}
-}
-
-.jet-ski-panel h2 {
-	color: var(--yellow);
 }
 
 .jet-ski-panel img {
