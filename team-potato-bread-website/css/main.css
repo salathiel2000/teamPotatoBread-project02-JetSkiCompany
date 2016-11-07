@@ -274,6 +274,21 @@ section{
 	padding-right: 0;
 }
 
+#booking-information .grid-col-1of2:nth-child(1){
+	padding-left: 0;
+	padding-right: 1rem;
+}
+
+#booking-information .grid-col-1of2:nth-child(2){
+	padding-left: 1rem;
+	padding-right: 0;
+}
+
+#booking-information .small-button{
+	padding: 1rem 3rem;
+}
+
+
 .remove-padding-left{
 	padding-left: 0;
 	padding-right: 1rem;
@@ -1309,6 +1324,38 @@ select{
 
 	.product-info .grid-col-1of2:nth-child(2){
 		padding-right:0;
+	}
+}
+
+@media(max-width: 49.25rem){
+	#booking-information .grid-col-1of2{
+	width: 100%;
+	padding:0;
+}
+
+}
+
+@media(max-width: 44.1875rem){
+	#passenger-information .grid-col-1of2:nth-child(1){
+	padding-left: 0;
+	padding-right: 0rem;
+}
+
+#passenger-information .grid-col-1of2:nth-child(2){
+	padding-left: 0rem;
+	padding-right: 0;
+}
+}
+
+@media(max-width: 49.3125rem){
+	#booking-information .small-button{
+		float:left;
+
+	}
+
+	#booking-information .grid-col-1of2:nth-child(2){
+		padding-left:0;
+
 	}
 }
 
