@@ -168,6 +168,10 @@ img {
 	width: 100%;
 }
 
+.header-form{
+	color:white;
+	float:left;
+}
 /* Buttons */ 
 /* buttons usually require specific styling in each use case */
 
