@@ -486,7 +486,7 @@ table{
 .head-banner h1 {
 	font-size: 3.75rem; /* 60pt */
 	margin: 18vh 0 0 0;
-	text-align: center;
+	text-align: left;
 }
 
 .head-banner p{
@@ -552,6 +552,12 @@ table{
 
 .menu-buttons a {
 	color: var(--white);
+}
+
+.menu-buttons a:hover {
+	color: var(--yellow);
+	cursor: pointer;
+	transition: 0.1s ease-in-out;
 }
 
 /* Product Detail Begin */ 
