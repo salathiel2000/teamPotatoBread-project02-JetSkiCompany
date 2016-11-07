@@ -319,11 +319,13 @@ section{
 
 .small-button, .large-button {
 	padding: 2rem;
+	margin-top: 1rem;
 
 	display: inline-block;
 
 	color: var(--white);
 	background-color: var(--blue);
+
 }
 
 .large-button { /* h2 size */
