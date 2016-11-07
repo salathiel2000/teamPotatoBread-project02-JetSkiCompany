@@ -14,6 +14,7 @@ fix usear agent stylesheet screwing with everything (its messing with the inputs
 ensure that all images are put into css as background images
 add links to styleguide, citations, and github repository
 add scroll protection for map
+add smooth scrolling for menu (requires javascript)
 
 Guidelines: 
 
@@ -281,6 +282,13 @@ section{
 .remove-padding-right{
 	padding-left: 1rem;
 	padding-right: 0;
+}
+
+@media(max-width: 46.25rem){
+	.remove-padding-left, .remove-padding-right {
+	padding-left: 0;
+	padding-right: 0;
+	}
 }
 
 #payment-information .small-button{
@@ -567,10 +575,9 @@ table{
 	color: var(--blue);
 }
 
-@media(max-width: 37rem){
+@media(max-width: 43rem){
 	.menu-buttons {
-		max-width: 30%;
-		display: inline;
+		max-width: 5rem;
 	}
 }
 /* Header End */
@@ -737,15 +744,16 @@ table{
 	text-align: center;
 
 	border: 1px solid var(--blue);
+
 		height: 650px;
+
+	margin-bottom: 1rem;
+>>>>>>> origin/master
 }
 
 .jet-ski-panel h3 {
 	color: var(--yellow);
 }
-
-
-
 
 .jet-ski-panel a { /* make the a tag work like a button in the jet ski panel (maybe find a better fix for this with time) */
 	display: inline-block;
@@ -1223,7 +1231,6 @@ select{
 	padding: 1rem;
 }	
 
-
 @media(max-width: 76.25rem){
 	.grid-row-section{
 		padding: 0 2rem;
@@ -1261,3 +1268,5 @@ select{
 		height: 850px;
 	}
 }
+
+>>>>>>> origin/master
