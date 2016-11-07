@@ -98,7 +98,6 @@ basically use rows and columns for each piece of content, one row/column can be 
 /* slot everything into a column */ /* this will create space between each column, edge space is created between column and grid-row */
 .grid-col-1of1 {
 	width: 100%;
-	padding:0;
 }
 
 .grid-col-1of2{
