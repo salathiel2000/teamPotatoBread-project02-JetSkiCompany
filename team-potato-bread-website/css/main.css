@@ -39,7 +39,7 @@ html {
 
 }
 
-.black-background { /* just for the styleguide */
+.black-background { /* styleguide only */
 	background-color: var(--black);
 }
 
@@ -90,7 +90,6 @@ h6 { /* ALL CAPS */
 
 p {
 	font-size: 0.875rem; /* 14pt */
-	
 	font-weight: 200; /* light */
 
 	color: var(--black);
@@ -100,18 +99,26 @@ p {
 
 a { /* Sentence case */ 
 	font-size: 1.125rem; /* 18pt */ /* Salathiel leave this alone, it has to match the h4 text size */
-	font-weight: 200; /* medium */
+	font-weight: 500; /* medium */
 
 	color: var(--blue);
 
 	text-decoration: none;
 }
 
-
 a:hover {
 	color: var(--yellow);
 	cursor: pointer;
 	transition: 0.1s ease-in-out;
+}
+
+code { /* styleguide only */
+	font-size: 0.875rem; /* 14pt */
+	font-weight: 200; /* light */
+
+	color: var(--black);
+	
+	line-height: 180%; 
 }
 
 input { /* the "user agent stylesheet" overrides some css styling of the attributes in the input tag are not directly set */
@@ -250,6 +257,10 @@ select, textarea, input {
 	margin-top: 1rem;
 	margin-bottom: 1rem;
 }
+
+
+.gray-background { /* used for cancel buttons */ /* must come after buttons */
+	background-color: var(--gray);
 }
 
 /* Universal End */
@@ -877,10 +888,6 @@ select{
 	border-width: 1px;
 	border-color: var(--blue);
 	padding: 1rem;
-}
-
-.cancel {
-	background-color: var(--gray);
 }
 
 
