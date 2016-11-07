@@ -104,7 +104,6 @@ a { /* Sentence case */
 
 
 a:hover {
-	text-decoration: underline
 	color: var(--yellow);
 	cursor: pointer;
 	transition: 0.1s ease-in-out;
