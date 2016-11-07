@@ -98,8 +98,8 @@ p {
 	line-height: 180%; 
 }
 
-a { /* Sentence case */
-	font-size: 0.875rem; /* 18pt */
+a { /* Sentence case */ 
+	font-size: 1.125rem; /* 18pt */ /* Salathiel leave this alone, it has to match the h4 text size */
 	font-weight: 200; /* medium */
 
 	color: var(--blue);
@@ -229,7 +229,7 @@ select, textarea, input {
 	outline-color: var(--yellow);
 }
 
-.right{
+.right { 
 	text-align: right; 
 }
 
