@@ -457,27 +457,6 @@ select, textarea, input {
 	margin-top: 1rem;
 }
 
-.footer-form ::-webkit-input-placeholder{
-	color: var(--white);
-	font-weight: 100; 
-}
-
-.footer-form ::-moz-placeholder { /* Firefox 19+ */
-  color: var(--blue);
-	font-weight: 100; 
-}
-
-.footer-form :-ms-input-placeholder { /* IE 10+ */
-  color: var(--blue);
-	
-	font-weight: 100; 
-}
-
-.footer-form :-moz-placeholder { /* Firefox 18- */
-  color: var(--blue);
-	font-weight: 100; 
-}
-
 
 /* Adaptation */
 
@@ -782,30 +761,24 @@ input[type=text] {
 
 ::-webkit-input-placeholder{
 	color: var(--black);
-	font-weight: 100; 
+	font-weight: 200; 
 }
 
 ::-moz-placeholder { /* Firefox 19+ */
-  color: var(--blue);
-	font-weight: 100; 
+  	color: var(--black);
+	font-weight: 200; 
 }
 
 :-ms-input-placeholder { /* IE 10+ */
-  color: var(--blue);
+  	color: var(--black);
 	
-	font-weight: 100; 
-}
-:-moz-placeholder { /* Firefox 18- */
-  color: var(--blue);
-	font-weight: 100; 
+	font-weight: 200; 
 }
 
-.styled-select { /* this really needs to be fixed */
-	width: 100%;
-	height: 60px; 
-/*select{
-	cursor: pointer;
-}*/}
+:-moz-placeholder { /* Firefox 18- */
+  	color: var(--black);
+	font-weight: 200; 
+}
 
 .select-option{
 	background: white;
@@ -826,37 +799,32 @@ input[type=text] {
 }
 
 select{
-	-webkit-appearance: none;
 	/*-moz-appearance: none;*/
 
 	/*background-position: right 10px center; 
 	background-repeat: no-repeat;
 	background-size: auto 500%; 
 	background: transparent;*/
+
+
+	-webkit-appearance: none;
+
 	width: 100%;
-	padding-left: 1rem; 
-	line-height: 1; 
-	height: 60px; 
-	border: 1px solid var(--blue);
-	color: var(--black);
-	font-weight: 100; 
+
+	padding: 1rem; 
 	margin-top: 2rem;
 	border-radius: 0px;
-	cursor: pointer;
+	border: 1px solid var(--blue);
+
+	font-weight: 200; 
+	line-height: 1; 
+	color: var(--black);
+	
 	background: url("../img/dropDown.png") no-repeat right #fff;
 	background-size: auto 15%;
 	background-position: 97%
-}
 
-	padding-left: 2rem; 
-	margin-bottom: 2rem;
-	border: 1px solid var(--blue);
-
-	line-height: 1; 
-
-
-	color: var(--black);
-	background: transparent;
+	cursor: pointer;
 }
 
 @media(max-width: 46.875rem){
