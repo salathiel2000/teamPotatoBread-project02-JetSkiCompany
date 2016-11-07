@@ -84,8 +84,6 @@ html {
 	color: var(--white);
 }
 
-
-
 .black-background { /* styleguide only */
 	background-color: var(--black);
 }
@@ -786,6 +784,7 @@ td {
 @media(max-width: 64.1875rem){
 	.jet-ski-panel {
 		max-width: 100%;
+		margin-top: 2rem;
 	}
 }
 
