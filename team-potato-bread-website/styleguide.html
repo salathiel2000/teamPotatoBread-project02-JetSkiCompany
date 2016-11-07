@@ -379,18 +379,17 @@
 
 							<h4>CSS</h4>
 							<code>
-
-							input[type=text] {<br>
-								width: 100%; <br>
-								height: 60px;<br>
-								padding-left: 20px;<br>
-								margin-top: 8px;<br>
-								border: 1px solid var(--blue);<br>
-								box-sizing: border-box;<br>
-								border-style: solid;<br>
-								border-width: 0;<br>
-								outline-color: var(--yellow);<br>
-							}<br>
+								input[type=text] {<br>
+									width: 100%; <br>
+									height: 60px;<br>
+									padding-left: 20px;<br>
+									margin-top: 8px;<br>
+									border: 1px solid var(--blue);<br>
+									box-sizing: border-box;<br>
+									border-style: solid;<br>
+									border-width: 0;<br>
+									outline-color: var(--yellow);<br>
+								}<br>
 							</code>
 						</div>
 					</div>
@@ -406,13 +405,13 @@
 
 							<h4>CSS</h4>
 							<code>
-							textarea {<br>
-								width:100%;<br>
-								padding:0.8rem;<br>
-								border: 1px solid var(--blue);<br>
-								margin-top: 0.5rem;<br>
-								outline-color: var(--yellow);<br>
-							}<br>
+								textarea {<br>
+									width:100%;<br>
+									padding:0.8rem;<br>
+									border: 1px solid var(--blue);<br>
+									margin-top: 0.5rem;<br>
+									outline-color: var(--yellow);<br>
+								}<br>
 							</code>
 						</div>
 					</div>
@@ -421,24 +420,39 @@
 						<div class="grid-col-1of1">
 							<h3>SELECT</h3>
 
-							<select class="styled-select"> 
-								<option value="option1"="">Choose an option</option> 
-								<option value="option2">Another one</option> 
-								<option value="option3">Here's another one</option> 
+							<select> 
+								<option value="option1">Option 1</option> 
+								<option value="option2">Option 2</option> 
+								<option value="option3">Option 3</option> 
 							</select>
 
 							<h4>HTML</h4>
-							<code>&lttextarea name="textarea" rows="5" cols="5" placeholder="Write your review here..."&gt&lt/textarea&gt</code>
+							<code>
+								&ltselect&gt<br>
+									&ltoption value="option1"&gtOption 1&lt/option&gt<br>
+									&ltoption value="option2"&gtOption 2&lt/option&gt<br>
+									&ltoption value="option3"&gtOption 3&lt/option&gt<br>
+								&lt/select&gt<br>
+							</code>
 
 							<h4>CSS</h4>
 							<code>
-							textarea {<br>
-								width:100%;<br>
-								padding:0.8rem;<br>
-								border: 1px solid var(--blue);<br>
-								margin-top: 0.5rem;<br>
-								outline-color: var(--yellow);<br>
-							}<br>
+								select{<br>
+									-webkit-appearance: none;<br>
+									width: 100%;<br>
+									padding: 1rem;<br>
+									margin-top: 1rem;<br>
+									margin-bottom: 1rem;<br>
+									border-radius: 0px;<br>
+									border: 1px solid var(--blue);<br>
+									font-weight: 200;<br>
+									line-height: 1;<br>
+									color: var(--black);<br>
+									background: url("../img/dropDown.png") no-repeat right #fff;<br>
+									background-size: auto 15%;<br>
+									background-position: 97%<br>
+									cursor: pointer;<br>
+								}<br>
 							</code>
 						</div>
 					</div>
@@ -467,9 +481,9 @@
 							<h4>CSS</h4>
 							<code>
 								h4 {<br>
-								font-size: 1.125rem;<br>
-								font-weight: 200;<br>
-								color: var(--black);<br>
+									font-size: 1.125rem;<br>
+									font-weight: 200;<br>
+									color: var(--black);<br>
 								}<br>
 							</code>
 						</div>
@@ -490,11 +504,11 @@
 							<h4>HTML</h4>
 							<code>
 								&ltform&gt<br>
-								&ltinput type="text" placeholder="First Name"&gt<br>
-								&ltinput type="text" placeholder="Last Name"&gt<br>
-								&lttextarea name="textarea" rows="5" cols="5" placeholder="Write your review here..."&gt&lt/textarea&gt<br>
-								&ltinput type="submit" value="Cancel" class="small-button gray-background"&gt<br>
-								&ltinput type="submit" value="Submit" class="small-button"&gt<br>
+									&ltinput type="text" placeholder="First Name"&gt<br>
+									&ltinput type="text" placeholder="Last Name"&gt<br>
+									&lttextarea name="textarea" rows="5" cols="5" placeholder="Write your review here..."&gt&lt/textarea&gt<br>
+									&ltinput type="submit" value="Cancel" class="small-button gray-background"&gt<br>
+									&ltinput type="submit" value="Submit" class="small-button"&gt<br>
 								&lt/form&gt<br>
 							</code>
 						</div>
