@@ -737,6 +737,7 @@ table{
 	text-align: center;
 
 	border: 1px solid var(--blue);
+		height: 650px;
 }
 
 .jet-ski-panel h3 {
@@ -779,11 +780,13 @@ td {
 	.jet-ski-panel {
 		max-width: 100%;
 		margin-top: 2rem;
+		height: 750px;
 	}
 }
 
 .jet-ski-panel img {
 	max-width: 100%;
+
 }
 
 /* Home End */
@@ -1221,5 +1224,40 @@ select{
 }	
 
 
+@media(max-width: 76.25rem){
+	.grid-row-section{
+		padding: 0 2rem;
+	}
+}
 
->>>>>>> salathiel
+
+@media(max-width: 67.8125rem){
+	.grid-row-section{
+		padding: 0 1rem;
+	}
+}
+
+@media(max-width: 55.9376rem){
+	.jet-ski-panel{
+		height: 700px;
+	}
+}
+
+
+@media(max-width: 44.25rem){
+	.jet-ski-panel{
+		height: 950px;
+	}
+}
+
+@media(max-width: 40.625rem){
+	.jet-ski-panel{
+		height: 900px;
+	}
+}
+
+@media(max-width: 34.365rem){
+	.jet-ski-panel{
+		height: 850px;
+	}
+}
