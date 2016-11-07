@@ -485,8 +485,13 @@ table{
 /* Different h1 styling for home header */
 .head-banner h1 {
 	font-size: 3.75rem; /* 60pt */
-	margin: 18vh 0 5rem 0;
-	text-align: left;
+	margin: 18vh 0 0 0;
+	text-align: center;
+}
+
+.head-banner p{
+	text-align: center; 
+	color: var(--blue);
 }
 
 .suggestion-menu {
@@ -1269,4 +1274,3 @@ select{
 	}
 }
 
->>>>>>> origin/master
