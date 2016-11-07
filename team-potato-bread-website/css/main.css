@@ -574,10 +574,9 @@ table{
 	color: var(--blue);
 }
 
-@media(max-width: 37rem){
+@media(max-width: 43rem){
 	.menu-buttons {
-		max-width: 30%;
-		display: inline;
+		max-width: 5rem;
 	}
 }
 /* Header End */
