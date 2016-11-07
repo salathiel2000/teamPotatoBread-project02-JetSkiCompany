@@ -41,71 +41,97 @@
 
 		<section class="grid-row-section">
 			<div class="grid-col-1of1">
+				<h2 class="yellow-text">READ OUR RULES BEFORE YOU BOOK</h2>
+
+				<h3>Age Restrictions</h3>
+				<p>To rent our jet skis you need to be at least 18 years of age or older. Unfortunately our insurance doesn't cover minors, even with parental consent, so we apologize for not being able to have you share in our adventure</p>
+
+				<h3>Licensing Requirements</h3>
+				<p>Here in the Bahamas you luckily don't need a boating license to drive a jet ski. As such all we need is a valid driver's license or passport to ensure your identity can be verified</p>
+			</div>
+		</section>
+
+		<section class="grid-row-section">
+			<div class="grid-col-1of1">
 				<h2 class="yellow">BOOKING INFORMATION</h2>
 			</div>
 
 			<div class="grid-col-1of2">
-				<select class="styled-select">
-					<option>SEADOO SPARK</option>
-					<option>SEADOO RTX</option>
-					<option>SEADOO GTXS</option>
-				</select>
+				<form>
 
-				<select class="styled-select">
-					<option>QUANTITY</option>
-					<option>1</option>
-					<option>2</option>
-					<option>3</option>
-					<option>4</option>
-				</select>
+					<label for="jet-ski-selection">Choose your jet ski</label>
+					<select class="styled-select less-margin-top add-bottom-space">
+						<option>SEADOO SPARK</option>
+						<option>SEADOO RTX</option>
+						<option>SEADOO GTXS</option>
+					</select>
 
-				<input type="date" name="date">
+					<label for="quantity">Quantity</label>
+					<input class="add-bottom-space" type="number" name="hours" min="1" max="5">
 
-				<input type="time" name="time">
+					<label for="date">Date</label>
+					<input class="add-bottom-space" type="date" name="date">
 
-				<input type="number" name="hours" min="1" max="8">
+					<label for="start-time">Start time</label>
+					<input class="add-bottom-space" type="time" name="time">
 
+					<label for="duration">Duration (in hrs.)</label>
+					<input class="add-bottom-space" type="number" name="hours" min="1" max="8">
+				</form>
 			</div>
 
 			<div class="grid-col-1of2">
 				<div class="book-panel">
 					<div id="book-img"></div>
 
-					<h2>LITE</h2>
+					<h2 class="remove-margin">LITE</h2>
 
-					<p>Light and easy to handle</p>
+					<p class="remove-margin">Light and easy to handle</p>
 
 					<div class="grid-col-1of1">
-						<table>
+						<table class="add-margin-left">
 							<tr>
-								<td><h3>RIDER CAPACITY</h3></td>
-								<td><h3>2</h3></td>
+								<td><h6 class="remove-margin-bottom">RIDER CAPACITY</h6></td>
+								<td><h6 class="remove-margin-bottom table-space">2</h6></td>
 							</tr>
 
 							<tr>
-								<td><h3>SPEED</h3></td>
-								<td><h3>60HP</h3></td>
+								<td><h6 class="remove-margin">SPEED</h6></td>
+								<td><h6 class="remove-margin table-space">60 HP</h6></td>
 							</tr>
 
 							<tr>
-								<td><h3>WEIGHT</h3></td>
-								<td><h3>160KG</h3></td>
+								<td><h6 class="remove-margin">WEIGHT</h6></td>
+								<td><h6 class="remove-margin table-space">160 KG</h6></td>
 							</tr>
 						</table>
-					</div>
 
-					<h2 class="yellow">$60/HR</h2>
+								<h2 class="yellow add-little-top-space">$60/HR</h2>
+					</div>
 				</div>
-			</div>
+
+		
+
+			</div> 
 		</section>
 
 		<section class="grid-row-section">
 			<div class="grid-col-1of1">
 				<h2 class="yellow">PASSENGER INFORMATION</h2>
-				<form>
-					<input type="text" placeholder="FIRST NAME">
-					<input type="text" placeholder="LAST NAME">
-					<input type="text" placeholder="EMAIL ADDRESS">
+				<form id="passenger-information">
+					
+					<div class="grid-col-1of2 add-bottom-space">
+						<label for="fname">First Name</label>
+						<input type="text">
+					</div>
+
+					<div class="grid-col-1of2 add-bottom-space">
+						<label for="lname">Last Name</label>
+						<input type="text">
+					</div>
+
+					<label for="email">Email Address</label>
+					<input type="text">
 				</form>
 			</div>
 		</section>
@@ -114,34 +140,51 @@
 			<div class="grid-col-1of1">
 				<h2 class="yellow">PAYMENT INFORMATION</h2>
 				<form>
-					<input type="text" placeholder="NAME ON CARD">
-					<input type="text" placeholder="CARD NUMBER">
-					<input type="text" placeholder="EXPIRATION DATE (MM/YY)">
-					<input type="text" placeholder="CVC (3 DIGITS ON BACK OF CARD)">
 
-					<a href="book.html" class="cancel large-button">Cancel</a>
-					<a href="booking-review.html" class="large-button">Submit</a>
+					<label for="card-name">Name on Card</label>
+					<input class="add-bottom-space" type="text">
+
+					<label for="card-number">Card Number</label>
+					<input class="add-bottom-space" type="text">
+
+					<div class="grid-col-1of2 remove-padding-left">
+						<label for="expiration-date">Expiration Date (MM/YY)</label>
+						<input class="add-bottom-space" type="text">
+					</div>
+
+					<div class="grid-col-1of2 remove-padding-right">
+						<label for="cvc">CVC (3 digits on back of card)</label>
+						<input class="add-bottom-space" type="text">
+					</div>
+
+					<div class="grid-col-1of2 remove-padding-left">
+						<a href="index.html" class="cancel small-button">Cancel</a>
+					</div>
+
+					<div class="grid-col-1of2 remove-padding-right">
+						<a href="booking-review.html" class="small-button float-right">Make booking</a>
+					</div>
 				</form>
 			</div>
 		</section>
 
-		<section class="foot-banner grid-row">
+<section class="foot-banner grid-row">
 			<div class="grid-row-section">
 				<div class="grid-col-1of2">
 					<h3>FIND US ON SOCIAL MEDIA</h3>
 
 					<div class="box-left box-center-align grid-row">
-						<div class="facebook icon box-item"></div> <!-- facebook icon needs to be expaned to line up with edge of the image -->
+						<div class="facebook icon box-item  footer-more-space"></div> <!-- facebook icon needs to be expaned to line up with edge of the image -->
 						<p class="box-item">Facebook</p>
 					</div>
 
 					<div class="box-left box-center-align grid-row">
-						<div class="twitter icon box-item"></div>
+						<div class="twitter icon box-item footer-more-space"></div>
 						<p class="box-item">Twitter</p>
 					</div>
 
 					<div class="box-left box-center-align grid-row">
-						<div class="instagram icon box-item"></div>
+						<div class="instagram icon box-item footer-more-space"></div>
 						<p class="box-item">Instagram</p>
 					</div>
 				</div>
@@ -152,15 +195,24 @@
 					<p class="yellow">via email:</p>
 
 					<form class="footer-form">
-						<input type="text" placeholder="Name">
-						<input type="text" placeholder="Email Address">
-						<input type="text" placeholder="Your Message Here">
+
+						<div class="grid-col-1of2 remove-padding-left">
+							<input type="text" placeholder="Name">
+						</div>
+
+						<div class="grid-col-1of2 remove-padding-right">
+							<input type="text" placeholder="Email Address">
+						</div>
+
+						<textarea name="textarea" rows="4" cols="5" placeholder="Your message here"></textarea>
 						<input type="submit" value="Submit" class="small-button">
 					</form>
 
-					<p class="yellow">via telephone:</p>
-
-					<p class="footer-telephone-2">1 (242) 466-7981</p>
+					<div class="footer-more-space">
+						<p class="yellow">via telephone:</p>
+						<p class="footer-telephone-2">1 (242) 466-7981</p>
+					</div>
+				
 				</div>
 			</div>
 

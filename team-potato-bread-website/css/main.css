@@ -118,7 +118,7 @@ input[type=date]{
 	width: 100%; 
 	height: 60px;
 	padding-left: 20px;
-	margin-top: 2rem; 
+	margin-top: 1rem; 
 	/*color: white;*/
 	border: 1px solid var(--blue);
 	box-sizing: border-box;
@@ -128,7 +128,7 @@ input[type=time]{
 	width: 100%; 
 	height: 60px;
 	padding-left: 20px;
-	margin-top: 2rem; 
+	margin-top: 1rem; 
 	/*color: white;*/
 	border: 1px solid var(--blue);
 	box-sizing: border-box;
@@ -138,7 +138,7 @@ input[type=number]{
 	width: 100%; 
 	height: 60px;
 	padding-left: 20px;
-	margin-top: 2rem; 
+	margin-top: 1rem; 
 	/*color: white;*/
 	border: 1px solid var(--blue);
 	box-sizing: border-box;
@@ -168,10 +168,85 @@ img {
 	width: 100%;
 }
 
+section{
+	padding: 2rem 0; 
+}
+
+
+.reduce-image{
+	width:90%;
+}
 .header-form{
 	color:white;
 	float:left;
 }
+
+.negative-margin{
+	margin-left: -1.5rem
+}
+
+.add-space{
+	margin-bottom: 1rem;
+}
+
+.add-top-space{
+	margin-top: 5rem;
+}
+
+.add-little-top-space{
+	margin-top: 3rem;
+}
+
+.who-are-we-1{
+	margin-top:0.25rem;
+}
+
+.add-bottom-space{
+	margin-bottom:2rem;
+}
+
+#passenger-information .grid-col-1of2:nth-child(1){
+	padding-left: 0;
+	padding-right: 1rem;
+}
+
+#passenger-information .grid-col-1of2:nth-child(2){
+	padding-left: 1rem;
+	padding-right: 0;
+}
+
+.remove-padding-left{
+	padding-left: 0;
+	padding-right: 1rem;
+}
+
+.remove-padding-right{
+	padding-left: 1rem;
+	padding-right: 0;
+}
+
+#payment-information .small-button{
+	padding: 1rem 3rem;
+}
+
+#booking-details .small-button{
+	padding: 1rem 3rem;
+}
+
+#submit-review .small-button{
+	padding: 1rem 3rem;
+}
+
+.main-page-form .small-button{
+	padding: 1rem 3rem;
+	margin-top: 1.5rem;
+	margin-right: 6.8rem;
+}
+
+.float-right{
+	float:right;
+}
+
 /* Buttons */ 
 /* buttons usually require specific styling in each use case */
 
@@ -180,18 +255,21 @@ img {
 	font-weight: 500; /* medium */
 }
 
-.large-button { /* h2 size */
-	font-size: 2.25rem; /* 36pt */
-	font-weight: 500; /* medium */
-}
+
 
 .small-button, .large-button {
-	padding: 1rem;
+	padding: 2rem;
 
 	display: inline-block;
 
 	color: var(--white);
 	background-color: var(--blue);
+}
+
+.large-button { /* h2 size */
+	font-size: 2.25rem; /* 36pt */
+	font-weight: 500; /* medium */
+	padding: 1rem 3rem;
 }
 
 .small-button:hover, .large-button:hover {
@@ -224,6 +302,62 @@ select, textarea, input {
 	outline-color: var(--yellow);
 }
 
+table{
+	text-align: left;
+}
+
+.table-space{
+	padding-left: 3rem;
+	font-weight: normal;
+}
+
+.normal{
+	font-weight: normal;
+}
+
+.remove-margin{
+	margin: 0;
+}
+
+.remove-margin-bottom{
+	margin-bottom: 0;
+}
+
+.align-left{
+	text-align: left;
+}
+
+.align-center{
+	text-align: center;
+}
+
+.remove-padding{
+	padding-top: 0.4rem;
+}
+
+.gray-text{
+	color: var(--gray);
+}
+
+.yellow-text{
+	color: var(--yellow);
+}
+
+.less-margin-top{
+	margin-top: 1rem;
+}
+
+.less-padding{
+	padding-top: 2rem;
+}
+
+.add-margin-left{
+	margin-left: 3rem; 
+}
+
+.sentence-form{
+	padding-top: 0.6rem;
+}
 /* Universal End */
 
 /* ------------------------------------------ Header ------------------------------------------ */
@@ -246,7 +380,7 @@ select, textarea, input {
 /* Different h1 styling for home header */
 .head-banner h1 {
 	font-size: 3.75rem; /* 60pt */
-	margin: 25vh 0 5rem 0;
+	margin: 18vh 0 5rem 0;
 	text-align: left;
 }
 
@@ -384,12 +518,18 @@ select, textarea, input {
 
 /* Color Adjustment*/
 
+.footer-more-space{
+	margin-top:1rem;
+}
+
 .foot-banner p {
 	color: var(--white);
+	margin: 0;
 }
 
 .foot-banner h3 {
 	color: var(--blue);
+	margin-bottom: 0;
 }
 
 .yellow {
@@ -400,21 +540,32 @@ select, textarea, input {
 
 .footer-form input[type=text] {
 	width: 100%;
-
+	height: 10px;
 	padding: 1rem;
 	margin: 1rem 0rem 1rem 0;
-
+	font-size: 0.7rem;
 	color: var(--white);
 	background-color: var(--transparent);
 	border-color: var(--blue);
 
-	border-width: 2px;
+	border-width: 1px;
 
 	border-style: solid;
 }
 
+
+.footer-form textarea{
+	background-color: var(--transparent);
+	font-size: 0.7rem;
+	color: white;
+}
+
+.footer-form .small-button{
+	padding: 0.7rem 1.4rem;
+	font-size: 0.7rem;
+}
+
 .foot-banner input[type=submit] {
-	width: 100%;
 	margin-top: 1rem;
 }
 
@@ -534,6 +685,7 @@ table {
 
 td {
 	width: 50%;
+	padding-top: 1rem;
 }
 
 .book-button {
@@ -586,6 +738,7 @@ td {
 	text-align: center;
 
 	border: 1px solid var(--blue);
+	height: 450px;
 }
 
 .info-panel h3 {
@@ -718,6 +871,10 @@ td {
 	padding-top: 1rem;
 }
 
+.little-more-space{
+	margin-top:1rem;
+}
+
 .button-top-space{
 	margin-top:2.5rem;
 	padding-top: 1rem;
@@ -805,10 +962,33 @@ select{
 	border: 1px solid var(--blue);
 	color: var(--black);
 	font-weight: 100; 
-	margin-top: 2rem;
+	margin-top: 8px;
 	border-radius: 0px;
 	cursor: pointer;
 	background: url("../img/dropDown.png") no-repeat right #fff;
+	background-size: auto 15%;
+	background-position: 97%
+}
+
+.banner-select{
+	-webkit-appearance: none;
+	/*-moz-appearance: none;*/
+
+	/*background-position: right 10px center; 
+	background-repeat: no-repeat;
+	background-size: auto 500%; 
+	background: transparent;*/
+	width: 100%;
+	padding-left: 1rem; 
+	line-height: 1; 
+	height: 60px; 
+	border-bottom: 1px solid var(--blue);
+	color: white;
+	font-weight: 100; 
+	margin-top: 8px;
+	border-radius: 0px;
+	cursor: pointer;
+	background: url("../img/dropDown.png") no-repeat right transparent;
 	background-size: auto 15%;
 	background-position: 97%
 }
@@ -849,10 +1029,10 @@ select{
 	justify-content: center;
 	text-align: center;
 
-	border: solid;
+/*	border: solid;
 	border-width: 1px;
-	border-color: var(--blue);
-	padding: 1rem;
+	border-color: var(--blue);*/
+	/*padding: 1rem; */
 }
 
 .cancel {
@@ -863,8 +1043,8 @@ select{
 /* ------------------------------------------ Booking Review ------------------------------------------ */
 .summary-panel { /* merge with other panels */
 	border: 1px solid var(--blue);
-	padding: 1.5rem;
-	height: 40rem;
+	/*padding: 1.5rem;*/
+	height: 28rem;
 	margin-top: 1rem;
 	margin-bottom: 1rem;
 }
@@ -960,3 +1140,5 @@ select{
 		font-size: 2rem;
 	}
 }
+
+

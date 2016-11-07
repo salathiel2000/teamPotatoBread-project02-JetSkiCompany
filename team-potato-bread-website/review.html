@@ -39,34 +39,38 @@
 			</div>
 		</header>
 
-		<section>
+		<section id="submit-review">
 			<div class="grid-row-section">
 				<div class="grid-col-1of2">
 					<h2>SUBMIT YOUR REVIEW</h2>
 				</div>
 
-				<div class="left top-space grid-col-1of2">
-					<h5>Or view submitted reviews by clicking <a href="#">here</a></h5>
+				<div class="left less-padding grid-col-1of2">
+					<p class="gray-text">Or view submitted reviews by clicking <a href="#">here</a></p>
 				</div>
 			</div>
 		
 			<form> 
 				 <div class="grid-row-section"> 
 					 <div class="middle-space grid-col-1of2"> 
-					 	<input class="black-text" type="text" id="fname" name="fname" placeholder="First Name"> 
+						<label for="fname">First Name</label>
+					 	<input class="black-text" type="text" id="fname" name="fname"> 
 					 </div> 
 
 					 <div class="middle-space grid-col-1of2"> 
-					 	<input class="black-text" type="text" id="lname" name="lname" placeholder="Last Name"> 
+					 	<label for="lname">Last Name</label>
+					 	<input class="black-text" type="text" id="lname" name="lname"> 
 					 </div> 
 				 </div>
 
 				 <div class="grid-row-section">
-				 	<div class="grid-col-1of1 dropdown">
-						<select class="styled-select"> 
-							 <option value="option1"="">Choose an option</option> 
-							 <option value="option2">Another one</option> 
-							 <option value="option3">Here's another one</option> 
+				 	<div class="grid-col-1of1 dropdown less-margin-top add-bottom-space">
+						<label for="jet-skis">Choose your jet ski</label>
+						
+						<select class="styled-select">	
+							 <option value="option1"="">Seadoo Spark</option> 
+							 <option value="option2">Seadoo RTX</option> 
+							 <option value="option3">Seadoo GTXS</option> 
 						</select>
 					</div>
 				</div>
@@ -78,9 +82,9 @@
 				 	</div>
 				</div>
 
-				<div class="button-top-space grid-row-section">
+				<div class="grid-row-section little-more-space">
 					<div class="grid-col-1of1">
-							<a class="large-button" href="book.html">Submit</a>
+							<a class="small-button" href="book.html">Submit</a>
 					</div>
 				</div>
 			</form>
@@ -92,12 +96,12 @@
 
 				<article>
 					<p> This was my first time ever in The Bahamas and also my first time riding a jet ski. Salathiel and Thomas were absolutely brilliant, they were able to make me feel extra comfortable with the Seadoo Spark, and even gave me an extra 10 mins. of training (without charging) to ensure I was truly ready to have the most fun on my ride.</p>
-					<h5>Submitted by John who rode a <a href="lite.html">Seadoo Spark</a></h5>
+					<p class="gray-text">Submitted by John who rode a <a href="lite.html">Seadoo Spark</a></p>
 				</article>
 
 				<article>
-					<p> I've ridden a jet ski before, but Jeti's modern fleet ensured a totally different experience. I was happy to see the jet skis were well kept, maintenance reports were clearly visible on the water craft, and that made me feel very comfortable.</p>
-					<h5>Submitted by Jane who rode a <a href="lite.html">Seadoo GTX</a></h5>
+					<p class="top-space"> I've ridden a jet ski before, but Jeti's modern fleet ensured a totally different experience. I was happy to see the jet skis were well kept, maintenance reports were clearly visible on the water craft, and that made me feel very comfortable.</p>
+					<p class="gray-text">Submitted by Jane who rode a <a href="lite.html">Seadoo GTX</a></p>
 				</article>
 			</div>
 		</section>
@@ -108,17 +112,17 @@
 					<h3>FIND US ON SOCIAL MEDIA</h3>
 
 					<div class="box-left box-center-align grid-row">
-						<div class="facebook icon box-item"></div> <!-- facebook icon needs to be expaned to line up with edge of the image -->
+						<div class="facebook icon box-item  footer-more-space"></div> <!-- facebook icon needs to be expaned to line up with edge of the image -->
 						<p class="box-item">Facebook</p>
 					</div>
 
 					<div class="box-left box-center-align grid-row">
-						<div class="twitter icon box-item"></div>
+						<div class="twitter icon box-item footer-more-space"></div>
 						<p class="box-item">Twitter</p>
 					</div>
 
 					<div class="box-left box-center-align grid-row">
-						<div class="instagram icon box-item"></div>
+						<div class="instagram icon box-item footer-more-space"></div>
 						<p class="box-item">Instagram</p>
 					</div>
 				</div>
@@ -129,15 +133,24 @@
 					<p class="yellow">via email:</p>
 
 					<form class="footer-form">
-						<input type="text" placeholder="Name">
-						<input type="text" placeholder="Email Address">
-						<input type="text" placeholder="Your Message Here">
+
+						<div class="grid-col-1of2 remove-padding-left">
+							<input type="text" placeholder="Name">
+						</div>
+
+						<div class="grid-col-1of2 remove-padding-right">
+							<input type="text" placeholder="Email Address">
+						</div>
+
+						<textarea name="textarea" rows="4" cols="5" placeholder="Your message here"></textarea>
 						<input type="submit" value="Submit" class="small-button">
 					</form>
 
-					<p class="yellow">via telephone:</p>
-
-					<p class="footer-telephone-2">1 (242) 466-7981</p>
+					<div class="footer-more-space">
+						<p class="yellow">via telephone:</p>
+						<p class="footer-telephone-2">1 (242) 466-7981</p>
+					</div>
+				
 				</div>
 			</div>
 
@@ -150,10 +163,8 @@
 					<p class="footer-telephone-1">1 (242) 466-7981</p>
 				</div>
 			</div>
-		</section> 
+		</section>
 
-	<script src="js/zepto.js"></script>
-    <script src="js/main.js"></script>
 
 	</body>
 </html>
