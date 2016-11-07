@@ -13,6 +13,7 @@ make file names consistent
 fix usear agent stylesheet screwing with everything (its messing with the inputs, and giving everything massive margins)
 ensure that all images are put into css as background images
 add links to styleguide, citations, and github repository
+add scroll protection for map
 
 Guidelines: 
 
@@ -26,7 +27,7 @@ attribute order: size, location, styling
 
 /* Color Variables */
 html {
-	--white: white;
+	--white: rgb(255, 255, 255);
 	--yellow: rgb(242, 187, 5);
 	--blue: rgb(31, 186, 214);
 	--black: rgb(56, 56, 56);
@@ -37,6 +38,56 @@ html {
 	font-size: 1.125rem; /* default h4 font size */
 	font-weight: 200;
 
+}
+
+#swatch-yellow, #swatch-blue, #swatch-gray, #swatch-black {
+	border-width: 0;
+	height: 10rem;
+	width: 10rem;
+	display: inline-block;
+	margin-right: 1rem;
+	margin-bottom: 1rem;
+	padding: 1rem;
+}		
+
+#swatch-white {
+	border-width: 1px;
+	border-style: solid;
+	height: 10rem;
+	width: 10rem;
+	display: inline-block;
+	margin-right: 1rem;
+	margin-bottom: 1rem;
+	padding: 1rem;
+
+	border-color: var(--black);
+	background-color: var(--white);
+}
+
+#swatch-yellow {
+	background-color: var(--yellow);
+}
+
+#swatch-blue {
+	background-color: var(--blue);
+}
+
+#swatch-gray {
+	background-color: var(--gray);
+}
+
+#swatch-black {
+	background-color: var(--black);
+}
+
+.white {
+	color: var(--white);
+}
+
+
+
+.black-background { /* styleguide only */
+	background-color: var(--black);
 }
 
 /* Text */
@@ -86,7 +137,6 @@ h6 { /* ALL CAPS */
 
 p {
 	font-size: 0.875rem; /* 14pt */
-	
 	font-weight: 200; /* light */
 
 	color: var(--black);
@@ -94,20 +144,28 @@ p {
 	line-height: 180%; 
 }
 
-a { /* Sentence case */
-	font-size: 0.875rem; /* 18pt */
-	font-weight: 200; /* medium */
+a { /* Sentence case */ 
+	font-size: 1.125rem; /* 18pt */ /* Salathiel leave this alone, it has to match the h4 text size */
+	font-weight: 500; /* medium */
 
 	color: var(--blue);
 
 	text-decoration: none;
 }
 
-
 a:hover {
 	color: var(--yellow);
 	cursor: pointer;
 	transition: 0.1s ease-in-out;
+}
+
+code { /* styleguide only */
+	font-size: 0.875rem; /* 14pt */
+	font-weight: 200; /* light */
+
+	color: var(--black);
+	
+	line-height: 180%; 
 }
 
 input { /* the "user agent stylesheet" overrides some css styling of the attributes in the input tag are not directly set */
@@ -224,6 +282,42 @@ textarea {
 select, textarea, input {
 	outline-color: var(--yellow);
 }
+
+.right { 
+	text-align: right; 
+}
+
+.left {
+	text-align: left;
+}
+
+.styleguide-panel {
+	max-width: 100%;
+	justify-content: left;
+	text-align: left;
+
+	border: solid;
+	border-width: 1px;
+	border-color: var(--blue);
+	padding: 1rem;
+
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+
+
+.gray-background { /* used for cancel buttons */ /* must come after buttons */
+	background-color: var(--gray);
+}
+
+.grid-highlight { /* styleguide only */
+	border-width: 1px;
+	border-style: solid;
+	border-color: yellow;
+	padding: 1rem;
+}
+
+
 
 /* Universal End */
 
@@ -419,27 +513,6 @@ select, textarea, input {
 	margin-top: 1rem;
 }
 
-.footer-form ::-webkit-input-placeholder{
-	color: var(--white);
-	font-weight: 100; 
-}
-
-.footer-form ::-moz-placeholder { /* Firefox 19+ */
-  color: var(--blue);
-	font-weight: 100; 
-}
-
-.footer-form :-ms-input-placeholder { /* IE 10+ */
-  color: var(--blue);
-	
-	font-weight: 100; 
-}
-
-.footer-form :-moz-placeholder { /* Firefox 18- */
-  color: var(--blue);
-	font-weight: 100; 
-}
-
 
 /* Adaptation */
 
@@ -552,10 +625,6 @@ td {
 	.jet-ski-panel {
 		max-width: 100%;
 	}
-}
-
-.jet-ski-panel h2 {
-	color: var(--yellow);
 }
 
 .jet-ski-panel img {
@@ -710,10 +779,6 @@ td {
 /*Submit Review Begin*/ 
 
 /* ------------------------------------------ Review ------------------------------------------ */
-.left{
-	text-align: right; 
-}
-
 .top-space{
 	margin-top:2.5rem;
 	padding-top: 1rem;
@@ -748,30 +813,24 @@ input[type=text] {
 
 ::-webkit-input-placeholder{
 	color: var(--black);
-	font-weight: 100; 
+	font-weight: 200; 
 }
 
 ::-moz-placeholder { /* Firefox 19+ */
-  color: var(--blue);
-	font-weight: 100; 
+  	color: var(--black);
+	font-weight: 200; 
 }
 
 :-ms-input-placeholder { /* IE 10+ */
-  color: var(--blue);
+  	color: var(--black);
 	
-	font-weight: 100; 
-}
-:-moz-placeholder { /* Firefox 18- */
-  color: var(--blue);
-	font-weight: 100; 
+	font-weight: 200; 
 }
 
-.styled-select { /* this really needs to be fixed */
-	width: 100%;
-	height: 60px; 
-/*select{
-	cursor: pointer;
-}*/}
+:-moz-placeholder { /* Firefox 18- */
+  	color: var(--black);
+	font-weight: 200; 
+}
 
 .select-option{
 	background: white;
@@ -792,37 +851,33 @@ input[type=text] {
 }
 
 select{
-	-webkit-appearance: none;
 	/*-moz-appearance: none;*/
 
 	/*background-position: right 10px center; 
 	background-repeat: no-repeat;
 	background-size: auto 500%; 
 	background: transparent;*/
+
+
+	-webkit-appearance: none;
+
 	width: 100%;
-	padding-left: 1rem; 
-	line-height: 1; 
-	height: 60px; 
-	border: 1px solid var(--blue);
-	color: var(--black);
-	font-weight: 100; 
-	margin-top: 2rem;
+
+	padding: 1rem;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
 	border-radius: 0px;
-	cursor: pointer;
+	border: 1px solid var(--blue);
+
+	font-weight: 200; 
+	line-height: 1; 
+	color: var(--black);
+	
 	background: url("../img/dropDown.png") no-repeat right #fff;
 	background-size: auto 15%;
 	background-position: 97%
-}
 
-	padding-left: 2rem; 
-	margin-bottom: 2rem;
-	border: 1px solid var(--blue);
-
-	line-height: 1; 
-
-
-	color: var(--black);
-	background: transparent;
+	cursor: pointer;
 }
 
 @media(max-width: 46.875rem){
@@ -854,10 +909,6 @@ select{
 	border-width: 1px;
 	border-color: var(--blue);
 	padding: 1rem;
-}
-
-.cancel {
-	background-color: var(--gray);
 }
 
 
@@ -961,3 +1012,9 @@ select{
 		font-size: 2rem;
 	}
 }
+.grid-highlight { /* styleguide only */
+	border-width: 1px;
+	border-color: var(--yellow);
+	color: var(--yellow);
+	padding: 1rem;
+}	
