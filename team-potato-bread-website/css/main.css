@@ -485,8 +485,13 @@ table{
 /* Different h1 styling for home header */
 .head-banner h1 {
 	font-size: 3.75rem; /* 60pt */
-	margin: 18vh 0 5rem 0;
-	text-align: left;
+	margin: 18vh 0 0 0;
+	text-align: center;
+}
+
+.head-banner p{
+	text-align: center; 
+	color: var(--blue);
 }
 
 .suggestion-menu {
@@ -745,7 +750,10 @@ table{
 
 	border: 1px solid var(--blue);
 
+		height: 650px;
+
 	margin-bottom: 1rem;
+>>>>>>> origin/master
 }
 
 .jet-ski-panel h3 {
@@ -785,11 +793,13 @@ td {
 	.jet-ski-panel {
 		max-width: 100%;
 		margin-top: 2rem;
+		height: 750px;
 	}
 }
 
 .jet-ski-panel img {
 	max-width: 100%;
+
 }
 
 /* Home End */
@@ -1225,3 +1235,42 @@ select{
 	color: var(--yellow);
 	padding: 1rem;
 }	
+
+@media(max-width: 76.25rem){
+	.grid-row-section{
+		padding: 0 2rem;
+	}
+}
+
+
+@media(max-width: 67.8125rem){
+	.grid-row-section{
+		padding: 0 1rem;
+	}
+}
+
+@media(max-width: 55.9376rem){
+	.jet-ski-panel{
+		height: 700px;
+	}
+}
+
+
+@media(max-width: 44.25rem){
+	.jet-ski-panel{
+		height: 950px;
+	}
+}
+
+@media(max-width: 40.625rem){
+	.jet-ski-panel{
+		height: 900px;
+	}
+}
+
+@media(max-width: 34.365rem){
+	.jet-ski-panel{
+		height: 850px;
+	}
+}
+
