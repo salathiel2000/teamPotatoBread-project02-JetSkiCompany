@@ -33,7 +33,7 @@
 
 			<div class="grid-row-section">
 				<div class="grid-col-1of1">
-					<h1>REVIEW INFORMATION</h1>
+					<h1>BOOKING DETAILS</h1>
 					<p>Ensure the entered information is correct</p>
 				</div>
 			</div>
@@ -50,24 +50,28 @@
 
 							<table>
 								<tr>
-									<td><h6>JET SKI</h6></td>
-									<td><h6>Lite (Seadoo Spark)</h6></td>
+									<td><h6 class="remove-margin-bottom">JET SKI</h6></td>
+									<td><h6 class="remove-margin-bottom normal">Lite (Seadoo Spark)</h6></td>
 								</tr>
 
 								<tr>
-									<td><h6>QUANTITY</h6></td>
-									<td><h6>1</h6></td>
+									<td><h6 class="remove-margin">QUANTITY</h6></td>
+									<td><h6 class="remove-margin normal">1</h6></td>
 								</tr>
 
 								<tr>
-									<td><h6>DATE</h6></td>
-									<td><h6>14 August 2017</h6></td>
+									<td><h6 class="remove-margin">DATE</h6></td>
+									<td><h6 class="remove-margin normal">14 August 2017</h6></td>
 								</tr>
 
-
 								<tr>
-									<td><h6>DURATION</h6></td>
-									<td><h6>1 HOUR</h6></td>
+									<td><h6 class="remove-margin">DURATION</h6></td>
+									<td><h6 class="remove-margin normal">1 HOUR</h6></td>
+								</tr>
+
+									<tr>
+									<td><h6 class="remove-margin">PRICE</h6></td>
+									<td><h6 class="remove-margin normal">$60</h6></td>
 								</tr>
 							</table>
 						</div>
@@ -85,13 +89,13 @@
 
 							<table>
 								<tr>
-									<td><h6>NAME</h6></td>
-									<td><h6>JANE DOE</h6></td>
+									<td><h6 class="remove-margin-bottom">NAME</h6></td>
+									<td><h6 class="remove-margin-bottom normal">JANE DOE</h6></td>
 								</tr>
 
 								<tr>
-									<td><h6>EMAIL</h6></td>
-									<td><h6>jane@me.com</h6></td>
+									<td><h6 class="remove-margin">EMAIL</h6></td>
+									<td><h6 class="remove-margin normal">jane@me.com</h6></td>
 								</tr>
 							</table>
 						</div>
@@ -109,24 +113,24 @@
 
 							<table>
 								<tr>
-									<td><h6>NAME</h6></td>
-									<td><h6>Jane M Doe</h6></td>
+									<td><h6 class="remove-margin-bottom">NAME</h6></td>
+									<td><h6 class="remove-margin-bottom normal">Jane M Doe</h6></td>
 								</tr>
 
 								<tr>
-									<td><h6>CARD NUMBER</h6></td>
-									<td><h6>**** **** 1234</h6></td>
+									<td><h6 class="remove-margin">CARD NUMBER</h6></td>
+									<td><h6 class="remove-margin normal">**** **** 1234</h6></td>
 								</tr>
 
 								<tr>
-									<td><h6>EXPIRATION DATE</h6></td>
-									<td><h6>03/19</h6></td>
+									<td><h6 class="remove-margin">EXPIRATION DATE</h6></td>
+									<td><h6 class="remove-margin normal">03/19</h6></td>
 								</tr>
 
 
 								<tr>
-									<td><h6>CVV</h6></td>
-									<td><h6>**1</h6></td>
+									<td><h6 class="remove-margin">CVV</h6></td>
+									<td><h6 class="remove-margin normal">**1</h6></td>
 								</tr>
 							</table>
 						</div>
@@ -136,31 +140,37 @@
 
 			<div class="grid-row">
 				<div class="grid-col-1of1">
-					<form>
-						<a href="booking-review.html" class="gray-background large-button">Cancel</a>
-						<a href="confirmation.html" class="large-button">Complete Order</a>
+					<form id="booking-details">
+
+					<div class="grid-col-1of2 remove-padding-left">
+						<a href="book.html" class="cancel small-button">Cancel</a>
+					</div>
+
+					<div class="grid-col-1of2 remove-padding-right">
+						<a href="confirmation.html" class="small-button float-right">Complete Order</a>
+					</div>
 					</form>
 				</div>
 			</div>
 		</section>
 
-		<section class="foot-banner grid-row">
+<section class="foot-banner grid-row">
 			<div class="grid-row-section">
 				<div class="grid-col-1of2">
 					<h3>FIND US ON SOCIAL MEDIA</h3>
 
 					<div class="box-left box-center-align grid-row">
-						<div class="facebook icon box-item"></div> <!-- facebook icon needs to be expaned to line up with edge of the image -->
+						<div class="facebook icon box-item  footer-more-space"></div> <!-- facebook icon needs to be expaned to line up with edge of the image -->
 						<p class="box-item">Facebook</p>
 					</div>
 
 					<div class="box-left box-center-align grid-row">
-						<div class="twitter icon box-item"></div>
+						<div class="twitter icon box-item footer-more-space"></div>
 						<p class="box-item">Twitter</p>
 					</div>
 
 					<div class="box-left box-center-align grid-row">
-						<div class="instagram icon box-item"></div>
+						<div class="instagram icon box-item footer-more-space"></div>
 						<p class="box-item">Instagram</p>
 					</div>
 				</div>
@@ -171,15 +181,24 @@
 					<p class="yellow">via email:</p>
 
 					<form class="footer-form">
-						<input type="text" placeholder="Name">
-						<input type="text" placeholder="Email Address">
-						<input type="text" placeholder="Your Message Here">
+
+						<div class="grid-col-1of2 remove-padding-left">
+							<input type="text" placeholder="Name">
+						</div>
+
+						<div class="grid-col-1of2 remove-padding-right">
+							<input type="text" placeholder="Email Address">
+						</div>
+
+						<textarea name="textarea" rows="4" cols="5" placeholder="Your message here"></textarea>
 						<input type="submit" value="Submit" class="small-button">
 					</form>
 
-					<p class="yellow">via telephone:</p>
-
-					<p class="footer-telephone-2">1 (242) 466-7981</p>
+					<div class="footer-more-space">
+						<p class="yellow">via telephone:</p>
+						<p class="footer-telephone-2">1 (242) 466-7981</p>
+					</div>
+				
 				</div>
 			</div>
 

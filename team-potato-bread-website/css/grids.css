@@ -58,17 +58,12 @@ basically use rows and columns for each piece of content, one row/column can be 
 
 /* ------------------------------------------ Grid ------------------------------------------ */
 /* Rows */
-section {
-	padding-top: 2rem;
-	padding-bottom: 2rem;
-}
-
 
 .grid-row-section {
 	width: 100%;
 
-	padding-left: 1rem;
-	padding-right: 1rem;
+	padding-left: 5rem;
+	padding-right: 5rem;
 }
 
 .grid-row {
@@ -119,7 +114,11 @@ section {
 
 .grid-col-1of7{
 	/*width:14.2857143%;*/
-	width: 16.6666667%
+	width: 16.6666667%;
+}
+
+.grid-col-6of7{
+	width:7%;
 }
 
 .product-image .grid-col-1of2{
