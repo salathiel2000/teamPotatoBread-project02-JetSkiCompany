@@ -13,6 +13,7 @@ make file names consistent
 fix usear agent stylesheet screwing with everything (its messing with the inputs, and giving everything massive margins)
 ensure that all images are put into css as background images
 add links to styleguide, citations, and github repository
+add scroll protection for map
 
 Guidelines: 
 
@@ -262,6 +263,15 @@ select, textarea, input {
 .gray-background { /* used for cancel buttons */ /* must come after buttons */
 	background-color: var(--gray);
 }
+
+.grid-highlight { /* styleguide only */
+	border-width: 1px;
+	border-style: solid;
+	border-color: yellow;
+	padding: 1rem;
+}
+
+
 
 /* Universal End */
 
@@ -960,3 +970,9 @@ select{
 		font-size: 2rem;
 	}
 }
+.grid-highlight { /* styleguide only */
+	border-width: 1px;
+	border-color: var(--yellow);
+	color: var(--yellow);
+	padding: 1rem;
+}	
