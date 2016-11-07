@@ -45,7 +45,6 @@
 
 /* ------------------------------------------ Grid ------------------------------------------ */
 /* Rows */
-
 .grid-row-section {
 	width: 100%;
 
@@ -69,8 +68,9 @@
 	clear:both; 
 }
 
+
 @media(max-width: 69.1775rem){
-	.grid-row-section{
+	.grid-row-section {
 		padding-left: 2rem;
 		padding-right: 2rem;
 	}
