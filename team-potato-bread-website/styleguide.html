@@ -1,13 +1,13 @@
 <!doctype html>
 
 <html lang="en">
-
 	<head>
 		<meta charset="utf-8">
+
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-		<title>Jeti Rentals</title>
-		
+		<title>Styleguide</title>
+
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/grids.css">
 		<link rel="stylesheet" href="css/main.css">
@@ -16,836 +16,202 @@
 	</head>
 
 	<body>
+		<header class="page-banner grid-row">
+			<div class="grid-row-section">
+				<nav class="grid-col-1of1">
+					<div class="menu-logo box">
+						<a href="index.html" class="menu-logo box-item"></a>
+					</div>
 
-		<section class="grid-row" id="banner">
-			<h1 id="jeti-title">Jeti Rentals</h1>
-			<h3>style guide</h3>
-
-			<div class="extra-nav">
-				<a href="http://www.sfu.ca/~srwells/iat339/p01/wireframes/#p=smartwatch_home" class="extra-nav-links">Wireframes</a>
-				<a href="http://www.sfu.ca/~srwells/iat339/p01/P01_SalathielWells_301263440_References.pdf" class="extra-nav-links">Citations</a>
+					<div class="menu-buttons box">
+						<a href="#text-elements" class="box-item">STATIC</a> <!-- add scroll smoothing -->
+						<a href="#interactive-elements" class="box-item">INTERACTIVE</a>
+						<a href="#combined-elements" class="box-item">COMBINED</a>
+					</div>
+				</nav>
 			</div>
+
+			<div class="grid-row-section">
+				<div class="grid-col-1of1">
+					<h1>STYLEGUIDE</h1>
+				</div>
+			</div>
+		</header>
+
+		<section class="grid-row-section">
+			<div id="text-elements" class="grid-col-1of1">
+				<h2>TEXT ELEMENTS</h2>
+
+				<div class="styleguide-panel grid-row">
+					<div class="grid-col-1of1">
+						<h3>HEADER 1</h3>
+
+						<h1 class="black-background">BANNER TITLE</h1>
+
+						<h4>Montserrat - Medium - 5rem - All Caps</h4>
+
+						<h4>HTML</h4>
+						<code>&lth1 class="black-background"&gtBANNER TITLE&lt/h1&gt</code>
+
+						<h4>CSS</h4>
+						<code>h1 {<br>
+							font-size: 5rem;<br>
+							font-weight: 500;<br>
+							color: var(--white);<br>
+							text-align: center;<br> 
+							margin-top: 2rem;<br>
+							margin-bottom: 0;<br>
+							}<br>
+						</code>
+					</div>
+				</div>
+
+				<div class="styleguide-panel grid-row">
+					<div class="grid-col-1of1">
+						<h3>HEADER 2</h3>
+
+						<h2>SECTION TITLE</h2>
+
+						<h4>Montserrat - Medium - 2.25rem - All Caps</h4>
+
+						<h4>HTML</h4>
+						<code>&lth2&gtSECTION TITLE&lt/h2&gt</code>
+
+						<h4>CSS</h4>
+						<code>h2 {<br>
+							font-size: 2.25rem;<br>
+							font-weight: 500;<br>
+							color: var(--blue);<br>
+							}<br>
+						</code>
+					</div>
+				</div>
+
+				<div class="styleguide-panel grid-row">
+					<div class="grid-col-1of1">
+						<h3>HEADER 3</h3>
+
+						<h3>SUBHEADER / PANEL TITLE</h3>
+
+						<h4>Montserrat - Medium - 1.5rem - All Caps</h4>
+
+						<h4>HTML</h4>
+						<code>&lth3&gtSUBHEADER / PANEL TITLE&lt/h3&gt</code>
+
+						<h4>CSS</h4>
+						<code>h3 {
+							font-size: 1.5rem;
+							font-weight: 500;
+							color: var(--black);
+							}
+						</code>
+
+						<h3>HEADER 4</h3>
+					</div>
+				</div>
+
+
+				<div class="styleguide-panel grid-row">
+					<div class="grid-col-1of1">
+						<h4>Montserrat - Light - 1.125rem - Sentence Case</h4>
+
+						<h4>HTML</h4>
+						<code></code>
+
+						<h4>CSS</h4>
+						<code></code>
+
+						<h3>HEADER 5</h3>
+					</div>
+				</div>
+
+
+				<div class="styleguide-panel grid-row">
+					<div class="grid-col-1of1">
+						<h4>Montserrat - Light - 1.125rem - Sentence Case</h4>
+
+						<h4>HTML</h4>
+						<code></code>
+
+						<h4>CSS</h4>
+						<code></code>
+
+						<h3>HEADER 6</h3>
+					</div>
+				</div>
+
+
+
+				<h4>Montserrat - Bold - 0.875rem - All Caps</h4>
+
+				<h4>HTML</h4>
+				<code></code>
+
+				<h4>CSS</h4>
+				<code></code>
+			</div>
+
+			<div id="interactive-elements" class="grid-row-1of1">
+				<h2>INTERACTIVE ELEMENTS</h2>
+			</div>
+
+			<div id="combined-elements" class="grid-row-1of1">
+				<h2>COMBINED ELEMENTS</h2>
+			</div>
+
 		</section>
 
-		<div class="grid-row">
-			<!-- <nav class="col-4of12 navigation"> -->
-	<!-- 			<a href="#" id="home"><h4>PATTERNS</h4></a>
-			
-				<ul>
-					<li><a href="#text-styling" class="main-section">Text styling</a></li>
-					<li><a href="#headings" class="sub-section">Headings</a></li>
-					<li><a href="#lists" class="sub-section">Lists</a></li>
-					<li><a href="#colours" class="sub-section">Colours</a></li>
-					<li><a href="#interactive-elements" class="main-section">Interactive elements</a></li>
-					<li><a href="#navigation-button" class="sub-section">Navigation Button</a></li>
-					<li><a href="#in-text" class="sub-section">In-text link</a></li>
-					<li><a href="#input-field" class="sub-section">Input field</a></li>
-					<li><a href="#dropdown" class="sub-section">Dropdown</a></li>
-					<li><a href="#buttons" class="sub-section">Buttons</a></li>
-					<li><a href="#combined-elements" class="main-section">Combined elements</a></li>
-					<li><a href="#main-nav" class="sub-section">Main Navigation</a></li>
-					<li><a href="#product-listing" class="sub-section">Product Listing</a></li>
-					<li><a href="#grid-structure" class="sub-section">Grid Structure</a></li>
-				</ul> -->
-			<!-- </nav> -->
-			<nav>
-				<div class="main-nav box grid-row"> <!-- class ordering: unique, box-related, grid-related -->
-					<a class="main-nav-button box-item" href="#text-styling">Text Styling</a>
-					<a class="main-nav-button box-item" href="#interactive-elements">Interactive Elements</a>
-					<a class="main-nav-button box-item" href="#combined-elements">Combined Elements</a>
+
+
+
+		<section class="foot-banner grid-row">
+			<div class="grid-row-section">
+				<div class="grid-col-1of2">
+					<h3>FIND US ON SOCIAL MEDIA</h3>
+
+					<div class="box-left box-center-align grid-row">
+						<div class="facebook icon box-item"></div> <!-- facebook icon needs to be expaned to line up with edge of the image -->
+						<p class="box-item">Facebook</p>
+					</div>
+
+					<div class="box-left box-center-align grid-row">
+						<div class="twitter icon box-item"></div>
+						<p class="box-item">Twitter</p>
+					</div>
+
+					<div class="box-left box-center-align grid-row">
+						<div class="instagram icon box-item"></div>
+						<p class="box-item">Instagram</p>
+					</div>
 				</div>
-			</nav>
-		</div>
 
+				<div class="grid-col-1of2">
+					<h3>CONTACT US</h3>
 
-			<div class="style-guide grid-col-1of1">
+					<p class="yellow">via email:</p>
 
-				<section id="text-styling">
-					<h1>TEXT STYLING</h1>
-					<p>The website uses Monsterrat at varying sizes and weights. These variations allow for hierarchy to be established throughout the website. </p>
+					<form class="footer-form">
+						<input type="text" placeholder="Name">
+						<input type="text" placeholder="Email Address">
+						<input type="text" placeholder="Your Message Here">
+						<input type="submit" value="Submit" class="small-button">
+					</form>
 
-					<h2 id="headings">Headings</h2>
+					<p class="yellow">via telephone:</p>
 
-					<div class="grid-row">
-						<h1 class="col-1of3 heading-color">Main Heading</h1>
-						<h1 class="col-1of3 heading-color">2.25 rem</h1>
-						<h1 class="col-1of3 heading-color">Bold</h1>
-						<p>Main Headings are used only once on the page, at the top to give the user evidence of the page they have arrived to. They appear at top in yellow in front of a banner image.</p>
-
-						<h3>Sample code</h3>
-
-						<h3>HTML</h3>
-
-						<div class="code-style">
-							<code> &lt;h1&gt;This is the main heading&lt;/h1&gt; </code>
-						</div>
-
-						<h3>CSS</h3>
-						<div class="code-style">
-							<code> h1{ <br>
-							font-size: 2.25rem; <br>
-							font-weight: bold; <br>
-							color:  #e9af00;<br>
-							} </code>
-						</div>
-					</div>
-
-
-					<div class="grid-row">
-						<h2 class="col-1of3">Sub-heading</h2>
-						<h2 class="col-1of3">1.75 rem</h2>
-						<h2 class="col-1of3">Semibold</h2>
-						
-						<p>Sub-headings are used as any main heading on the page that come beneath the banner image that has the main heading</p>
-
-						<h3>Sample code</h3>
-
-						<h3>HTML</h3>
-						<div class="code-style">
-							<code> &lt;h2&gt;This is a sub-heading&lt;/h2&gt; </code>
-						</div>
-
-						<h3>CSS</h3>
-						<div class="code-style">
-							<code> h2{ <br>
-								font-size: 1.75rem; <br>
-								font-weight: 600; <br>
-								} </code>
-						</div>
-					</div>
-
-					<div class="grid-row">
-						<h3 class="col-1of3">Section heading</h3>
-						<h3 class="col-1of3">1.25 rem</h3>
-						<h3 class="col-1of3">Medium</h3>
-
-						<p>Section headings are used on the product listings to give the title of the product</p>
-
-						<h3>Sample code</h3>
-
-						<h3>HTML</h3>
-						<div class="code-style">
-							<code> &lt;h3&gt;This is a section heading&lt;/h3&gt; </code>
-						</div>
-
-
-						<h3>CSS</h3>
-						<div class="code-style">
-							<code> h3{ <br>
-								font-size: 1.25rem; <br>
-								font-weight: 500; <br>
-								} </code>
-						</div>
-					</div>
-
-					<div class="grid-row">
-						<p class="col-1of3">Paragraph</p>
-						<p class="col-1of3">1 rem</p>
-						<p class="col-1of3">Light</p>
-
-						<h3>Sample code</h3>
-
-						<h3>HTML</h3>
-
-						<div class="code-style">
-							<code> &lt;p&gt;A paragraph will look like this&lt;/p&gt; </code>
-						</div>
-
-						<h3>CSS</h3>
-
-						<div class="code-style">
-							<code> p{ <br>
-								font-size: 1 rem; <br>
-								font-weight: 100; <br>
-								} </code>
-						</div>
-					</div>
-
-						<h3>Examples</h3>
-						<h2>Who We Are</h2>
-						<p class="example">We are a jet ski rental company providing our client's with newest, fastest jet skis within the market. Our fleet of 20 jet skis ranging from Lite Recreational Watercraft to Performance Models ensure our customer's will have a wide variety of options to choose from to suit their varying comfort levels. Our 3 locations also make it very likely for you to find us somewhere near you.</p>
-				</section>
-
-				<section id="lists">
-					<h2>Lists</h2>
-					<p>There is no direct usage of lists on the page, but if we ever need them, that's how they'll look</p>
-
-					<div class="grid-row">
-						<div class="col-1of2">
-							<h3>Ordered List</h3>
-							<ol class="ol-style">
-								<li>List Item</li>
-								<li>List Item</li>
-								<li>List Item</li>
-							</ol>
-						</div>
-
-						<div class="col-1of2">
-							<h3>Unordered List</h3>
-							<ul class="ul-style">
-								<li>List Item</li>
-								<li>List Item</li>
-								<li>List Item</li>
-							</ul>
-						</div>
-					</div>
-
-						<h3>CSS Selectors</h3>
-						<p>.ol-style</p>
-						<p>.ul-style</p>
-
-
-						<h3>Sample code</h3>
-						<h3>HTML</h3>
-
-						<div class="code-style">
-							<code> &lt;ol class="ol-style"&gt; <br>
-									&nbsp; &lt;li&gt;List Item&lt;/li&gt; <br>
-									&nbsp; &lt;li&gt;List Item&lt;/li&gt; <br>
-									&nbsp; &lt;li&gt;List Item&lt;/li&gt; <br>
-									&lt;/ol&gt;</code>
-						</div>
-
-						<h3>CSS</h3>
-						<div class="code-style">
-							<code> ul-style{ <br>
-								&nbsp;list-style-type: circle; <br>
-							} <br>
-							<br>
-							.ul-style li{ <br>
-								&nbsp; padding: 7px 0 7px 0; <br>
-							} <br>
-							<br>
-							.ol-style li{ <br>
-								&nbsp; padding: 7px 0 7px 0; <br>
-							}</code>
-						</div>
-				
-				</section>
-
-				<section id="colours">
-					<h2>Colours</h2>
-						<div class="grid-row">
-							<div class="yellow grid-col-1of4">
-								<p>#e9af00</p>
-							</div>
-
-							<div class="baby-blue grid-col-1of4">
-								<p>#6b90ff</p>
-							</div>
-
-							<div class="navy-blue grid-col-1of4">
-								<p>#0c2545</p>
-							</div>
-
-							<div class="gray grid-col-1of4">
-								<p>#eeeeee</p>
-							</div>
-						</div>
-
-					<div class="grid-row">
-						<div class="grid-col-1of4 align-l colour-description">
-							<p>Gold is be used for main headings, buttons and the main-navigation</p>
-						</div>
-
-						<div class="grid-col-1of4 align-l colour-description">
-							<p>Baby-blue is to be used for section headings within the product descriptions</p>
-						</div>
-
-						<div class="grid-col-1of4 align-l colour-description">
-							<p>Navy blue is be used as the primary background colour</p>
-						</div>
-
-						<div class="grid-col-1of4 align-l colour-description">
-							<p>Gray can is to be used as a secondary background colour</p>
-						</div>
-					</div>
-				</section>
-
-				<section id="interactive-elements">
-
-					<div class="grid-row">
-
-						<h1>INTERACTIVE ELEMENTS</h1>
-						<p>The navigation is at the top right of the page. All navigation elements are exposed to allow the user to easily access the page they want. They encompass the overall brand of the page with the navy-blue background and gold type. There's a call-to-action by the particular navigation button being underlined on hover.</p>
-
-						<section id="navigation-button">
-							<h2>Navigation Button</h2>
-							
-							<div class="grid-row main-nav">
-								<a href="#" class="main-nav-button">Navigation Button</a>
-							</div>
-						
-							<h3>CSS Selector</h3>
-							<p>.main-navigation</p>
-							
-							<h3>Sample code</h3>
-							<h3>HTML</h3>
-
-							<div class="code-style">
-								<code> &lt;a&gt;href="#" class="main-nav-button"&gt;Nav&lt;/a&gt;</code>
-							</div>
-
-							<h3>CSS</h3>
-
-							<div class="code-style">
-								<code> .main-navigation{ <br>
-									&nbsp; text-decoration: none; <br>
-									&nbsp; font-size: 1.75rem; <br>
-									&nbsp; color: #E9AF00; <br>
-									} <br>
-									<br>
-									.main-navigation:hover{ <br>
-									&nbsp; text-decoration: underline; <br>
-									}</code>
-							</div>
-						</section>
-
-						<section id="in-text">
-							<h2>In-text Link</h2>
-							<p>In-text links have a baby blue color with an underline as a means of a call-to-action within a paragraph</p>
-							<a href="#" class="in-text-link">in-text link</a>
-
-							<h3>CSS Selector</h3>
-							<p>.in-text-link</p>
-
-							<h3>Sample code</h3>
-							<h3>HTML</h3>
-
-							<div class="code-style">	
-								<code> &lt;a&gt;href="#" class="in-text-link"&gt;in-text-link&lt;/a&gt;</code>
-							</div>
-
-							<h3>CSS</h3>
-							<div class="code-style">
-								<code> .in-text-link{ <br>
-								&nbsp;font-size: 1rem; <br> 
-								&nbsp;color: #3CADF3; <br>
-								}</code>
-							</div>
-						</section>
-					</div>
-
-				</section>
-
-				<section id="form-elements">
-					
-					<h1>FORM ELEMENTS</h1>
-					<p>Forms are used throughout the website for its primary goal, which is to book a jet ski rental. They are also used to collect data to provide a suggestion to users who've never rented or ridden a jet ski before</p> 
-
-					<section id="input-field">
-					
-						<h2>Input field</h2>
-						
-						<p>Input fields are used within the Booking Section to allow the user to enter their data for the booking</p>
-
-						<form>
-							<div class="grid-row">
-								<label for="fname">First Name</label>
-							</div>
-
-							<div class="grid-row">
-								<input type="text" id="fname" name="fname">
-							</div>
-
-							<div class="grid-row">
-								<label for="lname">Last Name</label>
-							</div>
-
-							<div class="grid-row">
-								<input type="text" id="lname" name="lname">
-							</div>
-						</form>
-
-						<h3>CSS Selectors</h3>
-						<p>#fname</p> 
-						<p>#lname</p>
-
-						<h3>Sample code</h3>
-						<h3>HTML</h3>
-						<div class="code-style">
-							<code> &lt;form&gt; <br>
-							&nbsp;&lt;div class="grid-row"&gt; <br>
-							&nbsp;&nbsp;&lt;label for="fname"&gt;First Name&lt;/label&gt; <br>
-							&nbsp;&lt;/div&gt;<br>
-							<br>
-							&nbsp;&lt;div class="grid-row"&gt; <br>
-							&nbsp;&nbsp;&lt;input type="text" id="fname" name="fname"&gt; <br>
-							&nbsp;&lt;/div&gt; <br>
-							<br>
-							&nbsp;&lt;div class="grid-row"&gt; <br>
-							&nbsp;&nbsp;&lt;label for="lname"&gt;Last Name&lt;/label&gt; <br>
-							&nbsp;&lt;/div&gt; <br>
-							<br>
-							&nbsp;&lt;div class="grid-row"&gt; <br>
-							&nbsp;&nbsp;&lt;input type="text" id="lname" name="lname"&gt; <br>
-							&nbsp;&lt;/div&gt; <br>
-							&lt;/form&gt;</code>
-						</div>
-
-						<h3>CSS</h3>
-						<div class="code-style">
-							<code> input[type=text]{ <br>
-							&nbsp;width:75%; <br>
-							&nbsp;height: 40px; <br>
-							&nbsp;padding-left: 20px; <br>
-							&nbsp;margin-top: 8px; <br>
-							&nbsp;border: 1px solid #174887; <br>
-							&nbsp;border-radius: 4px; <br>
-							&nbsp;box-sizing: border-box; <br>
-							} <br>
-							<br>
-							#fname{ <br>
-							&nbsp;margin-bottom: 15px; <br>
-							} <br>
-							<br>
-							label{ <br>
-								&nbsp;color: #174887; <br>
-							}</code>
-						</div>
-
-					</section>
-
-					<section id="dropdown">
-
-						<h2>Dropdown</h2>
-
-						<p>Dropdown lists are used to collect data from the user for giving them a suggestion if they're unfamiliar with which jet ski they want to rent</p>
-
-						<select class="styled-select">
-							<option value="option1">Choose an option</option>
-							<option value="option2">Another one</option>
-							<option value="option3">Here's another one</option>
-						</select>
-
-						<h3>CSS Selector</h3>
-						<p>.styled-select</p>
-
-						<h3>Sample code</h3>
-						<h3>HTML</h3>
-
-						<div class="code-style">
-							<code> &lt;select class="styled-select"&gt; <br>
-								&nbsp;&nbsp;&lt;option value="option1"&gt;Choose an option&lt;/option&gt; <br>
-								&nbsp;&nbsp;&lt;option value="option2"&gt;Another one&lt;/option&gt; <br>
-								&nbsp;&nbsp;&lt;option value="option3"&gt;Here's another one&lt;/option&gt; <br>
-							&lt;/select&gt;</code>
-						</div>
-
-						<h3>CSS</h3>
-						<div class="code-style">
-							<code> .styled-select{ <br>
-							&nbsp;&nbsp;background: transparent; <br>
-							&nbsp;&nbsp;width: 75%; <br>
-							&nbsp;&nbsp;padding-left:20px; <br>
-							&nbsp;&nbsp;line-height: 1; <br> 
-							&nbsp;&nbsp;font-size: 1rem; <br>
-							&nbsp;&nbsp;border-radius: 4px; <br> 
-							&nbsp;&nbsp;height: 40px; <br>
-							&nbsp;&nbsp;border: 1px solid #174887; <br>
-							}</code>
-						</div>
-
-					</section>
-
-					<section id="buttons">
-						<h2>Buttons</h2>
-						<p>Buttons are used as a means of submitting the information the user entered and returning a specific result, either a suggestion, a re-direct or a confirmation that the booking has occurred</p>
-						<button class="reset-button">Reset</button>
-						<button class="submit-button">Submit</button>
-						
-						<h3>CSS Selectors</h3>
-						<p>.reset-button</p>
-						<p>.submit-button</p>
-
-						<h3>Sample code</h3>
-						<h3>HTML</h3>
-						<div class="code-style">
-							<code> &lt;button class="reset-button&gt;Reset&lt;/button&gt; <br>
-							&lt;button class="submit-button&gt;Submit&lt;/button&gt;</code>
-						</div>
-
-						<h3>CSS</h3>
-						<div class="code-style">
-							<code> .submit-button{ <br>
-							&nbsp;&nbsp;width: 10rem; <br>
-						  	&nbsp;&nbsp;padding-top: 0.5rem; <br>
-						 	&nbsp;&nbsp;padding-bottom: 0.5rem; <br>
-						  	&nbsp;&nbsp;padding-left: 1.5rem; <br>
-						  	&nbsp;&nbsp;padding-right: 1.5rem; <br>
-						  	&nbsp;&nbsp;background-color: #deb012; <br>
-						  	&nbsp;&nbsp;border-radius: 5rem; <br>
-						  	&nbsp;&nbsp;border: none; <br>
-						  	&nbsp;&nbsp;color: white; <br>
-						  	&nbsp;&nbsp;text-decoration: none; <br>
-							} <br>
-							<br>
-							.reset-button{ <br>
-							&nbsp;&nbsp;color: #deb012; <br>
-							&nbsp;&nbsp;text-decoration: underline; <br>
-							&nbsp;&nbsp;border: none; <br>
-							&nbsp;&nbsp;background-color: white; <br>
-							} <br>
-							<br>
-							.submit-button:hover{ <br>
-							&nbsp;&nbsp;background-color: #ff9e1f; <br>
-							&nbsp;&nbsp;transition: 0.5s, ease-in; <br>
-							} </code>
-						</div>	
-					</section>	
-				</section>
-				
-				<section id="combined-elements">
-					<h1>Combined Elements</h1>
-
-					<section id="main-nav">
-						<h2>Main Navigation</h2>
-						<p>The main navigation exposes all the options for maneuvering the website</p>
-						
-						<div class="grid-row main-nav">
-								<a href="#" class="main-nav-button">Book</a>
-								<a href="#" class="main-nav-button">Rates</a>
-								<a href="#" class="main-nav-button">Fleet</a>
-								<a href="#" class="main-nav-button">Review</a>
-								<a href="#" class="main-nav-button">Contact</a>
-								<a href="#" class="main-nav-button">Rules</a>
-						</div>
-
-						<h3>CSS Selectors</h3>
-							<p>.main-navigation</p>
-
-							<h3>Sample code</h3>
-							<h3>HTML</h3>
-							<div class="code-style">
-								<code> &lt;a href="#" class="main-nav-button"&gt;Book&lt;/a&gt; <br>
-								&lt;a href="#" class="main-nav-button"&gt;Rates&lt;/a&gt; <br>
-								&lt;a href="#" class="main-nav-button"&gt;Fleet&lt;/a&gt; <br>
-								&lt;a href="#" class="main-nav-button"&gt;Review&lt;/a&gt; <br>
-								&lt;a href="#" class="main-nav-button"&gt;Contact&lt;/a&gt; <br>
-								&lt;a href="#" class="main-nav-button"&gt;Rules&lt;/a&gt;</code>
-							</div>
-
-							<h3>CSS</h3>
-							<div class="code-style">
-								<code> .main-navigation{ <br>
-								&nbsp; text-decoration: none; <br>
-								&nbsp; font-size: 1.75rem; <br>
-								&nbsp; color: #E9AF00; <br>
-								&nbsp; background-color:#174887; <br>
-								&nbsp; padding: 1rem; <br>
-								&nbsp; float:left; <br>
-								 }</code>
-							</div>	
-						</section>
-
-						<section id="product-listing">
-							<h2>Product Listing</h2>
-							<p>The products are listed on the home page in a 3-column layout, giving a brief overview of the jet ski specs and allowig them to book the jet ski if they're satisified with the information provided</p>
-
-							<div class="grid-row">
-								<div class="product col-1of3 align-c">
-									<img src="img/seadooSpark.png" alt="Smaller Seadoo Spark jetski facing left with navy blue overlay">
-									<h3>LITE</h3>
-									<p class="product-description">Light and easy to handle</p>
-									
-									<div class="col-1of2 align-l">
-										<h5>Rider Capacity</h5>
-									</div>
-
-									<div class="col-1of2 align-l">
-										<p>2</p>
-									</div>
-
-									<div class="col-1of2 align-l">
-										<h5>Speed</h5>
-									</div>
-
-									<div class="col-1of2 align-l">
-										<p>60 hp</p>
-									</div>
-
-									<div class="col-1of2 align-l">
-										<h5>Weight</h5>
-									</div>
-
-									<div class="col-1of2 align-l">
-										<p>160 kg</p>
-									</div>
-
-									<h3>from $60 /hr</h3>
-
-									<a href="#" class="submit-button">Book</a>
-								</div>
-
-								<div class="product col-1of3 align-c">
-									<img src="img/seadooGTX.png" alt="Luxury Seadoo GTX with navy blue overlay facing left">
-									<h3>LUXURY</h3>
-									<p class="product-description">Stylish and comfortable</p>
-
-									<div class="col-1of2 align-l">
-										<h5>Rider Capacity</h5>
-									</div>
-
-									<div class="col-1of2 align-l">
-										<p>3</p>
-									</div>
-
-									<div class="col-1of2 align-l">
-										<h5>Speed</h5>
-									</div>
-
-									<div class="col-1of2 align-l">
-										<p>200 hp</p>
-									</div>
-
-									<div class="col-1of2 align-l">
-										<h5>Weight</h5>
-									</div>
-
-									<div class="col-1of2 align-l">
-										<p>272 kg</p>
-									</div>
-
-									<h3>from $75 /hr</h3>
-
-									<a href="#" class="submit-button">Book</a>
-								</div>
-
-								<div class="product col-1of3 align-c">
-									<img src="img/seadooRXT.png" alt="Performance Seadoo RXT jetski with navy blue overlay facing left">
-									<h3>PERFORMANCE</h3>
-									<p class="product-description">Fast and powerful</p>
-
-									<div class="col-1of2 align-l">
-										<h5>Rider Capacity</h5>
-									</div>
-
-									<div class="col-1of2 align-l">
-										<p>3</p>
-									</div>
-
-									<div class="col-1of2 align-l">
-										<h5>Speed</h5>
-									</div>
-
-									<div class="col-1of2 align-l">
-										<p>230 hp</p>
-									</div>
-
-									<div class="col-1of2 align-l">
-										<h5>Weight</h5>
-									</div>
-
-									<div class="col-1of2 align-l">
-										<p>272 kg</p>
-									</div>
-
-									<h3>from $90 /hr</h3>
-
-									<a href="#" class="submit-button">Book</a>
-								</div>
-
-							</div>
-
-							<h3>CSS Selectors</h3>
-							<p>.product</p>
-							<p>.col-1of3</p>
-
-							<h3>Sample code</h3>
-							<h3>HTML</h3>
-							<div class="code-style">
-								<code>&lt;div class="product col-1of3"&gt; <br>
-									&nbsp;&lt;img src="img/seadooRXT.png" alt="Performance Seadoo RXT &nbsp;jetski with navy blue overlay facing left"&gt; <br>
-									&nbsp;&lt;h3&gt;PERFORMANCE&lt;/h3&gt; <br>
-									&nbsp;&lt;p class="product-description"&gt;Fast and powerful&lt;/p&gt; <br>
-									<br>
-									&lt;div class="col-1of2"&gt; <br>
-										&nbsp;&lt;h5&gt;Rider Capacity&lt;/h5&gt; <br>
-									&lt;/div&gt; <br>
-									<br>
-									&lt;div class="col-1of2"&gt; <br>
-										&nbsp;&lt;p&gt;3&lt;/p&gt; <br>
-									&lt;/div&gt; <br>
-									<br>
-									&lt;div class="col-1of2"&gt; <br>
-										&nbsp;&lt;h5&gt;Speed&lt;/h5&gt; <br>
-									&lt;/div&gt; <br>
-									<br>
-									&lt;div class="col-1of2"&gt; <br>
-										&nbsp;&lt;p&gt;230 hp&lt;/p&gt; <br>
-									&lt;/div&gt; <br>
-									<br>
-									&lt;div class="col-1of2"&gt; <br>
-										&nbsp;&lt;h5&gt;Weight&lt;/h5&gt; <br>
-									&lt;/div&gt; <br>
-									<br>
-									&lt;div class="col-1of2"&gt; <br>
-										&nbsp;&lt;p&gt;272 kg&lt;/p&gt; <br>
-									&lt;/div&gt; <br>
-									<br>
-									&lt;h3&gt;from $90 /hr&lt;/h3&gt;<br>
-									<br>
-									&lt;a href="#" class="submit-button"&gt;Book&lt;/a&gt;</code>
-							</div>
-
-							<h3>CSS</h3>
-							<div class="code-style">
-								<code> .product-description{ <br>
-									&nbsp;&nbsp;color:white; <br>
-									&nbsp;&nbsp;font-style: italic; <br>
-									&nbsp;&nbsp;font-size: 12px; <br>
-								} <br>
-								<br>
-								.product p{ <br>
-									&nbsp;&nbsp;color: white; <br>
-									&nbsp;&nbsp;font-size: 12px; <br>
-									&nbsp;&nbsp;margin-top:3px;  <br>
-								} <br>
-								<br>
-								.product h5{ <br>
-									&nbsp;&nbsp;font-weight: 300; <br>
-									&nbsp;&nbsp;margin-top:0; <br>
-									&nbsp;&nbsp;margin-bottom: 0; <br>
-									&nbsp;&nbsp;color: #3CADF3;<br>
-								}<br>
-								<br>
-								.col-1of3{ <br>
-									&nbsp;&nbsp;box-sizing: border-box; <br>
-									&nbsp;&nbsp;width:32%; <br>
-									&nbsp;&nbsp;display: inline-block; <br>
-									&nbsp;&nbsp;float:left; <br>
-									&nbsp;&nbsp;margin-left: 5px; <br> 
-									&nbsp;&nbsp;margin-right: 5px; <br> 
-									&nbsp;&nbsp;background-color: #0c2545; <br>
-									&nbsp;&nbsp;padding-bottom: 30px; <br>
-								}</code>
-							</div>	
-
-						</section>
-
-						<section id="grid-structure">
-							<h2>Grid Structure</h2>
-							<p>The website uses seveal grid structures nested within a row to organize the information. For example, product listings use a 3 column grid structure on the home page. The fleet page utilizes a 2 column grid structure to view the fleet.</p>
-							<h3>Size 1 of 1</h3>
-							
-							<div class="grid-row">
-								<div class="grid-col-1of1">
-									<p class="grid-filler">1/1</p>
-								</div>
-							</div>
-
-							<h3>Size 1 of 2</h3>
-							<div class="grid-row">
-								<div class="grid-col-1of2">
-									<p class="grid-filler">1/2</p>
-								</div>
-
-								<div class="grid-col-1of2">
-									<p class="grid-filler">1/2</p>
-								</div>
-							</div>
-
-							<h3>Size 1 of 3</h3>
-							<div class="grid-row">
-								<div class="grid-col-1of3">
-									<p class="grid-filler">1/3</p>
-								</div>
-
-								<div class="grid-col-1of3">
-									<p class="grid-filler">1/3</p>
-								</div>
-
-								<div class="grid-col-1of3">
-									<p class="grid-filler">1/3</p>
-								</div>
-							</div>
-
-							<h3>Size 1 of 4</h3>
-							<div class="grid-row">
-								<div class="grid-col-1of4">
-									<p class="grid-filler">1/4</p>
-								</div>
-
-								<div class="grid-col-1of4">
-									<p class="grid-filler">1/4</p>
-								</div>
-
-
-								<div class="grid-col-1of4">
-									<p class="grid-filler">1/4</p>
-								</div>
-
-
-								<div class="grid-col-1of4">
-									<p class="grid-filler">1/4</p>
-								</div>
-							</div>
-
-							<h3>Size 1 of 8</h3>
-							<div class="grid-row">
-								<div class="grid-col-1of8">
-									<p class="grid-filler">1/8</p>
-								</div>
-
-								<div class="grid-col-1of8">
-									<p class="grid-filler">1/8</p>
-								</div>
-
-
-								<div class="grid-col-1of8">
-									<p class="grid-filler">1/8</p>
-								</div>
-
-								
-								<div class="grid-col-1of8">
-									<p class="grid-filler">1/8</p>
-								</div>
-
-								<div class="grid-col-1of8">
-									<p class="grid-filler">1/8</p>
-								</div>
-
-								<div class="grid-col-1of8">
-									<p class="grid-filler">1/8</p>
-								</div>
-
-
-								<div class="grid-col-1of8">
-									<p class="grid-filler">1/8</p>
-								</div>
-
-								
-								<div class="grid-col-1of8">
-									<p class="grid-filler">1/8</p>
-								</div>
-							</div>
-
-							<h3>CSS Selectors</h3>
-							<p>.grid-col-1of4</p>
-
-							<h3>Sample code</h3>
-							<h3>HTML</h3>
-							<div class="code-style">
-								<code> &lt;div class="grid-col-1of4"&gt;&lt;/div&gt; <br>
-								&lt;div class="grid-col-1of4"&gt;&lt;/div&gt; <br>
-								&lt;div class="grid-col-1of4"&gt;&lt;/div&gt; <br>
-								&lt;div class="grid-col-1of4"&gt;&lt;/div&gt; <br></code>
-							</div>
-
-							<h3>CSS</h3>
-							<div class="code-style">
-								<code> .grid-col-1of4{ <br>
-								&nbsp; width:25%; <br>
-								&nbsp; float:left; <br>
-								 }</code>
-							</div>	
-
-						</section>
-
-				</section>
-
+					<p class="footer-telephone-2">1 (242) 466-7981</p>
+				</div>
 			</div>
-		</div>
-	</body>
 
+			<div class="grid-row-section">
+				<div class="grid-col-1of2">
+					<p>© 2016. Jeti Rentals. All Rights Reserved.</p>
+				</div>
+
+				<div class="grid-col-1of2">
+					<p class="footer-telephone-1">1 (242) 466-7981</p>
+				</div>
+			</div>
+		</section>
+	</body>
 </html>

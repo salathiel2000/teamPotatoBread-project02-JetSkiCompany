@@ -39,6 +39,10 @@ html {
 
 }
 
+.black-background { /* just for the styleguide */
+	background-color: var(--black);
+}
+
 /* Text */
 h1 { /* ALL CAPS */
 	font-size: 5rem; /* 80pt */
@@ -223,6 +227,29 @@ textarea {
 
 select, textarea, input {
 	outline-color: var(--yellow);
+}
+
+.right{
+	text-align: right; 
+}
+
+.left {
+	text-align: left;
+}
+
+.styleguide-panel {
+	max-width: 100%;
+	justify-content: left;
+	text-align: left;
+
+	border: solid;
+	border-width: 1px;
+	border-color: var(--blue);
+	padding: 1rem;
+
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
 }
 
 /* Universal End */
@@ -710,10 +737,6 @@ td {
 /*Submit Review Begin*/ 
 
 /* ------------------------------------------ Review ------------------------------------------ */
-.left{
-	text-align: right; 
-}
-
 .top-space{
 	margin-top:2.5rem;
 	padding-top: 1rem;
