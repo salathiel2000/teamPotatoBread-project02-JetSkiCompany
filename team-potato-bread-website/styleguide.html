@@ -384,6 +384,7 @@
 						<div class="grid-col-1of1">
 							<h3>INPUT</h3>
 
+							<label for="fname">First Name</label>
 							<input type="text" placeholder="First Name" role="form">
 
 							<h4>HTML</h4>
@@ -410,6 +411,7 @@
 						<div class="grid-col-1of1">
 							<h3>TEXTAREA</h3>
 
+							<label for="message">Your message here</label>
 							<textarea name="textarea" rows="5" cols="5" placeholder="Write your review here..." role="form"></textarea>
 
 							<h4>HTML</h4>
@@ -432,6 +434,7 @@
 						<div class="grid-col-1of1">
 							<h3>SELECT</h3>
 
+							<label for="options">Choose an option</label>
 							<select> 
 								<option value="option1">Option 1</option> 
 								<option value="option2">Option 2</option> 
@@ -480,8 +483,11 @@
 							<h3>FORM</h3>
 
 							<form role="form">
+								<label for="fname">First Name</label>
 								<input type="text" placeholder="First Name">
+								<label for="lname">Last Name</label>
 								<input type="text" placeholder="Last Name">
+								<label for="review">Write your review here</label>
 								<textarea name="textarea" rows="5" cols="5" placeholder="Write your review here..."></textarea>
 								<input type="submit" value="Cancel" class="small-button gray-background">
 								<input type="submit" value="Submit" class="small-button">
@@ -511,28 +517,28 @@
 											<div class="grid-col-1of1">
 												<img src="img/seadoo-spark.png" alt="image of a jet ski">
 
-												<h3>LITE</h3>
+												<h3 class="remove-margin-bottom">LITE</h3>
 
-												<p>Light and easy to handle</p>
+												<p class="remove-margin-bottom">Light and easy to handle</p>
 
 												<table>
 													<tr>
-														<td><h6>RIDER CAPACITY</h6></td>
-														<td><h6>2</h6></td>
+														<td><h6 class="remove-margin-bottom">RIDER CAPACITY</h6></td>
+														<td><h6 class="remove-margin-bottom">2</h6></td>
 													</tr>
 
 													<tr>
-														<td><h6>SPEED</h6></td>
-														<td><h6>60HP</h6></td>
+														<td><h6 class="remove-margin">SPEED</h6></td>
+														<td><h6 class="remove-margin">60HP</h6></td>
 													</tr>
 
 													<tr>
-														<td><h6>WEIGHT</h6></td>
-														<td><h6>160KG</h6></td>
+														<td><h6 class="remove-margin">WEIGHT</h6></td>
+														<td><h6 class="remove-margin">160KG</h6></td>
 													</tr>
 												</table>
 
-												<h3>$60 / HR</h3>
+												<h3 class="remove-margin">$60 / HR</h3>
 											</div>
 										</div>
 
@@ -744,7 +750,8 @@
 												<input type="text" placeholder="Email Address">
 											</div>
 
-											<textarea name="textarea" rows="4" cols="5" placeholder="Your message here"></textarea>
+											<label for="message">Your message here</label>
+											<textarea name="textarea" rows="4" cols="5"></textarea>
 											<input type="submit" value="Submit" class="small-button">
 										</form>
 

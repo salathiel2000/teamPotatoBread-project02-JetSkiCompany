@@ -230,7 +230,11 @@ section{
 	padding: 2rem 0; 
 }
 
-
+ul{
+	list-style-type: none;
+	padding-top: 2rem;
+	padding-left: 3rem;
+}
 
 .reduce-image{
 	width:90%;
@@ -326,6 +330,11 @@ section{
 
 .float-right{
 	float:right;
+}
+
+.float-center{
+	margin-left:auto;
+	margin-right: auto; 
 }
 
 /* Buttons */ 
@@ -578,7 +587,7 @@ table{
 /* Product Detail Begin */ 
 
 .page-banner{
-	background-image: url("../img/home-panorama.jpg"); 
+	background-image: url("../img/Optimized-home-panorama.jpg"); 
 
 	background-attachment: scroll; 
     background-position: top; 
@@ -774,8 +783,8 @@ table{
 		height: 650px;
 
 	margin-bottom: 1rem;
->>>>>>> origin/master
 }
+
 
 .jet-ski-panel h3 {
 	color: var(--yellow);
@@ -922,12 +931,38 @@ td {
 /*About Begin*/
 .values {
 	border: 1px solid var(--yellow);
+	height: 310px;
+	margin-bottom: 2rem;
+}
+
+@media(max-width: 44.25rem){
+	.values{
+	height:200px
+}
+}
+
+@media(max-width: 36.5rem){
+	.values{
+	height:250px
+}
+}
+
+@media(max-width: 26.875rem){
+	.values{
+	height:300px
+}
+}
+
+@media(max-width: 22rem){
+	.values{
+	height:350px
+}
 }
 
 .values h3{
 	font-family: 'Againts', sans-serif;
 
-	font-size: 5rem;
+	font-size: 3rem;
 	margin: 0;
 	text-align: center;
 
@@ -1100,7 +1135,8 @@ select{
 	height: 60px; 
 	border-bottom: 1px solid var(--blue);
 	color: white;
-	font-weight: 100; 
+	font-weight: 100;
+	font-size: 0.8rem; 
 	margin-top: 8px;
 	border-radius: 0px;
 	cursor: pointer;
@@ -1309,6 +1345,18 @@ select{
 	.info-panel{
 		height: 450px;
 	}
+
+	.footer-form .grid-col-1of2:nth-child(1){
+		width:100%;
+	}
+
+	.footer-form .grid-col-1of2:nth-child(2){
+		width:100%;
+	}
+
+	.negative-margin{
+		margin-left:0;
+	}
 }
 
 @media(max-width: 31.5rem){
@@ -1361,6 +1409,46 @@ select{
 	#booking-information .grid-col-1of2:nth-child(2){
 		padding-left:0;
 
+	}
+}
+
+@media(max-width: 65.875rem){
+	.grid-col-1of7{
+		width: 25%
+	}
+
+	.grid-col-6of7{
+		width: 25%
+	}
+}
+
+@media(max-width: 44.5625rem){
+	.grid-col-1of7{
+		width: 35%
+	}
+
+	.grid-col-6of7{
+		width: 35%
+	}
+}
+
+@media(max-width: 32.5rem){
+	.grid-col-1of7{
+		width: 50%
+	}
+
+	.grid-col-6of7{
+		width: 50%
+	}
+}
+
+@media(max-width: 23rem){
+	.grid-col-1of7{
+		width: 100%
+	}
+
+	.grid-col-6of7{
+		width: 100%
 	}
 }
 
