@@ -490,6 +490,117 @@
 				<div class="styleguide-panel grid-row">
 					<div class="grid-col-1of1">
 						<h3>CONTENT PANEL</h3>
+
+						<div class="grid-row">
+							<div class="grid-col-1of3">
+								<div class="jet-ski-panel">
+									<div class="grid-row">
+										<div class="grid-col-1of1">
+											<img src="img/seadoo-spark.png" alt="image of a jet ski">
+
+											<h3>LITE</h3>
+
+											<p>Light and easy to handle</p>
+
+											<table>
+												<tr>
+													<td><h6>RIDER CAPACITY</h6></td>
+													<td><h6>2</h6></td>
+												</tr>
+
+												<tr>
+													<td><h6>SPEED</h6></td>
+													<td><h6>60HP</h6></td>
+												</tr>
+
+												<tr>
+													<td><h6>WEIGHT</h6></td>
+													<td><h6>160KG</h6></td>
+												</tr>
+											</table>
+
+											<h3>$60 / HR</h3>
+										</div>
+									</div>
+
+									<div class="grid-row">
+										<div class="grid-col-1of2">
+											<a href="lite.html">View Details</a>
+										</div>
+										<div class="grid-col-1of2">
+											<a href="book.html" class="small-button">Book</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<h4>HTML</h4>
+						<code>
+							&ltdiv class="jet-ski-panel"&gt<br>
+								&ltdiv class="grid-row"&gt<br>
+									&ltdiv class="grid-col-1of1"&gt<br>
+										&ltimg src="img/seadoo-spark.png" alt="image of a jet ski"&gt<br>
+										<br>
+										&lth3&gtLITE&lt/h3&gt<br>
+										<br>
+										&ltp&gtLight and easy to handle&lt/p&gt<br>
+										<br>
+										&lttable&gt<br>
+											&lttr&gt<br>
+												&lttd&gt&lth6&gtRIDER CAPACITY&lt/h6&gt&lt/td&gt<br>
+												&lttd&gt&lth6&gt2&lt/h6&gt&lt/td&gt<br>
+											&lt/tr&gt<br>
+											<br>
+											&lttr&gt<br>
+												&lttd&gt&lth6&gtSPEED&lt/h6&gt&lt/td&gt<br>
+												&lttd&gt&lth6&gt60HP&lt/h6&gt&lt/td&gt<br>
+											&lt/tr&gt<br>
+											<br>
+											&lttr&gt<br>
+												&lttd&gt&lth6&gtWEIGHT&lt/h6&gt&lt/td&gt<br>
+												&lttd&gt&lth6&gt160KG&lt/h6&gt&lt/td&gt<br>
+											&lt/tr&gt<br>
+										&lt/table&gt<br>
+										<br>
+										&lth3&gt$60 / HR&lt/h3&gt<br>
+									&lt/div&gt<br>
+								&lt/div&gt<br>
+								<br>
+								&ltdiv class="grid-row"&gt<br>
+									&ltdiv class="grid-col-1of2"&gt<br>
+										&lta href="lite.html"&gtView Details&lt/a&gt<br>
+									&lt/div&gt<br>
+									&ltdiv class="grid-col-1of2"&gt<br>
+										&lta href="book.html" class="small-button"&gtBook&lt/a&gt<br>
+									&lt/div&gt<br>
+								&lt/div&gt<br>
+							&lt/div&gt<br>
+						</code>
+
+						<h4>CSS</h4>
+						<code>
+						.jet-ski-panel {<br>
+							justify-content: center;<br>
+							text-align: center;<br>
+							border: 1px solid var(--blue);<br>
+						}<br>
+						<br>
+						.jet-ski-panel h3 {<br>
+							color: var(--yellow);<br>
+						}<br>
+						<br>
+						.jet-ski-panel a {<br>
+							display: inline-block;<br>
+							padding-top: 1rem;<br>
+							padding-bottom: 1rem;<br>
+							margin-bottom: 1rem;<br>
+						}<br>
+						<br>
+						.jet-ski-panel img {<br>
+							max-width: 100%;<br>
+						}<br>
+						</code>
 					</div>
 				</div>
 
@@ -585,7 +696,7 @@
 					<div class="grid-col-1of1">
 						<h3>FOOTER</h3>
 
-						<h4>CSS</h4>
+						<h4>HTML</h4>
 						<code>
 						</code>
 
@@ -625,7 +736,7 @@
 				<div class="styleguide-panel grid-row">
 					<div class="grid-col-1of1">
 						<h4>Initial 2rem page margins are created using the grid-row-section and grid-col- classes for all content.</h4>
-						<h4>Only the header and footer banner images ignore this rule by using the grid-row class to span the full browser window.</h4>
+						<h4>Only the header and footer banner images ignore this rule by using the grid-row class which has no margin to span the full browser window.</h4>
 
 						<div class="grid-highlight grid-row-section">
 							<h4>grid-row-section</h4>
@@ -650,6 +761,96 @@
 							<div class="grid-highlight grid-col-1of3">
 								<h4>grid-col-1of3</h4>
 							</div>
+
+							<div class="grid-highlight grid-col-1of3">
+								<h4>grid-col-1of3</h4>
+							</div>
+							<div class="grid-highlight grid-col-2of3">
+								<h4>grid-col-2of3</h4>
+							</div>
+						</div>
+
+						<h4>HTML</h4>
+						<code>
+							&ltdiv class="grid-highlight grid-row-section"&gt<br>
+								&lth4&gtgrid-row-section&lt/h4&gt<br>
+								<br>
+								&ltdiv class="grid-highlight grid-col-1of1"&gt<br>
+									&lth4&gtgrid-col-1of1&lt/h4&gt<br>
+								&lt/div&gt<br>
+								<br>
+								&ltdiv class="grid-highlight grid-col-1of2"&gt<br>
+									&lth4&gtgrid-col-1of2&lt/h4&gt<br>
+								&lt/div&gt<br>
+								&ltdiv class="grid-highlight grid-col-1of2"&gt<br>
+									&lth4&gtgrid-col-1of2&lt/h4&gt<br>
+								&lt/div&gt<br>
+								<br>
+								&ltdiv class="grid-highlight grid-col-1of3"&gt<br>
+									&lth4&gtgrid-col-1of3&lt/h4&gt<br>
+								&lt/div&gt<br>
+								&ltdiv class="grid-highlight grid-col-1of3"&gt<br>
+									&lth4&gtgrid-col-1of3&lt/h4&gt<br>
+								&lt/div&gt<br>
+								&ltdiv class="grid-highlight grid-col-1of3"&gt<br>
+									&lth4&gtgrid-col-1of3&lt/h4&gt<br>
+								&lt/div&gt<br>
+								<br>
+								&ltdiv class="grid-highlight grid-col-1of3"&gt<br>
+									&lth4&gtgrid-col-1of3&lt/h4&gt<br>
+								&lt/div&gt<br>
+								&ltdiv class="grid-highlight grid-col-2of3"&gt<br>
+									&lth4&gtgrid-col-2of3&lt/h4&gt<br>
+								&lt/div&gt<br>
+							&lt/div&gt<br>
+						</code>
+
+						<h4>CSS</h4>
+						<code>
+							.grid-row-section {<br>
+								width: 100%;<br>
+								padding-left: 1rem;<br>
+								padding-right: 1rem;<br>
+							}<br>
+							<br>
+							.grid-row {<br>
+								width: 100%;<br>
+							}<br>
+							<br>
+							.grid-row::after {<br>
+								content:"";<br>
+								display:block;<br>
+								clear:both; <br>
+							}<br>
+							<br>
+							.grid-row-section::after {<br>
+								content:"";<br>
+								display:block;<br>
+								clear:both; <br>
+							}<br>
+							<br>
+							[class*='grid-col-']{<br>
+								float:left;<br>
+								padding-left: 1rem;<br>
+								padding-right: 1rem;<br>
+							}<br>
+							<br>
+							.grid-col-1of1 {<br>
+								width: 100%;<br>
+							}<br>
+							<br>
+							.grid-col-1of2{<br>
+								width:50%;<br>
+							}<br>
+							<br>
+							.grid-col-2of3{<br>
+								width:66.6666%;<br>
+							}<br>
+							<br>
+							.grid-col-1of3{<br>
+								width:33.3333%;<br>
+							}<br>
+						</code>
 					</div>
 				</div>
 			</div>
