@@ -311,7 +311,6 @@ section{
 	padding: 2rem 0; 
 }
 
-<<<<<<< HEAD
 ul{
 	list-style-type: none;
 	padding-top: 2rem;
@@ -320,10 +319,10 @@ ul{
 
 .reduce-image{
 	width:90%;
-=======
+}
+
 .negative-margin {
 	margin-left: -1.5rem
->>>>>>> thomas
 }
 
 .remove-margin {
@@ -370,7 +369,6 @@ ul{
 	padding-top: 2rem;
 }
 
-<<<<<<< HEAD
 #booking-information .grid-col-1of2:nth-child(1){
 	padding-left: 0;
 	padding-right: 1rem;
@@ -386,10 +384,7 @@ ul{
 }
 
 
-.remove-padding-left{
-=======
 .remove-padding-left {
->>>>>>> thomas
 	padding-left: 0;
 	padding-right: 1rem;
 }
@@ -411,7 +406,6 @@ ul{
 	float:right;
 }
 
-<<<<<<< HEAD
 .float-center{
 	margin-left:auto;
 	margin-right: auto; 
@@ -452,8 +446,6 @@ ul{
 }
 
 /* Select */
-
-/* Selection Box Styling (removes arrow) */
 select {
 	-moz-appearance: none;
 	-webkit-appearance:none;
@@ -474,8 +466,6 @@ select, textarea, input {
 	outline-color: var(--yellow);
 }
 
-=======
->>>>>>> thomas
 .right { 
 	text-align: right; 
 }
@@ -704,9 +694,7 @@ header, body {
 	transition: 0.1s ease-in-out;
 }
 
-<<<<<<< HEAD
 /* Product Detail Begin */ 
-
 .page-banner{
 	background-image: url("../img/Optimized-home-panorama.jpg"); 
 
@@ -731,10 +719,8 @@ header, body {
 	color: var(--blue);
 }
 
-@media(max-width: 43rem){
-=======
+
 @media(max-width: 43rem) {
->>>>>>> thomas
 	.menu-buttons {
 		max-width: 5rem;
 	}
@@ -904,13 +890,10 @@ header, body {
 
 	border: 1px solid var(--blue);
 	margin-bottom: 1rem;
-<<<<<<< HEAD
-=======
 }
 
 .jet-ski-panel img {
 	max-width: 100%;
->>>>>>> thomas
 }
 
 
@@ -1260,8 +1243,8 @@ header, body {
 	border-style: solid;
 	border-color: var(--yellow);
 	padding: 1rem;
-<<<<<<< HEAD
 }	
+/* Styleguide End */
 
 @media(max-width: 76.25rem){
 	.grid-row-section{
@@ -1417,8 +1400,3 @@ header, body {
 		width: 100%
 	}
 }
-
-=======
-}
-/* Styleguide End */
->>>>>>> thomas
