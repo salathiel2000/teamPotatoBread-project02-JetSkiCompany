@@ -62,23 +62,23 @@
 						<form>
 
 							<label for="jet-ski-selection">Choose your jet ski</label>
-							<select class="styled-select less-margin-top add-bottom-space">
+							<select class="styled-select less-margin-top add-bottom-space" id="jet-ski-selection">
 								<option>SEADOO SPARK</option>
 								<option>SEADOO RTX</option>
 								<option>SEADOO GTXS</option>
 							</select>
 
 							<label for="quantity">Quantity</label>
-							<input class="add-bottom-space" type="number" name="hours" min="1" max="5">
+							<input class="add-bottom-space" type="number" name="hours" min="1" max="5" id="quantity">
 
 							<label for="date">Date</label>
-							<input class="add-bottom-space" type="date" name="date">
+							<input class="add-bottom-space" type="date" name="date" id="date">
 
 							<label for="start-time">Start time</label>
-							<input class="add-bottom-space" type="time" name="time">
+							<input class="add-bottom-space" type="time" name="time" id="start-time">
 
 							<label for="duration">Duration (in hrs.)</label>
-							<input class="add-bottom-space" type="number" name="hours" min="1" max="8">
+							<input class="add-bottom-space" type="number" name="hours" min="1" max="8" id="duration">
 						</form>
 					</div>
 
@@ -124,16 +124,16 @@
 							
 							<div class="grid-col-1of2 add-bottom-space">
 								<label for="fname">First Name</label>
-								<input type="text">
+								<input type="text" class="fname" id="fname">
 							</div>
 
 							<div class="grid-col-1of2 add-bottom-space">
 								<label for="lname">Last Name</label>
-								<input type="text">
+								<input type="text" id="lname">
 							</div>
 
 							<label for="email">Email Address</label>
-							<input type="text">
+							<input type="text" id="email">
 						</form>
 					</div>
 				</section>
@@ -144,20 +144,21 @@
 						<form id="booking-information">
 							
 							<label for="name-on-card">Name on Card</label>
-							<input class="add-bottom-space" type="text">
+							<input class="add-bottom-space" type="text" id="name-on-card">
 
 							<label for="card-number">Card Number</label>
-							<input class="add-bottom-space" type="text">
+							<input class="add-bottom-space" type="text" id="card-number">
 
 							<div class="grid-col-1of2 add-bottom-space remove-padding-left">
 								<label for="exp-date">Exp. Date (MM/YY)</label>
-								<input type="text">
+								<input type="text" id="exp-date">
 							</div>
 
 							<div class="grid-col-1of2 add-bottom-space remove-padding-right">
 								<label for="cvc">CVC Number (3 Digits on back of card)</label>
-								<input type="text">
+								<input type="text" id="cvc">
 							</div>
+						</form>
 
 					<div class="grid-row">
 						<div class="grid-col-1of1">
@@ -173,7 +174,7 @@
 							</form>
 						</div>
 					</div>
-						</form>
+					
 					</div>
 				</section>
 			</div>
@@ -203,7 +204,7 @@
 						<li><a href="styleguide.html">Style Guide</a></li>
 						<li><a href="P02_References.pdf">Citations</a></li>
 					</ul>
-					
+
 				</div>
 
 				<div class="grid-col-1of2">

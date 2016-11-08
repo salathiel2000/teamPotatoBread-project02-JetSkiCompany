@@ -1,29 +1,3 @@
-/* ------------------------------------------ Notes ------------------------------------------ */
-/*
-we need to level out some of the beach images
-png images need to be edited so they dont waterfall-load
-include links to github and sytle guide and other things in bottom of page
-properly define classes and ids
-add consistent text styling
-add consistent button & interactable styling
-addback in arrow for seleciton boxes
-add in consistent annotations and spacing for all pages and css
-add image alt text
-make file names consistent
-fix usear agent stylesheet screwing with everything (its messing with the inputs, and giving everything massive margins)
-ensure that all images are put into css as background images
-add links to styleguide, citations, and github repository
-add scroll protection for map
-add smooth scrolling for menu (requires javascript)
-
-Guidelines: 
-
-attribute order: size, location, styling
-1rem = 16pt font
-***inline elements do not have vertical padding*** change them to inline-blocks
-
-
-
 /* ------------------------------------------ New Website ------------------------------------------ */
 
 /* Color Variables */

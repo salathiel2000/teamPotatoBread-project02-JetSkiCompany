@@ -39,7 +39,6 @@ basically use rows and columns for each piece of content, one row/column can be 
 	flex-wrap: -ms-wrap;
 	flex-wrap: -webkit-wrap;
 
-	justify-content: left;
 	justify-content: -ms-left;
 	justify-content: -webkit-left;
 }
@@ -163,6 +162,7 @@ basically use rows and columns for each piece of content, one row/column can be 
 	.grid-col-1of3{
 		width:100%;
 }
+}
 
 
 @media(max-width: 46.25rem){
@@ -171,11 +171,6 @@ basically use rows and columns for each piece of content, one row/column can be 
 	}
 }
 
-@media(max-width: 65.875rem){
-	.grid-col-1of7{
-		width: 25%
-	}
-}
 /* Grid End */
 
 
