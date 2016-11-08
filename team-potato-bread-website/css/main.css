@@ -9,7 +9,7 @@ h1 { /* ALL CAPS */
 	font-size: 5rem; /* 80pt */
 	font-weight: 500; /* medium */
 
-	color: var(--white);
+	color: rgb(255, 255, 255);
 
 	text-align: center; 
 	margin-top: 2rem;
@@ -20,28 +20,28 @@ h2 { /* ALL CAPS */
 	font-size: 2.25rem; /* 36pt */
 	font-weight: 500; /* medium */
 
-	color: var(--blue);
+	color: rgb(31, 186, 214);
 }
 
 h3 { /* ALL CAPS */
 	font-size: 1.5rem; /* 24pt */
 	font-weight: 500; /* medium */
 
-	color: var(--black);
+	color: rgb(56, 56, 56);
 }
 
 h4 { /* Sentence case */
 	font-size: 1.125rem; /* 18pt */
 	font-weight: 200; /* light */
 
-	color: var(--black);
+	color: rgb(56, 56, 56);
 }
 
 h5 { /* Sentence case */
 	font-size: 1.125rem; /* 18pt */
 	font-weight: 200; /* light */
 
-	color: var(--gray);
+	color: rgb(187, 187, 187);
 }
 
 h6 { /* ALL CAPS */
@@ -53,7 +53,7 @@ p { /* Sentence case */
 	font-size: 0.875rem; /* 14pt */
 	font-weight: 200; /* light */
 
-	color: var(--black);
+	color: rgb(56, 56, 56);
 	
 	line-height: 180%; 
 }
@@ -62,13 +62,13 @@ a { /* Sentence case */
 	font-size: 1.125rem; /* 18pt */
 	font-weight: 500; /* medium */
 
-	color: var(--blue);
+	color: rgb(31, 186, 214);
 
 	text-decoration: none;
 }
 
 a:hover {
-	color: var(--yellow);
+	color: rgb(242, 187, 5);
 	cursor: pointer;
 	transition: 0.1s ease-in-out;
 }
@@ -77,7 +77,7 @@ code { /* styleguide only */
 	font-size: 0.875rem; /* 14pt */
 	font-weight: 200; /* light */
 
-	color: var(--black);
+	color: rgb(56, 56, 56);
 	
 	line-height: 180%; 
 }
@@ -113,14 +113,14 @@ img {
 
 	display: inline-block;
 
-	color: var(--white);
-	background-color: var(--blue);
+	color: rgb(255, 255, 255);
+	background-color: rgb(31, 186, 214);
 
 }
 
 .small-button:hover, .large-button:hover {
-	background-color: var(--yellow);
-	color: var(--white);
+	background-color: rgb(242, 187, 5);
+	color: rgb(255, 255, 255);
 	cursor: pointer;
 	transition: 0.1s ease-in-out;
 }
@@ -154,11 +154,11 @@ select {
 	margin-top: 1rem;
 	margin-bottom: 1rem;
 	border-radius: 0px;
-	border: 1px solid var(--blue);
+	border: 1px solid rgb(31, 186, 214);
 
 	font-weight: 200; 
 	line-height: 1; 
-	color: var(--black);
+	color: rgb(56, 56, 56);
 
 	
 	background: url("../img/dropDown.png") no-repeat right #fff;
@@ -180,12 +180,12 @@ select::-ms-expand {
 textarea {
 	width:100%;
 	padding:0.8rem;
-	border: 1px solid var(--blue);
+	border: 1px solid rgb(31, 186, 214);
 	margin-top: 0.5rem;
 }
 
 select, textarea, input {
-	outline-color: var(--yellow);
+	outline-color: rgb(242, 187, 5);
 }
 
 input { /* the "user agent stylesheet" overrides some css styling of the attributes in the input tag are not directly set */
@@ -199,7 +199,7 @@ input[type=text] {
 	padding-left: 20px;
 	margin-top: 8px; 
 	/*color: white;*/
-	border: 1px solid var(--blue);
+	border: 1px solid rgb(31, 186, 214);
 	box-sizing: border-box;
 }
 
@@ -209,7 +209,7 @@ input[type=date] {
 	padding-left: 20px;
 	margin-top: 1rem; 
 	/*color: white;*/
-	border: 1px solid var(--blue);
+	border: 1px solid rgb(31, 186, 214);
 	box-sizing: border-box;
 }
 
@@ -219,7 +219,7 @@ input[type=time] {
 	padding-left: 20px;
 	margin-top: 1rem; 
 	/*color: white;*/
-	border: 1px solid var(--blue);
+	border: 1px solid rgb(31, 186, 214);
 	box-sizing: border-box;
 }
 
@@ -229,7 +229,7 @@ input[type=number] {
 	padding-left: 20px;
 	margin-top: 1rem; 
 	/*color: white;*/
-	border: 1px solid var(--blue);
+	border: 1px solid rgb(31, 186, 214);
 	box-sizing: border-box;
 }
 
@@ -243,23 +243,23 @@ input[type=date]::-webkit-outer-spin-button {
 }
 
 ::-webkit-input-placeholder {
-	color: var(--white);
+	color: rgb(255, 255, 255);
 	font-weight: 200; 
 }
 
 ::-moz-placeholder { /* Firefox 19+ */
-  	color: var(--white);
+  	color: rgb(255, 255, 255);
 	font-weight: 200; 
 }
 
 :-ms-input-placeholder { /* IE 10+ */
-  	color: var(--white);
+  	color: rgb(255, 255, 255);
 	
 	font-weight: 200; 
 }
 
 :-moz-placeholder { /* Firefox 18- */
-  	color: var(--white);
+  	color: rgb(255, 255, 255);
 	font-weight: 200; 
 }
 
@@ -399,8 +399,8 @@ ul{
 
 	display: inline-block;
 
-	color: var(--white);
-	background-color: var(--blue);
+	color: rgb(255, 255, 255);
+	background-color: rgb(31, 186, 214);
 
 }
 
@@ -411,8 +411,8 @@ ul{
 }
 
 .small-button:hover, .large-button:hover {
-	background-color: var(--yellow);
-	color: var(--white); /* keeps the <a> hover-state from creating a blank yellow box */
+	background-color: rgb(242, 187, 5);
+	color: rgb(255, 255, 255); /* keeps the <a> hover-state from creating a blank yellow box */
 	cursor: pointer;
 	transition: 0.1s ease-in-out;
 }
@@ -430,12 +430,12 @@ select::-ms-expand {
 textarea {
 	width:100%;
 	padding:0.8rem;
-	border: 1px solid var(--blue);
+	border: 1px solid rgb(31, 186, 214);
 	margin-top: 0.5rem;
 }
 
 select, textarea, input {
-	outline-color: var(--yellow);
+	outline-color: rgb(242, 187, 5);
 }
 
 .right { 
@@ -455,15 +455,6 @@ select, textarea, input {
 }
 
 /* Color */
-header, body {
-	--white: rgb(255, 255, 255);
-	--yellow: rgb(242, 187, 5);
-	--blue: rgb(31, 186, 214);
-	--black: rgb(56, 56, 56);
-	--gray: rgb(187, 187, 187);
-	--transparent: rgba(0, 0, 0, 0);
-}
-
 #swatch-yellow, #swatch-blue, #swatch-gray, #swatch-black {
 	border-width: 0;
 	height: 10rem;
@@ -484,44 +475,44 @@ header, body {
 	margin-bottom: 1rem;
 	padding: 1rem;
 
-	border-color: var(--black);
-	background-color: var(--white);
+	border-color: rgb(56, 56, 56);
+	background-color: rgb(255, 255, 255);
 }
 
 #swatch-yellow {
-	background-color: var(--yellow);
+	background-color: rgb(242, 187, 5);
 }
 
 #swatch-blue {
-	background-color: var(--blue);
+	background-color: rgb(31, 186, 214);
 }
 
 #swatch-gray {
-	background-color: var(--gray);
+	background-color: rgb(187, 187, 187);
 }
 
 #swatch-black {
-	background-color: var(--black);
+	background-color: rgb(56, 56, 56);
 }
 
 .white {
-	color: var(--white);
+	color: rgb(255, 255, 255);
 }
 
 .black-background { /* styleguide only */
-	background-color: var(--black);
+	background-color: rgb(56, 56, 56);
 }
 
 .gray-background { /* used for cancel buttons */ /* must come after button styling */
-	background-color: var(--gray);
+	background-color: rgb(187, 187, 187);
 }
 
 .gray-text {
-	color: var(--gray);
+	color: rgb(187, 187, 187);
 }
 
 .yellow-text {
-	color: var(--yellow);
+	color: rgb(242, 187, 5);
 }
 /* Universal End */
 
@@ -550,7 +541,7 @@ header, body {
 
 .head-banner p {
 	text-align: center; 
-	color: var(--blue);
+	color: rgb(31, 186, 214);
 }
 
 .suggestion-menu {
@@ -567,9 +558,9 @@ header, body {
 	margin: 1rem 2rem 1rem 0;
 	border-width: 1px;
 
-	color: var(--white);
-	background-color: var(--transparent);
-	border-color: var(--blue);	
+	color: rgb(255, 255, 255);
+	background-color: rgba(0, 0, 0, 0);
+	border-color: rgb(31, 186, 214);	
 }
 
 .suggestion-menu input {
@@ -615,7 +606,7 @@ header, body {
 	margin-top: 0;
 	text-align: center; 
 
-	color: var(--blue);
+	color: rgb(31, 186, 214);
 }
 
 @media(max-width: 44.1875rem) {
@@ -657,11 +648,11 @@ header, body {
 }
 
 .menu-buttons a {
-	color: var(--white);
+	color: rgb(255, 255, 255);
 }
 
 .menu-buttons a:hover {
-	color: var(--yellow);
+	color: rgb(242, 187, 5);
 	cursor: pointer;
 	transition: 0.1s ease-in-out;
 }
@@ -688,7 +679,7 @@ header, body {
 	margin-top: 0;
 	text-align: center; 
 
-	color: var(--blue);
+	color: rgb(31, 186, 214);
 }
 
 
@@ -742,17 +733,17 @@ header, body {
 }
 
 .foot-banner p {
-	color: var(--white);
+	color: rgb(255, 255, 255);
 	margin: 0;
 }
 
 .foot-banner h3 {
-	color: var(--blue);
+	color: rgb(31, 186, 214);
 	margin-bottom: 0;
 }
 
 .yellow {
-	color: var(--yellow) !important;
+	color: rgb(242, 187, 5) !important;
 }
 
 /* Footer Form */
@@ -762,9 +753,9 @@ header, body {
 	padding: 1rem;
 	margin: 1rem 0rem 1rem 0;
 	font-size: 0.7rem;
-	color: var(--white);
-	background-color: var(--transparent);
-	border-color: var(--blue);
+	color: rgb(255, 255, 255);
+	background-color: rgba(0, 0, 0, 0);
+	border-color: rgb(31, 186, 214);
 
 	border-width: 1px;
 
@@ -772,7 +763,7 @@ header, body {
 }
 
 .footer-form textarea {
-	background-color: var(--transparent);
+	background-color: rgba(0, 0, 0, 0);
 	font-size: 0.7rem;
 	color: white;
 }
@@ -860,7 +851,7 @@ header, body {
 	justify-content: center;
 	text-align: center;
 
-	border: 1px solid var(--blue);
+	border: 1px solid rgb(31, 186, 214);
 	margin-bottom: 1rem;
 }
 
@@ -870,7 +861,7 @@ header, body {
 
 
 .jet-ski-panel h3 {
-	color: var(--yellow);
+	color: rgb(242, 187, 5);
 }
 
 .jet-ski-panel a {
@@ -910,9 +901,9 @@ header, body {
 	padding: 1rem;
 	margin: 1rem 0 1rem 0;
 
-	color: var(--white);
-	background-color: var(--blue);
-	border-color: var(--blue);
+	color: rgb(255, 255, 255);
+	background-color: rgb(31, 186, 214);
+	border-color: rgb(31, 186, 214);
 
 	border-width: 2px;
 }
@@ -960,12 +951,12 @@ header, body {
 	justify-content: center;
 	text-align: center;
 
-	border: 1px solid var(--blue);
+	border: 1px solid rgb(31, 186, 214);
 	height: 450px;
 }
 
 .info-panel h3 {
-	color: var(--yellow);
+	color: rgb(242, 187, 5);
 }
 
 @media(max-width: 60.5625rem) {
@@ -994,7 +985,7 @@ header, body {
 
 /* ------------------------------------------ About ------------------------------------------ */
 .values {
-	border: 1px solid var(--yellow);
+	border: 1px solid rgb(242, 187, 5);
 	height: 310px;
 	margin-bottom: 2rem;
 }
@@ -1030,7 +1021,7 @@ header, body {
 	margin: 0;
 	text-align: center;
 
-	color: var(--yellow);
+	color: rgb(242, 187, 5);
 }
 
 #thomas-portrait {
@@ -1089,7 +1080,7 @@ header, body {
 }
 
 #submit-review p {
-	color: var(--black);
+	color: rgb(56, 56, 56);
 }
 
 .black-text {
@@ -1102,8 +1093,8 @@ header, body {
 	padding-left: 2rem; 
 	line-height: 1; 
 	height: 60px; 
-	border: 1px solid var(--blue);
-	color: var(--black);
+	border: 1px solid rgb(31, 186, 214);
+	color: rgb(56, 56, 56);
 	font-weight: 100; 
 	margin-top: 2rem;
 }
@@ -1121,7 +1112,7 @@ header, body {
 	padding-left: 1rem; 
 	line-height: 1; 
 	height: 60px; 
-	border-bottom: 1px solid var(--blue);
+	border-bottom: 1px solid rgb(31, 186, 214);
 	color: white;
 	font-weight: 100;
 	font-size: 0.8rem; 
@@ -1171,21 +1162,21 @@ header, body {
 
 /* ------------------------------------------ Booking Review ------------------------------------------ */
 .summary-panel {
-	border: 1px solid var(--blue);
+	border: 1px solid rgb(31, 186, 214);
 	height: 28rem;
 	margin-top: 1rem;
 	margin-bottom: 1rem;
 }
 
 .summary-panel h2 {
-	color: var(--yellow);
+	color: rgb(242, 187, 5);
 }
 /* Booking Review End */
 
 /* ------------------------------------------ Confirm ------------------------------------------ */
 #confirm .right-align {
 	text-align: right;
-	color: var(--gray); 
+	color: rgb(187, 187, 187); 
 }
 
 @media(max-width: 36.25rem) {
@@ -1203,7 +1194,7 @@ header, body {
 
 	border: solid;
 	border-width: 1px;
-	border-color: var(--blue);
+	border-color: rgb(31, 186, 214);
 	padding: 1rem;
 
 	margin-top: 1rem;
@@ -1213,7 +1204,7 @@ header, body {
 .grid-highlight { /* styleguide only */
 	border-width: 1px;
 	border-style: solid;
-	border-color: var(--yellow);
+	border-color: rgb(242, 187, 5);
 	padding: 1rem;
 }	
 /* Styleguide End */
