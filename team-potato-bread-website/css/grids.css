@@ -1,36 +1,25 @@
-/* ------------------------------------------ Notes ------------------------------------------ */
-/*
-need to figure out grid padding
-using grid columns for table values isnt going to work because they're going to change their widths with the media queries, try putting them on one line
-
-Guidelines:
-basically use rows and columns for each piece of content, one row/column can be shared between multiple elements only when the column number stays the same
-
-*/
-
 /* ------------------------------------------ Universal ------------------------------------------ */
-*, *::after, *::before { /* ensures that literally everything follows this model no matter what changes are made */
+*, *::after, *::before {
 	box-sizing: border-box;
 }
 /* Universal End */
 
 /* ------------------------------------------ Flexbox ------------------------------------------ */
 .box {
-	display: flex; /* choose flexbox */
+	display: flex;
 	display: -ms-flex;
 	display: -webkit-flex;
-	/* display: -moz-flex;  ask andrew? */
 
-	flex-wrap: wrap; /* wrap elements underneath when out of space */
+	flex-wrap: wrap;
 	flex-wrap: -ms-wrap;
 	flex-wrap: -webkit-wrap;
 
-	justify-content: space-between; /* how long along the main axis should the box justify space?, if extra space, justify between elements */
+	justify-content: space-between;
 	justify-content: -ms-space-between;
 	justify-content: -webkit-space-between;
 }
 
-.box-left { /* differences: left justify and center align */
+.box-left {
 	display: flex;
 	display: -ms-flex;
 	display: -webkit-flex;
@@ -49,15 +38,12 @@ basically use rows and columns for each piece of content, one row/column can be 
 }
 
 .box-item {
-	/* flex: flex-grow flex-shrink flexbasis */
-	flex: 0 1 auto; /* auto adjusts to content width(eg: text width), 0 adjusts to 0 (eg: word width) */
-	/* not the same as the default andrew gave us: 1 1 auto; */
+	flex: 0 1 auto;
 }
 /* Flexbox End */
 
 /* ------------------------------------------ Grid ------------------------------------------ */
 /* Rows */
-
 .grid-row-section {
 	width: 100%;
 
@@ -82,9 +68,12 @@ basically use rows and columns for each piece of content, one row/column can be 
 }
 
 
-/*.jet-ski-panel .grid-col-1of2 {
-	height: 5rem;
-}*/
+@media(max-width: 69.1775rem){
+	.grid-row-section {
+		padding-left: 2rem;
+		padding-right: 2rem;
+	}
+}
 
 /* Columns */
 [class*='grid-col-']{
@@ -94,7 +83,6 @@ basically use rows and columns for each piece of content, one row/column can be 
 	padding-right: 1rem;
 }
 
-/* slot everything into a column */ /* this will create space between each column, edge space is created between column and grid-row */
 .grid-col-1of1 {
 	width: 100%;
 }
@@ -124,34 +112,10 @@ basically use rows and columns for each piece of content, one row/column can be 
 	padding: 22rem 4rem 0 1rem;
 }
 
-
-/* thse look fine but they are different from the rest of the site grid structure */
-/* 
-#company-values .grid-col-1of3:nth-child(2){
-	padding: 0 1rem 0 0;
-}
-
-#company-values .grid-col-1of3:nth-child(3){
-	padding: 0 1rem 0 0;
-}
-
-#meet-the-team .grid-col-1of2{
-	padding: 0 4rem;
-}
-*/
-
-@media(max-width: 69.1775rem){
-	.grid-row-section{
-		padding-left: 2rem;
-		padding-right: 2rem;
-	}
-}
-
 @media(max-width: 64.1875rem){
 	.grid-col-1of3 {
 		width: 50%;
 	}
-
 
 	.grid-col-2of3{
 		width:100%;

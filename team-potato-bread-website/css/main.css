@@ -1,18 +1,467 @@
-/* ------------------------------------------ New Website ------------------------------------------ */
-
-/* Color Variables */
 html {
+	font-family: "Montserrat", Arial, sans-serif; 
+	font-size: 1.125rem;
+	font-weight: 200;
+}
+
+/* Text */
+h1 { /* ALL CAPS */
+	font-size: 5rem; /* 80pt */
+	font-weight: 500; /* medium */
+
+	color: var(--white);
+
+	text-align: center; 
+	margin-top: 2rem;
+	margin-bottom: 0;
+}
+
+h2 { /* ALL CAPS */
+	font-size: 2.25rem; /* 36pt */
+	font-weight: 500; /* medium */
+
+	color: var(--blue);
+}
+
+h3 { /* ALL CAPS */
+	font-size: 1.5rem; /* 24pt */
+	font-weight: 500; /* medium */
+
+	color: var(--black);
+}
+
+h4 { /* Sentence case */
+	font-size: 1.125rem; /* 18pt */
+	font-weight: 200; /* light */
+
+	color: var(--black);
+}
+
+h5 { /* Sentence case */
+	font-size: 1.125rem; /* 18pt */
+	font-weight: 200; /* light */
+
+	color: var(--gray);
+}
+
+h6 { /* ALL CAPS */
+	font-size: 0.875rem; /* 14 pt */
+	font-weight: bold; /* bold */
+}
+
+p { /* Sentence case */ 
+	font-size: 0.875rem; /* 14pt */
+	font-weight: 200; /* light */
+
+	color: var(--black);
+	
+	line-height: 180%; 
+}
+
+a { /* Sentence case */ 
+	font-size: 1.125rem; /* 18pt */
+	font-weight: 500; /* medium */
+
+	color: var(--blue);
+
+	text-decoration: none;
+}
+
+a:hover {
+	color: var(--yellow);
+	cursor: pointer;
+	transition: 0.1s ease-in-out;
+}
+
+code { /* styleguide only */
+	font-size: 0.875rem; /* 14pt */
+	font-weight: 200; /* light */
+
+	color: var(--black);
+	
+	line-height: 180%; 
+}
+
+.normal {
+	font-weight: normal;
+}
+
+/* Image */
+img {
+	width: 100%;
+}
+
+.reduce-image {
+	width:90%;
+}
+
+/* Buttons */
+.small-button { /* anchor link equivalent */
+	font-size: 1.125rem; /* 18pt */
+	font-weight: 500; /* medium */
+}
+
+.large-button { /* h2 equivalent */
+	font-size: 2.25rem; /* 36pt */
+	font-weight: 500; /* medium */
+	padding: 1rem 3rem;
+}
+
+.small-button, .large-button {
+	padding: 2rem;
+	margin-top: 1rem;
+
+	display: inline-block;
+
+	color: var(--white);
+	background-color: var(--blue);
+
+}
+
+.small-button:hover, .large-button:hover {
+	background-color: var(--yellow);
+	color: var(--white);
+	cursor: pointer;
+	transition: 0.1s ease-in-out;
+}
+
+#payment-information .small-button {
+	padding: 1rem 3rem;
+}
+
+#booking-details .small-button {
+	padding: 1rem 3rem;
+}
+
+#submit-review .small-button {
+	padding: 1rem 3rem;
+}
+
+.main-page-form .small-button {
+	padding: 1rem 3rem;
+	margin-top: 1.5rem;
+	margin-right: 6.8rem;
+}
+
+/* Form Elements */
+select {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+
+	width: 100%;
+
+	padding: 1rem;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	border-radius: 0px;
+	border: 1px solid var(--blue);
+
+	font-weight: 200; 
+	line-height: 1; 
+	color: var(--black);
+
+	
+	background: url("../img/dropDown.png") no-repeat right #fff;
+	background-size: auto 15%;
+	background-position: 97%
+	font-weight: 100; 
+	margin-top: 8px;
+	border-radius: 0px;
+	cursor: pointer;
+	background: url("../img/dropDown.png") no-repeat right #fff;
+	background-size: auto 15%;
+	background-position: 97%
+}
+
+select::-ms-expand {
+	display: none;
+}
+
+textarea {
+	width:100%;
+	padding:0.8rem;
+	border: 1px solid var(--blue);
+	margin-top: 0.5rem;
+}
+
+select, textarea, input {
+	outline-color: var(--yellow);
+}
+
+input { /* the "user agent stylesheet" overrides some css styling of the attributes in the input tag are not directly set */
+	border-style: solid;
+	border-width: 0;
+}
+
+input[type=text] {
+	width: 100%; 
+	height: 60px;
+	padding-left: 20px;
+	margin-top: 8px; 
+	/*color: white;*/
+	border: 1px solid var(--blue);
+	box-sizing: border-box;
+}
+
+input[type=date] {
+	width: 100%; 
+	height: 60px;
+	padding-left: 20px;
+	margin-top: 1rem; 
+	/*color: white;*/
+	border: 1px solid var(--blue);
+	box-sizing: border-box;
+}
+
+input[type=time] {
+	width: 100%; 
+	height: 60px;
+	padding-left: 20px;
+	margin-top: 1rem; 
+	/*color: white;*/
+	border: 1px solid var(--blue);
+	box-sizing: border-box;
+}
+
+input[type=number] {
+	width: 100%; 
+	height: 60px;
+	padding-left: 20px;
+	margin-top: 1rem; 
+	/*color: white;*/
+	border: 1px solid var(--blue);
+	box-sizing: border-box;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button,
+input[type=time]::-webkit-inner-spin-button, 
+input[type=time]::-webkit-outer-spin-button,
+input[type=date]::-webkit-inner-spin-button, 
+input[type=date]::-webkit-outer-spin-button {
+   opacity: 1;
+}
+
+::-webkit-input-placeholder {
+	color: var(--white);
+	font-weight: 200; 
+}
+
+::-moz-placeholder { /* Firefox 19+ */
+  	color: var(--white);
+	font-weight: 200; 
+}
+
+:-ms-input-placeholder { /* IE 10+ */
+  	color: var(--white);
+	
+	font-weight: 200; 
+}
+
+:-moz-placeholder { /* Firefox 18- */
+  	color: var(--white);
+	font-weight: 200; 
+}
+
+table {
+	width: 100%;
+	text-align: left;
+}
+
+td {
+	width: 50%;
+	padding-top: 1rem;
+}
+
+.table-space {
+	padding-left: 3rem;
+	font-weight: normal;
+}
+
+/* Spacing */
+section{
+	padding: 2rem 0; 
+}
+
+ul{
+	list-style-type: none;
+	padding-top: 2rem;
+	padding-left: 3rem;
+}
+
+.reduce-image{
+	width:90%;
+}
+
+.negative-margin {
+	margin-left: -1.5rem
+}
+
+.remove-margin {
+	margin: 0;
+}
+
+.remove-margin-bottom {
+	margin-bottom: 0;
+}
+
+.add-space {
+	margin-bottom: 1rem;
+}
+
+.add-top-space {
+	margin-top: 5rem;
+}
+
+.add-little-top-space {
+	margin-top: 3rem;
+}
+
+.add-bottom-space {
+	margin-bottom:2rem;
+}
+
+.less-margin-top {
+	margin-top: 1rem;
+}
+
+.add-margin-left {
+	margin-left: 3rem; 
+}
+
+.sentence-form {
+	padding-top: 0.6rem;
+}
+
+.remove-padding {
+	padding-top: 0.4rem;
+}
+
+.less-padding {
+	padding-top: 2rem;
+}
+
+#booking-information .grid-col-1of2:nth-child(1){
+	padding-left: 0;
+	padding-right: 1rem;
+}
+
+#booking-information .grid-col-1of2:nth-child(2){
+	padding-left: 1rem;
+	padding-right: 0;
+}
+
+#booking-information .small-button{
+	padding: 1rem 3rem;
+}
+
+
+.remove-padding-left {
+	padding-left: 0;
+	padding-right: 1rem;
+}
+
+.remove-padding-right {
+	padding-left: 1rem;
+	padding-right: 0;
+}
+
+@media(max-width: 46.25rem) {
+	.remove-padding-left, .remove-padding-right {
+	padding-left: 0;
+	padding-right: 0;
+	}
+}
+
+/* Alignment */
+.float-right {
+	float:right;
+}
+
+.float-center{
+	margin-left:auto;
+	margin-right: auto; 
+}
+
+/* Buttons */ 
+/* buttons usually require specific styling in each use case */
+
+.small-button { /* anchor link size */
+	font-size: 1.125rem; /* 18pt */
+	font-weight: 500; /* medium */
+}
+
+
+
+.small-button, .large-button {
+	padding: 2rem;
+	margin-top: 1rem;
+
+	display: inline-block;
+
+	color: var(--white);
+	background-color: var(--blue);
+
+}
+
+.large-button { /* h2 size */
+	font-size: 2.25rem; /* 36pt */
+	font-weight: 500; /* medium */
+	padding: 1rem 3rem;
+}
+
+.small-button:hover, .large-button:hover {
+	background-color: var(--yellow);
+	color: var(--white); /* keeps the <a> hover-state from creating a blank yellow box */
+	cursor: pointer;
+	transition: 0.1s ease-in-out;
+}
+
+/* Select */
+select {
+	-moz-appearance: none;
+	-webkit-appearance:none;
+}
+
+select::-ms-expand {
+	display: none;
+}
+
+textarea {
+	width:100%;
+	padding:0.8rem;
+	border: 1px solid var(--blue);
+	margin-top: 0.5rem;
+}
+
+select, textarea, input {
+	outline-color: var(--yellow);
+}
+
+.right { 
+	text-align: right; 
+}
+
+.left {
+	text-align: left;
+}
+
+.align-left {
+	text-align: left;
+}
+
+.align-center {
+	text-align: center;
+}
+
+/* Color */
+header, body {
 	--white: rgb(255, 255, 255);
 	--yellow: rgb(242, 187, 5);
 	--blue: rgb(31, 186, 214);
 	--black: rgb(56, 56, 56);
 	--gray: rgb(187, 187, 187);
 	--transparent: rgba(0, 0, 0, 0);
-
-	font-family: "Montserrat", Arial, sans-serif; 
-	font-size: 1.125rem; /* default h4 font size */
-	font-weight: 200;
-
 }
 
 #swatch-yellow, #swatch-blue, #swatch-gray, #swatch-black {
@@ -63,431 +512,43 @@ html {
 	background-color: var(--black);
 }
 
-/* Text */
-h1 { /* ALL CAPS */
-	font-size: 5rem; /* 80pt */
-	font-weight: 500; /* medium */
-
-	color: var(--white);
-
-	text-align: center; 
-	margin-top: 2rem;
-	margin-bottom: 0;
-}
-
-h2 { /* ALL CAPS */
-	font-size: 2.25rem; /* 36pt */
-	font-weight: 500; /* medium */
-
-	color: var(--blue);
-}
-
-h3 { /* ALL CAPS */
-	font-size: 1.5rem; /* 24pt */
-	font-weight: 500; /* medium */
-
-	color: var(--black);
-}
-
-h4 { /* Sentence case */
-	font-size: 1.125rem; /* 18pt */
-	font-weight: 200; /* light */
-
-	color: var(--black);
-}
-
-h5 { /* Sentence case */
-	font-size: 1.125rem; /* 18pt */
-	font-weight: 200; /* light */
-
-	color: var(--gray);
-}
-
-h6 { /* ALL CAPS */
-	font-size: 0.875rem; /* 14 pt */
-	font-weight: bold; /* bold */   /* where is the actual bold 700 weight font? */
-}
-
-p {
-	font-size: 0.875rem; /* 14pt */
-	font-weight: 200; /* light */
-
-	color: var(--black);
-	
-	line-height: 180%; 
-}
-
-a { /* Sentence case */ 
-	font-size: 1.125rem; /* 18pt */ /* Salathiel leave this alone, it has to match the h4 text size */
-	font-weight: 500; /* medium */
-
-	color: var(--blue);
-
-	text-decoration: none;
-}
-
-a:hover {
-	color: var(--yellow);
-	cursor: pointer;
-	transition: 0.1s ease-in-out;
-}
-
-code { /* styleguide only */
-	font-size: 0.875rem; /* 14pt */
-	font-weight: 200; /* light */
-
-	color: var(--black);
-	
-	line-height: 180%; 
-}
-
-input { /* the "user agent stylesheet" overrides some css styling of the attributes in the input tag are not directly set */
-	border-style: solid;
-	border-width: 0;
-}
-
-input[type=date]{
-	width: 100%; 
-	height: 60px;
-	padding-left: 20px;
-	margin-top: 1rem; 
-	/*color: white;*/
-	border: 1px solid var(--blue);
-	box-sizing: border-box;
-}
-
-input[type=time]{
-	width: 100%; 
-	height: 60px;
-	padding-left: 20px;
-	margin-top: 1rem; 
-	/*color: white;*/
-	border: 1px solid var(--blue);
-	box-sizing: border-box;
-}
-
-input[type=number]{
-	width: 100%; 
-	height: 60px;
-	padding-left: 20px;
-	margin-top: 1rem; 
-	/*color: white;*/
-	border: 1px solid var(--blue);
-	box-sizing: border-box;
-}
-
-input[type=number]::-webkit-inner-spin-button, 
-input[type=number]::-webkit-outer-spin-button {  
-
-   opacity: 1;
-
-}
-
-input[type=time]::-webkit-inner-spin-button, 
-input[type=time]::-webkit-outer-spin-button {  
-
-   opacity: 1;
-
-}
-
-input[type=date]::-webkit-inner-spin-button, 
-input[type=date]::-webkit-outer-spin-button {  
-
-   opacity: 1;
-}
-
-img {
-	width: 100%;
-}
-
-section{
-	padding: 2rem 0; 
-}
-
-ul{
-	list-style-type: none;
-	padding-top: 2rem;
-	padding-left: 3rem;
-}
-
-.reduce-image{
-	width:90%;
-}
-.header-form{
-	color:white;
-	float:left;
-}
-
-.negative-margin{
-	margin-left: -1.5rem
-}
-
-.add-space{
-	margin-bottom: 1rem;
-}
-
-.add-top-space{
-	margin-top: 5rem;
-}
-
-.add-little-top-space{
-	margin-top: 3rem;
-}
-
-.who-are-we-1{
-	margin-top:0.25rem;
-}
-
-.add-bottom-space{
-	margin-bottom:2rem;
-}
-
-#passenger-information .grid-col-1of2:nth-child(1){
-	padding-left: 0;
-	padding-right: 1rem;
-}
-
-#passenger-information .grid-col-1of2:nth-child(2){
-	padding-left: 1rem;
-	padding-right: 0;
-}
-
-#booking-information .grid-col-1of2:nth-child(1){
-	padding-left: 0;
-	padding-right: 1rem;
-}
-
-#booking-information .grid-col-1of2:nth-child(2){
-	padding-left: 1rem;
-	padding-right: 0;
-}
-
-#booking-information .small-button{
-	padding: 1rem 3rem;
-}
-
-
-.remove-padding-left{
-	padding-left: 0;
-	padding-right: 1rem;
-}
-
-.remove-padding-right{
-	padding-left: 1rem;
-	padding-right: 0;
-}
-
-@media(max-width: 46.25rem){
-	.remove-padding-left, .remove-padding-right {
-	padding-left: 0;
-	padding-right: 0;
-	}
-}
-
-#payment-information .small-button{
-	padding: 1rem 3rem;
-}
-
-#booking-details .small-button{
-	padding: 1rem 3rem;
-}
-
-#submit-review .small-button{
-	padding: 1rem 3rem;
-}
-
-.main-page-form .small-button{
-	padding: 1rem 3rem;
-	margin-top: 1.5rem;
-	margin-right: 6.8rem;
-}
-
-.float-right{
-	float:right;
-}
-
-.float-center{
-	margin-left:auto;
-	margin-right: auto; 
-}
-
-/* Buttons */ 
-/* buttons usually require specific styling in each use case */
-
-.small-button { /* anchor link size */
-	font-size: 1.125rem; /* 18pt */
-	font-weight: 500; /* medium */
-}
-
-
-
-.small-button, .large-button {
-	padding: 2rem;
-	margin-top: 1rem;
-
-	display: inline-block;
-
-	color: var(--white);
-	background-color: var(--blue);
-
-}
-
-.large-button { /* h2 size */
-	font-size: 2.25rem; /* 36pt */
-	font-weight: 500; /* medium */
-	padding: 1rem 3rem;
-}
-
-.small-button:hover, .large-button:hover {
-	background-color: var(--yellow);
-	color: var(--white); /* keeps the <a> hover-state from creating a blank yellow box */
-	cursor: pointer;
-	transition: 0.1s ease-in-out;
-}
-
-/* Select */
-
-/* Selection Box Styling (removes arrow) */
-select {
-	-moz-appearance: none;
-	-webkit-appearance:none;
-}
-
-select::-ms-expand {
-	display: none;
-}
-
-textarea {
-	width:100%;
-	padding:0.8rem;
-	border: 1px solid var(--blue);
-	margin-top: 0.5rem;
-}
-
-select, textarea, input {
-	outline-color: var(--yellow);
-}
-
-.right { 
-	text-align: right; 
-}
-
-.left {
-	text-align: left;
-}
-
-.styleguide-panel {
-	max-width: 100%;
-	justify-content: left;
-	text-align: left;
-
-	border: solid;
-	border-width: 1px;
-	border-color: var(--blue);
-	padding: 1rem;
-
-	margin-top: 1rem;
-	margin-bottom: 1rem;
-}
-
-
-.gray-background { /* used for cancel buttons */ /* must come after buttons */
+.gray-background { /* used for cancel buttons */ /* must come after button styling */
 	background-color: var(--gray);
 }
 
-.grid-highlight { /* styleguide only */
-	border-width: 1px;
-	border-style: solid;
-	border-color: yellow;
-	padding: 1rem;
-}
-
-
-
-table{
-	text-align: left;
-}
-
-.table-space{
-	padding-left: 3rem;
-	font-weight: normal;
-}
-
-.normal{
-	font-weight: normal;
-}
-
-.remove-margin{
-	margin: 0;
-}
-
-.remove-margin-bottom{
-	margin-bottom: 0;
-}
-
-.align-left{
-	text-align: left;
-}
-
-.align-center{
-	text-align: center;
-}
-
-.remove-padding{
-	padding-top: 0.4rem;
-}
-
-.gray-text{
+.gray-text {
 	color: var(--gray);
 }
 
-.yellow-text{
+.yellow-text {
 	color: var(--yellow);
 }
-
-.less-margin-top{
-	margin-top: 1rem;
-}
-
-.less-padding{
-	padding-top: 2rem;
-}
-
-.add-margin-left{
-	margin-left: 3rem; 
-}
-
-.sentence-form{
-	padding-top: 0.6rem;
-}
-
 /* Universal End */
 
 /* ------------------------------------------ Header ------------------------------------------ */
 /* Home Header */
 .head-banner {
-	background-image: url("../img/jet-ski-banner.jpg");  /* eventually switch this to an child id of .head-banner */
+	background-image: url("../img/jet-ski-banner.jpg");
 
-    background-attachment: scroll; /* change to "fixed" if a scrolling effect is wanted */
-    background-position: center; /* controls which edge the picture snaps to */
-    background-size: cover; /* "contain" will fit the image but leave white space, "cover" will fit the container but cut off the image, size can also be manually set */
+    background-attachment: scroll;
+    background-position: center;
+    background-size: cover;
     background-repeat: no-repeat;
 
 
-    min-height: 100vh; /* Home banner fills screen */
+    min-height: 100vh;
 
     padding-top: 2rem;
     padding-bottom: 2rem;
 }
 
-/* Different h1 styling for home header */
-.head-banner h1 {
+.head-banner h1 { /* Different h1 styling for home header */
 	font-size: 3.75rem; /* 60pt */
 	margin: 18vh 0 0 0;
 	text-align: left;
 }
 
-.head-banner p{
+.head-banner p {
 	text-align: center; 
 	color: var(--blue);
 }
@@ -499,8 +560,8 @@ table{
 }
 
 .suggestion-menu select {
-	width: 15rem; /* default width */
-	max-width: 100%; /* fits selectors to small screen widths */
+	width: 15rem;
+	max-width: 100%;
 
 	padding: 1rem;
 	margin: 1rem 2rem 1rem 0;
@@ -520,15 +581,62 @@ table{
 	border-width: 0;
 }
 
-@media(max-width: 24.2rem){
+@media(max-width: 24.2rem) {
 	.head-banner h1 {
 		font-size: 2.5rem;
 		margin: 10vh 0 2rem 0;
 	}
-
 }
 
-/* Page Header */
+.header-form {
+	color:white;
+	float:left;
+}
+
+/* Page Bannner */
+.page-banner {
+	background-image: url("../img/home-panorama.jpg"); 
+
+	background-attachment: scroll; 
+    background-position: top; 
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 20rem;
+
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.page-banner img {
+	width: 100%;
+}
+
+.page-banner p {
+	margin-top: 0;
+	text-align: center; 
+
+	color: var(--blue);
+}
+
+@media(max-width: 44.1875rem) {
+	.page-banner h1 {
+		font-size: 4rem;
+	}
+}
+
+@media(max-width: 36.125rem) {
+	.page-banner h1 {
+		font-size: 3rem;
+	}
+}
+
+@media(max-width: 29.25rem) {
+	.page-banner h1 {
+		font-size: 2rem;
+	}
+}
+
+/* All Banners */
 .menu-logo {
 	background-image: url("../img/logo.png"); 
 
@@ -559,7 +667,6 @@ table{
 }
 
 /* Product Detail Begin */ 
-
 .page-banner{
 	background-image: url("../img/Optimized-home-panorama.jpg"); 
 
@@ -584,13 +691,13 @@ table{
 	color: var(--blue);
 }
 
-@media(max-width: 43rem){
+
+@media(max-width: 43rem) {
 	.menu-buttons {
 		max-width: 5rem;
 	}
 }
 /* Header End */
-
 
 /* ------------------------------------------ Footer ------------------------------------------ */
 .foot-banner {
@@ -628,7 +735,6 @@ table{
 	background-image: url("../img/instagram-icon.png"); 
 }
 
-
 /* Color Adjustment*/
 
 .footer-more-space{
@@ -650,7 +756,6 @@ table{
 }
 
 /* Footer Form */
-
 .footer-form input[type=text] {
 	width: 100%;
 	height: 10px;
@@ -666,14 +771,13 @@ table{
 	border-style: solid;
 }
 
-
-.footer-form textarea{
+.footer-form textarea {
 	background-color: var(--transparent);
 	font-size: 0.7rem;
 	color: white;
 }
 
-.footer-form .small-button{
+.footer-form .small-button {
 	padding: 0.7rem 1.4rem;
 	font-size: 0.7rem;
 }
@@ -682,9 +786,7 @@ table{
 	margin-top: 1rem;
 }
 
-
-/* Adaptation */
-
+/* Bottom Text Responsive Switch */
 .footer-telephone-2 {
 	visibility: hidden;
 	height: 0;
@@ -692,7 +794,7 @@ table{
 	padding: 0;
 }
 
-@media(max-width: 46.875rem){
+@media(max-width: 46.875rem) {
 	.footer-telephone-1 {
 		visibility: hidden;
 		height: 0;
@@ -722,6 +824,10 @@ table{
     height: 20rem;
 }
 
+.who-are-we-1 {
+	margin-top:0.25rem;
+}
+
 .who-are-we-2 {
 	visibility: hidden;
 	width: 0;
@@ -730,7 +836,7 @@ table{
 	padding: 0;
 }
 
-@media(max-width: 64.1875rem){
+@media(max-width: 64.1875rem) {
 	.who-are-we-1 {
 		visibility: hidden;
 		width: 0;
@@ -748,15 +854,18 @@ table{
 	}
 }	
 
-.jet-ski-panel { /* merge with other panels? */
+.jet-ski-panel {
+	height: 650px;
+
 	justify-content: center;
 	text-align: center;
 
 	border: 1px solid var(--blue);
-
-		height: 650px;
-
 	margin-bottom: 1rem;
+}
+
+.jet-ski-panel img {
+	max-width: 100%;
 }
 
 
@@ -764,7 +873,7 @@ table{
 	color: var(--yellow);
 }
 
-.jet-ski-panel a { /* make the a tag work like a button in the jet ski panel (maybe find a better fix for this with time) */
+.jet-ski-panel a {
 	display: inline-block;
 
 	padding-top: 1rem;
@@ -772,14 +881,29 @@ table{
 	margin-bottom: 1rem;
 }
 
-
-table {
-	width: 100%;
+@media(max-width: 55.9376rem) {
+	.jet-ski-panel {
+		height: 700px;
+	}
 }
 
-td {
-	width: 50%;
-	padding-top: 1rem;
+
+@media(max-width: 44.25rem) {
+	.jet-ski-panel {
+		height: 950px;
+	}
+}
+
+@media(max-width: 40.625rem) {
+	.jet-ski-panel {
+		height: 900px;
+	}
+}
+
+@media(max-width: 34.365rem) {
+	.jet-ski-panel {
+		height: 850px;
+	}
 }
 
 .book-button {
@@ -793,23 +917,17 @@ td {
 	border-width: 2px;
 }
 
-@media(max-width: 64.1875rem){
+@media(max-width: 64.1875rem) {
 	.jet-ski-panel {
 		max-width: 100%;
 		margin-top: 2rem;
 		height: 750px;
 	}
 }
-
-.jet-ski-panel img {
-	max-width: 100%;
-
-}
-
 /* Home End */
 
 /* ------------------------------------------ Product Detail ------------------------------------------ */
-.product-image{
+.product-image {
 	background-image: url("../img/spark.png"); 
 
 	background-attachment: scroll;
@@ -821,12 +939,24 @@ td {
 	margin-top: 4rem;
 }
 
-.product-image img{
+.product-image img {
 	width: 100%;
 	margin-top: 4rem;
 }
 
-.info-panel{ /* merge with other panels? */
+@media(max-width: 61.4375rem) {
+	.product-image .grid-col-1of2{
+		width: 100%;
+		padding: 0;
+		margin-top: 45%;
+	}
+
+	.product-image{
+		height: 100%;
+	}
+}
+
+.info-panel {
 	justify-content: center;
 	text-align: center;
 
@@ -838,71 +968,31 @@ td {
 	color: var(--yellow);
 }
 
+@media(max-width: 60.5625rem) {
+	.info-panel {
+		height: 600px;
+	}
+}
+
+@media(max-width: 48.75rem) {
+	.info-panel {
+		height: 450px;
+	}
+}
+
+@media(max-width: 31.5rem) {
+	.info-panel {
+		height: 650px;
+	}
+}
+
 .center {
 	text-align: center;
 }
-
-/* kill these */
-@media(max-width: 78.9375rem){
-	.space{
-		height: 38rem;
-	}
-}
-
-@media(max-width: 73.75rem){
-	.space{
-		height: 40rem;
-	}
-}
-
-@media(max-width: 68.0625rem){
-	.space{
-		height: 42rem;
-	}
-}
-
-@media(max-width: 62.6875rem){
-	.space{
-		height: 44rem;
-	}
-}
-
-@media(max-width: 48.75rem){
-	.product-info .grid-col-1of2{
-		width: 100%;
-		margin-top: 2rem;
-		padding:0;
-	}
-
-	.space{
-		height: 35rem;
-	}
-
-
-}
-
-@media(max-width: 35.125rem){
-	.space{
-		height: 44rem;
-	}
-}
-
-@media(max-width: 26.4375rem){
-	.space{
-		height: 53rem;
-	}
-}
-
-
 /* Product Detail End */
 
 
 /* ------------------------------------------ About ------------------------------------------ */
-
-
-/*Product Detail End */ 
-
-/*About Begin*/
 .values {
 	border: 1px solid var(--yellow);
 	height: 310px;
@@ -967,81 +1057,46 @@ td {
     height: calc(100vh * .8); /* idk what to do with this, maybe fixed height and a media query? */
 }
 
-
-
-.feature-map{
+.feature-map {
 	height:400px;
 	filter:grayscale(99%);
 	margin-top: 1rem;
 }
 
-.feature-map iframe{
+.feature-map iframe {
 	width: 100% !important;
 	height:100% !important;
 }
 /*About End*/ 
 
-/*Submit Review Begin*/ 
-
 /* ------------------------------------------ Review ------------------------------------------ */
-.top-space{
+.top-space {
 	margin-top:2.5rem;
 	padding-top: 1rem;
 }
 
-.little-more-space{
+.little-more-space {
 	margin-top:1rem;
 }
 
-.button-top-space{
+.button-top-space {
 	margin-top:2.5rem;
 	padding-top: 1rem;
 }
 
-#submit-review h2{
+#submit-review h2 {
 	margin: 4rem 0 2rem 0;
 }
 
-#submit-review p{
+#submit-review p {
 	color: var(--black);
 }
 
-.black-text{
+.black-text {
 	color:black;
 }
 
-input[type=text] {
-	width: 100%; 
-	height: 60px;
-	padding-left: 20px;
-	margin-top: 8px; 
-	/*color: white;*/
-	border: 1px solid var(--blue);
-	box-sizing: border-box;
-}
-
-::-webkit-input-placeholder{
-	color: var(--white);
-	font-weight: 200; 
-}
-
-::-moz-placeholder { /* Firefox 19+ */
-  	color: var(--white);
-	font-weight: 200; 
-}
-
-:-ms-input-placeholder { /* IE 10+ */
-  	color: var(--white);
-	
-	font-weight: 200; 
-}
-
-:-moz-placeholder { /* Firefox 18- */
-  	color: var(--white);
-	font-weight: 200; 
-}
-
-.select-option{
+.select-option {
 	background: white;
 	width: 100%;
 	padding-left: 2rem; 
@@ -1053,56 +1108,15 @@ input[type=text] {
 	margin-top: 2rem;
 }
 
-.select-hidden{
+.select-hidden {
 	display: none;
 	visibility: hidden; 
 	padding-right: 20px; 
 }
 
-select{
-	/*-moz-appearance: none;*/
-
-	/*background-position: right 10px center; 
-	background-repeat: no-repeat;
-	background-size: auto 500%; 
-	background: transparent;*/
-
-
+.banner-select {
 	-webkit-appearance: none;
 
-	width: 100%;
-
-	padding: 1rem;
-	margin-top: 1rem;
-	margin-bottom: 1rem;
-	border-radius: 0px;
-	border: 1px solid var(--blue);
-
-	font-weight: 200; 
-	line-height: 1; 
-	color: var(--black);
-
-	
-	background: url("../img/dropDown.png") no-repeat right #fff;
-	background-size: auto 15%;
-	background-position: 97%
-	font-weight: 100; 
-	margin-top: 8px;
-	border-radius: 0px;
-	cursor: pointer;
-	background: url("../img/dropDown.png") no-repeat right #fff;
-	background-size: auto 15%;
-	background-position: 97%
-}
-
-.banner-select{
-	-webkit-appearance: none;
-	/*-moz-appearance: none;*/
-
-	/*background-position: right 10px center; 
-	background-repeat: no-repeat;
-	background-size: auto 500%; 
-	background: transparent;*/
 	width: 100%;
 	padding-left: 1rem; 
 	line-height: 1; 
@@ -1119,19 +1133,8 @@ select{
 	background-position: 97%
 }
 
-	padding-left: 2rem; 
-	margin-bottom: 2rem;
-	border: 1px solid var(--blue);
-
-	line-height: 1; 
-
-
-	color: var(--black);
-	background: transparent;
-}
-
-@media(max-width: 46.875rem){
-	.left{
+@media(max-width: 46.875rem) {
+	.left {
 		text-align: left;
 	}
 }
@@ -1146,130 +1149,74 @@ select{
     background-size: contain;
     background-repeat: no-repeat;
 
-	height: 15rem; /* keeps the panel from getting too long */
+	height: 15rem;
 }
 
-
-.book-panel { /* merge with other panels */
+.book-panel {
 	max-width: 100%;
 	justify-content: center;
 	text-align: center;
+}
 
-/*	border: solid;
-	border-width: 1px;
-	border-color: var(--blue);*/
-	/*padding: 1rem; */
+#passenger-information .grid-col-1of2:nth-child(1) {
+	padding-left: 0;
+	padding-right: 1rem;
+}
+
+#passenger-information .grid-col-1of2:nth-child(2) {
+	padding-left: 1rem;
+	padding-right: 0;
 }
 
 
 /* ------------------------------------------ Booking Review ------------------------------------------ */
-.summary-panel { /* merge with other panels */
+.summary-panel {
 	border: 1px solid var(--blue);
-	/*padding: 1.5rem;*/
 	height: 28rem;
 	margin-top: 1rem;
 	margin-bottom: 1rem;
 }
 
-.summary-panel h2 { /* merge with other panels */
+.summary-panel h2 {
 	color: var(--yellow);
 }
-
+/* Booking Review End */
 
 /* ------------------------------------------ Confirm ------------------------------------------ */
-#confirm .right-align{
+#confirm .right-align {
 	text-align: right;
 	color: var(--gray); 
 }
 
-
-
-/* ------------------------------------------ Old Website STUFF IN HERE IS STILL USED GOTTA FIGURE OUT WHAT ------------------------------------------ */
-@media(max-width: 61.4375rem){
-	.product-image .grid-col-1of2{
-		width: 100%;
-		padding: 0;
-		margin-top: 45%;
-	}
-
-	.product-image{
-		height: 100%;
-	}
-
-}
-
-@media(max-width: 36.25rem){
-	#confirm .right-align{
+@media(max-width: 36.25rem) {
+	#confirm .right-align {
 		text-align: left;s
 	}
 }
+/* Confirm End */
 
+/* ------------------------------------------ Styleguide ------------------------------------------ */
+.styleguide-panel {
+	max-width: 100%;
+	justify-content: left;
+	text-align: left;
 
-/*Confirmation End*/ 
+	border: solid;
+	border-width: 1px;
+	border-color: var(--blue);
+	padding: 1rem;
 
-
-/* Images */ /*why are the icons in as background images, that's not semantically meaningful*/
-
-.facebook-icon {
-	width: 2.5rem;
-	height: 2.5rem;
-
-	background-image: url("../img/facebook-icon.png"); 
-
-    background-attachment: scroll; 
-    background-position: center; 
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.twitter-icon {
-	width: 2.5rem;
-	height: 2.5rem;
-
-	background-image: url("../img/twitter-icon.png"); 
-
-    background-attachment: scroll; 
-    background-position: center; 
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.instagram-icon {
-	width: 2.5rem;
-	height: 2.5rem;
-
-	background-image: url("../img/instagram-icon.png"); 
-
-    background-attachment: scroll; 
-    background-position: center; 
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-@media(max-width: 44.1875rem){
-	.page-banner h1{
-		font-size: 4rem;
-	}
-}
-
-@media(max-width: 36.125rem){
-	.page-banner h1{
-		font-size: 3rem;
-	}
-}
-
-@media(max-width: 29.25rem){
-	.page-banner h1{
-		font-size: 2rem;
-	}
+	margin-top: 1rem;
+	margin-bottom: 1rem;
 }
 
 .grid-highlight { /* styleguide only */
 	border-width: 1px;
+	border-style: solid;
 	border-color: var(--yellow);
-	color: var(--yellow);
 	padding: 1rem;
 }	
+/* Styleguide End */
 
 @media(max-width: 76.25rem){
 	.grid-row-section{
@@ -1425,4 +1372,3 @@ select{
 		width: 100%
 	}
 }
-
