@@ -892,7 +892,6 @@ select, textarea, input {
 }	
 
 .jet-ski-panel {
-	height: 650px;
 
 	justify-content: center;
 	text-align: center;
@@ -918,34 +917,6 @@ select, textarea, input {
 	margin-bottom: 1rem;
 }
 
-@media(max-width: 55.9376rem) {
-	.jet-ski-panel {
-		height: 700px;
-	}
-}
-
-
-@media(max-width: 44.25rem) {
-	.jet-ski-panel {
-		height: 950px;
-	}
-}
-
-@media(max-width: 40.625rem) {
-	.jet-ski-panel {
-		height: 900px;
-	}
-}
-
-@media(max-width: 34.365rem) {
-	.jet-ski-panel {
-		height: 850px;
-	}
-}
-
-
-
-
 .book-button {
 	padding: 1rem;
 	margin: 1rem 0 1rem 0;
@@ -957,13 +928,7 @@ select, textarea, input {
 	border-width: 2px;
 }
 
-@media(max-width: 64.1875rem) {
-	.jet-ski-panel {
-		max-width: 100%;
-		margin-top: 2rem;
-		height: 750px;
-	}
-}
+
 /* Home End */
 
 /* ------------------------------------------ Product Detail ------------------------------------------ */
