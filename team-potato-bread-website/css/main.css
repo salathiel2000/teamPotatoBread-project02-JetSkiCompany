@@ -95,7 +95,7 @@ img {
 }
 
 .reduce-image {
-	width:90%;
+	width:93%;
 }
 
 /* Buttons */
@@ -140,6 +140,10 @@ img {
 	padding: 1rem 3rem;
 }
 
+.main-page-form{
+	margin-left: 1rem;
+}
+
 .main-page-form .small-button {
 	padding: 1rem 3rem;
 	margin-top: 1.5rem;
@@ -157,7 +161,7 @@ select {
 	margin-top: 1rem;
 	margin-bottom: 1rem;
 	border-radius: 0px;
-	border: 1px solid rgb(31, 186, 214);
+	border: 2px solid rgb(31, 186, 214);
 
 	font-weight: 200; 
 	line-height: 1; 
@@ -180,12 +184,6 @@ select::-ms-expand {
 	display: none;
 }
 
-textarea {
-	width:100%;
-	padding:0.8rem;
-	border: 1px solid rgb(31, 186, 214);
-	margin-top: 0.5rem;
-}
 
 select, textarea, input {
 	outline-color: rgb(242, 187, 5);
@@ -202,7 +200,7 @@ input[type=text] {
 	padding-left: 20px;
 	margin-top: 8px; 
 	/*color: white;*/
-	border: 1px solid rgb(31, 186, 214);
+	border: 2px solid rgb(31, 186, 214);
 	box-sizing: border-box;
 }
 
@@ -292,9 +290,6 @@ ul{
 	padding-left: 3rem;
 }
 
-.reduce-image{
-	width:90%;
-}
 
 .negative-margin {
 	margin-left: -1.5rem
@@ -457,9 +452,10 @@ select::-ms-expand {
 textarea {
 	width:100%;
 	padding:0.8rem;
-	border: 1px solid rgb(31, 186, 214);
+	border: 2px solid rgb(31, 186, 214);
 	margin-top: 0.5rem;
 }
+
 
 select, textarea, input {
 	outline-color: rgb(242, 187, 5);
@@ -568,6 +564,8 @@ select, textarea, input {
 
 .head-banner p {
 	text-align: center; 
+	font-weight: normal; 
+	/*font-size: 1rem;*/
 	color: rgb(31, 186, 214);
 }
 
@@ -784,7 +782,7 @@ select, textarea, input {
 	background-color: rgba(0, 0, 0, 0);
 	border-color: rgb(31, 186, 214);
 
-	border-width: 1px;
+	border-width: 2px;
 
 	border-style: solid;
 }
@@ -892,8 +890,8 @@ select, textarea, input {
 }	
 
 .jet-ski-panel {
-	height: 650px;
-
+	/*height: 650px;*/
+	height: 100%;
 	justify-content: center;
 	text-align: center;
 
@@ -902,7 +900,9 @@ select, textarea, input {
 }
 
 .jet-ski-panel img {
-	max-width: 100%;
+	/*max-width: 100%;*/
+	/*height: 100%;*/
+	width: 100%;
 }
 
 
@@ -918,30 +918,36 @@ select, textarea, input {
 	margin-bottom: 1rem;
 }
 
-@media(max-width: 55.9376rem) {
+/*@media(max-width: 114.125rem){
+	.reduce-image{
+		width: 93%;
+	}
+}
+*/
+/*@media(max-width: 55.9376rem) {
 	.jet-ski-panel {
 		height: 700px;
 	}
-}
+}*/
 
-
+/*
 @media(max-width: 44.25rem) {
 	.jet-ski-panel {
 		height: 950px;
 	}
-}
+}*/
 
-@media(max-width: 40.625rem) {
+/*@media(max-width: 40.625rem) {
 	.jet-ski-panel {
 		height: 900px;
 	}
-}
+}*/
 
-@media(max-width: 34.365rem) {
+/*@media(max-width: 34.365rem) {
 	.jet-ski-panel {
 		height: 850px;
 	}
-}
+}*/
 
 
 
@@ -961,7 +967,7 @@ select, textarea, input {
 	.jet-ski-panel {
 		max-width: 100%;
 		margin-top: 2rem;
-		height: 750px;
+		/*height: 750px;*/
 	}
 }
 /* Home End */
@@ -1027,6 +1033,10 @@ select, textarea, input {
 }
 
 .center {
+	margin-left: auto; 
+	margin-right: auto; 
+	float: none;
+	width: 100%;
 	text-align: center;
 }
 /* Product Detail End */
@@ -1047,19 +1057,13 @@ select, textarea, input {
 
 @media(max-width: 36.5rem){
 	.values{
-	height:250px
-}
-}
-
-@media(max-width: 26.875rem){
-	.values{
 	height:300px
 }
 }
 
-@media(max-width: 22rem){
+@media(max-width: 25rem){
 	.values{
-	height:350px
+	height:400px
 }
 }
 
@@ -1161,7 +1165,7 @@ select, textarea, input {
 	padding-left: 1rem; 
 	line-height: 1; 
 	height: 60px; 
-	border-bottom: 1px solid rgb(31, 186, 214);
+	border-bottom: 2px solid rgb(31, 186, 214);
 	color: white;
 	font-weight: 100;
 	font-size: 0.8rem; 
@@ -1171,6 +1175,10 @@ select, textarea, input {
 	background: url("../img/dropDown.png") no-repeat right transparent;
 	background-size: auto 15%;
 	background-position: 97%
+}
+
+option{
+	color: rgb(31, 186, 214); 
 }
 
 @media(max-width: 46.875rem) {
