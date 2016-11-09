@@ -77,6 +77,8 @@
 	font-style: normal;
 	src: url('.../fonts/Montserrat-SemiBold.otf');
 	src: url('.../fonts/Montserrat-SemiBold.otf?#iefixed') format('otf');
+	src: url('.../fonts/Montserrat-SemiBold.woff');
+	src: url('.../fonts/Montserrat-SemiBold.woff?#iefixed') format('woff');
 }
 
 @font-face{
