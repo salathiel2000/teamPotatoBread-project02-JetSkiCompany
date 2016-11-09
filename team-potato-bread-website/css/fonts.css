@@ -97,5 +97,7 @@
 	font-style: normal;
 	src: url('.../fonts/Montserrat-Black.otf');
 	src: url('.../fonts/Montserrat-Black.otf?#iefixed') format('otf');
+	src: url('.../fonts/Montserrat-Black.woff');
+	src: url('.../fonts/Montserrat-Black.woff?#iefixed') format('woff');
 }
 
