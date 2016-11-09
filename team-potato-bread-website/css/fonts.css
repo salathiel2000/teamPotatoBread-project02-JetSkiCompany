@@ -67,6 +67,8 @@
 	font-style: normal;
 	src: url('.../fonts/Montserrat-Medium.otf');
 	src: url('.../fonts/Montserrat-Medium.otf?#iefixed') format('otf');
+	src: url('.../fonts/Montserrat-Medium.woff');
+	src: url('.../fonts/Montserrat-Medium.woff?#iefixed') format('woff');
 }
 
 @font-face{
