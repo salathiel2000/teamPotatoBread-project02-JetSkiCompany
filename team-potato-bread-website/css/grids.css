@@ -159,6 +159,21 @@
 		margin-bottom: 2rem;
 	}
 
+	#booking-details .grid-col-1of2{
+		width: 50%;
+	}
+}
+
+
+@media(max-width: 37.0625rem){
+	
+	#booking-details .grid-col-1of2{
+		width: 100%;
+			}
+	
+	#booking-details .float-right{
+		float:left; 
+	}
 }
 
 @media(max-width: 66.1875rem){

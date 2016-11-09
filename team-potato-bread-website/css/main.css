@@ -1,4 +1,4 @@
-/* IAT 343 Project 2 - Salathiel Wells, Thomas Laurie */
+/* IAT 339 Project 2 - Salathiel Wells, Thomas Laurie */
 
 html {
 	font-family: "Montserrat", Arial, sans-serif; 
@@ -139,10 +139,6 @@ img {
 	padding: 1rem 3rem;
 }
 
-.main-page-form{
-	margin-left: 1rem;
-}
-
 .main-page-form .small-button {
 	padding: 1rem 3rem;
 	margin-top: 1.5rem;
@@ -169,7 +165,7 @@ select {
 	
 	background: url("../img/dropDown.png") no-repeat right #fff;
 	background-size: auto 15%;
-	background-position: 97%
+	background-position: 97%;
 	font-weight: 100; 
 	margin-top: 8px;
 	border-radius: 0px;
@@ -209,7 +205,7 @@ input[type=date] {
 	padding-left: 20px;
 	margin-top: 1rem; 
 	/*color: white;*/
-	border: 1px solid rgb(31, 186, 214);
+	border: 2px solid rgb(31, 186, 214);
 	box-sizing: border-box;
 }
 
@@ -219,7 +215,7 @@ input[type=time] {
 	padding-left: 20px;
 	margin-top: 1rem; 
 	/*color: white;*/
-	border: 1px solid rgb(31, 186, 214);
+	border: 2px solid rgb(31, 186, 214);
 	box-sizing: border-box;
 }
 
@@ -229,7 +225,7 @@ input[type=number] {
 	padding-left: 20px;
 	margin-top: 1rem; 
 	/*color: white;*/
-	border: 1px solid rgb(31, 186, 214);
+	border: 2px solid rgb(31, 186, 214);
 	box-sizing: border-box;
 }
 
@@ -332,6 +328,10 @@ ul {
 
 .remove-padding {
 	padding-top: 0.4rem;
+}
+
+.remove-all-padding {
+	padding: 0;
 }
 
 .less-padding {
@@ -570,11 +570,6 @@ iframe {
 	color: rgb(31, 186, 214);
 }
 
-.suggestion-menu {
-	justify-content: left;
-	justify-content: -ms-left;
-	justify-content: -webkit-left;
-}
 
 .suggestion-menu select {
 	width: 15rem;
@@ -911,11 +906,9 @@ iframe {
 }	
 
 .jet-ski-panel {
-
-	justify-content: center;
 	text-align: center;
 
-	border: 1px solid rgb(31, 186, 214);
+	border: 2px solid rgb(31, 186, 214);
 	margin-bottom: 1rem;
 }
 
@@ -994,7 +987,6 @@ iframe {
 }
 
 .info-panel {
-	justify-content: center;
 	text-align: center;
 
 	border: 1px solid rgb(31, 186, 214);
@@ -1035,7 +1027,7 @@ iframe {
 
 /* ------------------------------------------ About ------------------------------------------ */
 .values {
-	border: 1px solid rgb(242, 187, 5);
+	border: 2px solid rgb(242, 187, 5);
 	height: 310px;
 	margin-bottom: 2rem;
 }
@@ -1198,7 +1190,6 @@ option{
 
 .book-panel {
 	max-width: 100%;
-	justify-content: center;
 	text-align: center;
 }
 
@@ -1227,7 +1218,7 @@ option{
 
 /* ------------------------------------------ Booking Review ------------------------------------------ */
 .summary-panel {
-	border: 1px solid rgb(31, 186, 214);
+	border: 2px solid rgb(31, 186, 214);
 	height: 28rem;
 	margin-top: 1rem;
 	margin-bottom: 1rem;
@@ -1246,7 +1237,7 @@ option{
 
 @media(max-width: 36.25rem) {
 	#confirm .right-align {
-		text-align: left;s
+		text-align: left;
 	}
 }
 /* Confirm End */
@@ -1254,7 +1245,6 @@ option{
 /* ------------------------------------------ Styleguide ------------------------------------------ */
 .styleguide-panel {
 	max-width: 100%;
-	justify-content: left;
 	text-align: left;
 
 	border: solid;
