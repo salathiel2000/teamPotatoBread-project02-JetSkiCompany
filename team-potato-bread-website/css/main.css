@@ -927,8 +927,6 @@ select, textarea, input {
 
 	border-width: 2px;
 }
-
-
 /* Home End */
 
 /* ------------------------------------------ Product Detail ------------------------------------------ */
@@ -1071,6 +1069,13 @@ select, textarea, input {
 .feature-map iframe {
 	width: 100% !important;
 	height:100% !important;
+}
+
+iframe {
+	width: 600px;
+	height: 500px;
+	border-width: 0;
+
 }
 /*About End*/ 
 
