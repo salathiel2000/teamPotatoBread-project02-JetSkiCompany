@@ -713,8 +713,29 @@ iframe {
 
 @media(max-width: 43rem) {
 	.menu-buttons {
-		max-width: 5rem;
+		width: 6rem;
+
 	}
+
+	.menu-buttons a {
+		width: 100%;
+		text-align: center;
+
+		padding: .5rem;
+		margin: .5rem;
+
+		font-size: 0.875rem;
+		background-color: rgb(31, 186, 214);
+	}
+
+	.menu-buttons a:hover {
+			color: rgb(255, 255, 255);
+			background-color: rgb(242, 187, 5);
+			cursor: pointer;
+			transition: 0.1s ease-in-out;
+	}
+
+
 }
 /* Header End */
 
