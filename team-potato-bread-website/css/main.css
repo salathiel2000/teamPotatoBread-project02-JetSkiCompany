@@ -541,6 +541,11 @@ select, textarea, input {
 .yellow-text {
 	color: rgb(242, 187, 5);
 }
+
+/* Other */
+iframe {
+	border-width: 0;
+}
 /* Universal End */
 
 /* ------------------------------------------ Header ------------------------------------------ */
@@ -927,6 +932,11 @@ select, textarea, input {
 
 	border-width: 2px;
 }
+
+#forecast-embed {
+	width: 100%;
+	height: 245px;
+}
 /* Home End */
 
 /* ------------------------------------------ Product Detail ------------------------------------------ */
@@ -1004,29 +1014,29 @@ select, textarea, input {
 
 @media(max-width: 44.25rem){
 	.values{
-	height:200px
+	height: 200px
 }
 }
 
 @media(max-width: 36.5rem){
 	.values{
-	height:250px
+	height: 250px
 }
 }
 
 @media(max-width: 26.875rem){
 	.values{
-	height:300px
+	height: 300px
 }
 }
 
 @media(max-width: 22rem){
 	.values{
-	height:350px
+	height: 350px
 }
 }
 
-.values h3{
+.values h3 {
 	font-family: 'Againts', sans-serif;
 
 	font-size: 3rem;
@@ -1068,14 +1078,12 @@ select, textarea, input {
 
 .feature-map iframe {
 	width: 100% !important;
-	height:100% !important;
+	height: 100% !important;
 }
 
-iframe {
+#interactive-map {
 	width: 600px;
 	height: 500px;
-	border-width: 0;
-
 }
 /*About End*/ 
 
