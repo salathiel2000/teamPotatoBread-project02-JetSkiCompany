@@ -87,6 +87,8 @@
 	font-style: normal;
 	src: url('.../fonts/Montserrat-ExtraBold.otf');
 	src: url('.../fonts/Montserrat-ExtraBold.otf?#iefixed') format('otf');
+	src: url('.../fonts/Montserrat-ExtraBold.woff');
+	src: url('.../fonts/Montserrat-ExtraBold.woff?#iefixed') format('woff');
 }
 
 @font-face{
