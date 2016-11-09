@@ -384,7 +384,7 @@ ul {
 	padding-right: 0;
 }
 
-@media(max-width: 46.25rem) {
+@media(max-width: 48.875rem) {
 	.remove-padding-left, .remove-padding-right {
 	padding-left: 0;
 	padding-right: 0;
@@ -675,6 +675,13 @@ iframe {
 
 .menu-buttons a {
 	color: rgb(255, 255, 255);
+
+	text-align: center;
+
+	padding: .5rem;
+	margin: .5rem;
+
+	border: 1px solid rgb(31, 186, 214);
 }
 
 .menu-buttons a:hover {
@@ -717,13 +724,7 @@ iframe {
 
 	.menu-buttons a {
 		width: 100%;
-		text-align: center;
-
-		padding: .5rem;
-		margin: .5rem;
-
 		font-size: 0.875rem;
-		background-color: rgb(31, 186, 214);
 	}
 
 	.menu-buttons a:hover {
@@ -732,8 +733,6 @@ iframe {
 			cursor: pointer;
 			transition: 0.1s ease-in-out;
 	}
-
-
 }
 /* Header End */
 
@@ -1162,7 +1161,7 @@ iframe {
 	padding-left: 1rem; 
 	line-height: 1; 
 	height: 60px; 
-	border-bottom: 2px solid rgb(31, 186, 214);
+	border: 1px solid rgb(31, 186, 214);
 	color: white;
 	font-weight: 100;
 	font-size: 0.8rem; 
@@ -1213,7 +1212,7 @@ option{
 	padding-right: 0;
 }
 
-@media(max-width: 44.1875rem) {
+@media(max-width: 48.875rem) {
 	#passenger-information .grid-col-1of2:nth-child(1) {
 		padding-left: 0;
 		padding-right: 0rem;
