@@ -288,7 +288,7 @@ section {
 ul {
 	list-style-type: none;
 	padding-top: 2rem;
-	padding-left: 3rem;
+	padding-left: 0rem;
 }
 
 .reduce-image {
