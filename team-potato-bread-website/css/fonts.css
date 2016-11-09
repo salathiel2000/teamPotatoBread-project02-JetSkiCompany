@@ -24,6 +24,8 @@
 	font-style: normal;
 	src: url('.../fonts/Montserrat-Bold.otf');
 	src: url('.../fonts/Montserrat-Bold.otf?#iefixed') format('otf');
+	src: url('.../fonts/Montserrat-Bold.woff');
+	src: url('.../fonts/Montserrat-Bold.woff?#iefixed') format('woff');
 }
 
 
