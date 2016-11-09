@@ -45,6 +45,9 @@
 	font-style: normal;
 	src: url('.../fonts/Montserrat-Light.otf');
 	src: url('.../fonts/Montserrat-Light.otf?#iefixed') format('otf');
+	src: url('.../fonts/Montserrat-Light.woff');
+	src: url('.../fonts/Montserrat-Light.woff?#iefixed') format('woff');
+}
 }
 
 @font-face{
