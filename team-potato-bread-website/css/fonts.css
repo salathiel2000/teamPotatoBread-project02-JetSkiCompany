@@ -35,6 +35,8 @@
 	font-style: normal;
 	src: url('.../fonts/Montserrat-ExtraLight.otf');
 	src: url('.../fonts/Montserrat-ExtraLight.otf?#iefixed') format('otf');
+	src: url('.../fonts/Montserrat-ExtraLight.woff');
+	src: url('.../fonts/Montserrat-ExtraLight.woff?#iefixed') format('woff');
 }
 
 @font-face{
