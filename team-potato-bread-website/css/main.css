@@ -358,6 +358,30 @@ ul{
 	padding: 1rem 3rem;
 }
 
+@media(max-width: 49.3125rem){
+	#booking-information .small-button{
+		float:left;
+
+	}
+
+	#booking-information .grid-col-1of1{
+		padding:0;
+
+	}
+
+	#booking-information .grid-col-1of2:nth-child(2){
+		padding-left:0;
+
+	}
+}
+
+@media(max-width: 49.25rem){
+	#booking-information .grid-col-1of2{
+		width: 100%;
+		padding:0;
+	}
+}
+
 
 .remove-padding-left {
 	padding-left: 0;
@@ -776,6 +800,25 @@ select, textarea, input {
 	font-size: 0.7rem;
 }
 
+@media(max-width: 48.75rem){
+	.info-panel{
+		height: 450px;
+	}
+
+	.footer-form .grid-col-1of2:nth-child(1){
+		width:100%;
+	}
+
+	.footer-form .grid-col-1of2:nth-child(2){
+		width:100%;
+	}
+
+	.negative-margin{
+		margin-left:0;
+	}
+}
+
+
 .foot-banner input[type=submit] {
 	margin-top: 1rem;
 }
@@ -899,6 +942,9 @@ select, textarea, input {
 		height: 850px;
 	}
 }
+
+
+
 
 .book-button {
 	padding: 1rem;
@@ -1162,6 +1208,18 @@ select, textarea, input {
 	padding-right: 0;
 }
 
+@media(max-width: 44.1875rem){
+	#passenger-information .grid-col-1of2:nth-child(1){
+		padding-left: 0;
+		padding-right: 0rem;
+	}
+
+	#passenger-information .grid-col-1of2:nth-child(2){
+		padding-left: 0rem;
+		padding-right: 0;
+	}
+}
+
 
 /* ------------------------------------------ Booking Review ------------------------------------------ */
 .summary-panel {
@@ -1212,157 +1270,7 @@ select, textarea, input {
 }	
 /* Styleguide End */
 
-@media(max-width: 76.25rem){
-	.grid-row-section{
-		padding: 0 2rem;
-	}
-}
 
 
-@media(max-width: 67.8125rem){
-	.grid-row-section{
-		padding: 0 1rem;
-	}
-}
-
-@media(max-width: 55.9376rem){
-	.jet-ski-panel{
-		height: 700px;
-	}
-}
 
 
-@media(max-width: 44.25rem){
-	.jet-ski-panel{
-		height: 950px;
-	}
-}
-
-@media(max-width: 40.625rem){
-	.jet-ski-panel{
-		height: 900px;
-	}
-}
-
-@media(max-width: 34.365rem){
-	.jet-ski-panel{
-		height: 850px;
-	}
-}
-
-@media(max-width: 60.5625rem){
-	.info-panel{
-		height: 600px;
-	}
-}
-
-@media(max-width: 48.75rem){
-	.info-panel{
-		height: 450px;
-	}
-
-	.footer-form .grid-col-1of2:nth-child(1){
-		width:100%;
-	}
-
-	.footer-form .grid-col-1of2:nth-child(2){
-		width:100%;
-	}
-
-	.negative-margin{
-		margin-left:0;
-	}
-}
-
-@media(max-width: 31.5rem){
-	.info-panel{
-		height: 650px;
-	}
-}
-
-@media(max-width: 56.625rem){
-	.product-info .grid-col-1of2:nth-child(1){
-		padding-left:0;
-	}
-
-	.product-info .grid-col-1of2:nth-child(2){
-		padding-right:0;
-	}
-}
-
-@media(max-width: 49.25rem){
-	#booking-information .grid-col-1of2{
-	width: 100%;
-	padding:0;
-}
-
-}
-
-@media(max-width: 44.1875rem){
-	#passenger-information .grid-col-1of2:nth-child(1){
-	padding-left: 0;
-	padding-right: 0rem;
-}
-
-#passenger-information .grid-col-1of2:nth-child(2){
-	padding-left: 0rem;
-	padding-right: 0;
-}
-}
-
-@media(max-width: 49.3125rem){
-	#booking-information .small-button{
-		float:left;
-
-	}
-
-	#booking-information .grid-col-1of1{
-		padding:0;
-
-	}
-
-	#booking-information .grid-col-1of2:nth-child(2){
-		padding-left:0;
-
-	}
-}
-
-@media(max-width: 65.875rem){
-	.grid-col-1of7{
-		width: 25%
-	}
-
-	.grid-col-6of7{
-		width: 25%
-	}
-}
-
-@media(max-width: 44.5625rem){
-	.grid-col-1of7{
-		width: 35%
-	}
-
-	.grid-col-6of7{
-		width: 35%
-	}
-}
-
-@media(max-width: 32.5rem){
-	.grid-col-1of7{
-		width: 50%
-	}
-
-	.grid-col-6of7{
-		width: 50%
-	}
-}
-
-@media(max-width: 23rem){
-	.grid-col-1of7{
-		width: 100%
-	}
-
-	.grid-col-6of7{
-		width: 100%
-	}
-}
