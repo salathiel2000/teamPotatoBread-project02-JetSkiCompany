@@ -803,6 +803,11 @@ iframe {
 	border-style: solid;
 }
 
+.facebook:hover{
+	background-color: #000; 
+	opacity: 0.5;
+}
+
 .footer-form textarea {
 	background-color: rgba(0, 0, 0, 0);
 	font-size: 0.7rem;
