@@ -1,6 +1,5 @@
 /* IAT 343 Project 2 - Salathiel Wells, Thomas Laurie */
 
-
 html {
 	font-family: "Montserrat", Arial, sans-serif; 
 	font-size: 1.125rem;
@@ -280,14 +279,14 @@ td {
 }
 
 /* Spacing */
-section{
+section {
 	padding: 2rem 0; 
 }
 
-ul{
+ul {
 	list-style-type: none;
 	padding-top: 2rem;
-	padding-left: 3rem;
+	padding-left: 0rem;
 }
 
 
@@ -339,39 +338,36 @@ ul{
 	padding-top: 2rem;
 }
 
-#booking-information .grid-col-1of2:nth-child(1){
+#booking-information .grid-col-1of2:nth-child(1) {
 	padding-left: 0;
 	padding-right: 1rem;
 }
 
-#booking-information .grid-col-1of2:nth-child(2){
+#booking-information .grid-col-1of2:nth-child(2) {
 	padding-left: 1rem;
 	padding-right: 0;
 }
 
-#booking-information .small-button{
+#booking-information .small-button {
 	padding: 1rem 3rem;
 }
 
-@media(max-width: 49.3125rem){
-	#booking-information .small-button{
+@media(max-width: 49.3125rem) {
+	#booking-information .small-button {
 		float:left;
-
 	}
 
-	#booking-information .grid-col-1of1{
+	#booking-information .grid-col-1of1 {
 		padding:0;
-
 	}
 
-	#booking-information .grid-col-1of2:nth-child(2){
+	#booking-information .grid-col-1of2:nth-child(2) {
 		padding-left:0;
-
 	}
 }
 
-@media(max-width: 49.25rem){
-	#booking-information .grid-col-1of2{
+@media(max-width: 49.25rem) {
+	#booking-information .grid-col-1of2 {
 		width: 100%;
 		padding:0;
 	}
@@ -400,7 +396,7 @@ ul{
 	float:right;
 }
 
-.float-center{
+.float-center {
 	margin-left:auto;
 	margin-right: auto; 
 }
@@ -536,6 +532,11 @@ select, textarea, input {
 
 .yellow-text {
 	color: rgb(242, 187, 5);
+}
+
+/* Other */
+iframe {
+	border-width: 0;
 }
 /* Universal End */
 
@@ -683,7 +684,7 @@ select, textarea, input {
 }
 
 /* Product Detail Begin */ 
-.page-banner{
+.page-banner {
 	background-image: url("../img/Optimized-home-panorama.jpg"); 
 
 	background-attachment: scroll; 
@@ -696,7 +697,7 @@ select, textarea, input {
     padding-bottom: 2rem;
 }
 
-.page-banner img{
+.page-banner img {
 	width: 100%;
 }
 
@@ -710,8 +711,29 @@ select, textarea, input {
 
 @media(max-width: 43rem) {
 	.menu-buttons {
-		max-width: 5rem;
+		width: 6rem;
+
 	}
+
+	.menu-buttons a {
+		width: 100%;
+		text-align: center;
+
+		padding: .5rem;
+		margin: .5rem;
+
+		font-size: 0.875rem;
+		background-color: rgb(31, 186, 214);
+	}
+
+	.menu-buttons a:hover {
+			color: rgb(255, 255, 255);
+			background-color: rgb(242, 187, 5);
+			cursor: pointer;
+			transition: 0.1s ease-in-out;
+	}
+
+
 }
 /* Header End */
 
@@ -798,20 +820,20 @@ select, textarea, input {
 	font-size: 0.7rem;
 }
 
-@media(max-width: 48.75rem){
+@media(max-width: 48.75rem) {
 	.info-panel{
 		height: 450px;
 	}
 
-	.footer-form .grid-col-1of2:nth-child(1){
+	.footer-form .grid-col-1of2:nth-child(1) {
 		width:100%;
 	}
 
-	.footer-form .grid-col-1of2:nth-child(2){
+	.footer-form .grid-col-1of2:nth-child(2) {
 		width:100%;
 	}
 
-	.negative-margin{
+	.negative-margin {
 		margin-left:0;
 	}
 }
@@ -890,8 +912,7 @@ select, textarea, input {
 }	
 
 .jet-ski-panel {
-	/*height: 650px;*/
-	height: 100%;
+
 	justify-content: center;
 	text-align: center;
 
@@ -918,40 +939,6 @@ select, textarea, input {
 	margin-bottom: 1rem;
 }
 
-/*@media(max-width: 114.125rem){
-	.reduce-image{
-		width: 93%;
-	}
-}
-*/
-/*@media(max-width: 55.9376rem) {
-	.jet-ski-panel {
-		height: 700px;
-	}
-}*/
-
-/*
-@media(max-width: 44.25rem) {
-	.jet-ski-panel {
-		height: 950px;
-	}
-}*/
-
-/*@media(max-width: 40.625rem) {
-	.jet-ski-panel {
-		height: 900px;
-	}
-}*/
-
-/*@media(max-width: 34.365rem) {
-	.jet-ski-panel {
-		height: 850px;
-	}
-}*/
-
-
-
-
 .book-button {
 	padding: 1rem;
 	margin: 1rem 0 1rem 0;
@@ -969,6 +956,11 @@ select, textarea, input {
 		margin-top: 2rem;
 		/*height: 750px;*/
 	}
+}
+
+#forecast-embed {
+	width: 100%;
+	height: 245px;
 }
 /* Home End */
 
@@ -1049,13 +1041,13 @@ select, textarea, input {
 	margin-bottom: 2rem;
 }
 
-@media(max-width: 44.25rem){
+@media(max-width: 44.25rem) {
 	.values{
-	height:200px
+	height: 200px
 }
 }
 
-@media(max-width: 36.5rem){
+@media(max-width: 36.5rem) {
 	.values{
 	height:300px
 }
@@ -1067,7 +1059,7 @@ select, textarea, input {
 }
 }
 
-.values h3{
+.values h3 {
 	font-family: 'Againts', sans-serif;
 
 	font-size: 3rem;
@@ -1109,7 +1101,12 @@ select, textarea, input {
 
 .feature-map iframe {
 	width: 100% !important;
-	height:100% !important;
+	height: 100% !important;
+}
+
+#interactive-map {
+	width: 600px;
+	height: 500px;
 }
 /*About End*/ 
 
@@ -1216,13 +1213,13 @@ option{
 	padding-right: 0;
 }
 
-@media(max-width: 44.1875rem){
-	#passenger-information .grid-col-1of2:nth-child(1){
+@media(max-width: 44.1875rem) {
+	#passenger-information .grid-col-1of2:nth-child(1) {
 		padding-left: 0;
 		padding-right: 0rem;
 	}
 
-	#passenger-information .grid-col-1of2:nth-child(2){
+	#passenger-information .grid-col-1of2:nth-child(2) {
 		padding-left: 0rem;
 		padding-right: 0;
 	}

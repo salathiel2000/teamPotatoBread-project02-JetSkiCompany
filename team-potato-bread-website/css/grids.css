@@ -1,3 +1,5 @@
+/* IAT 343 Project 2 - Salathiel Wells, Thomas Laurie */
+
 /* ------------------------------------------ Universal ------------------------------------------ */
 *, *::after, *::before {
 	box-sizing: border-box;
@@ -91,7 +93,7 @@
 }
 
 /* Columns */
-[class*='grid-col-']{
+[class*='grid-col-'] {
 	float:left;
 
 	padding-left: 1rem;
